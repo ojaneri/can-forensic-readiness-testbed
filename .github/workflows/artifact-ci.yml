@@ -1,0 +1,29 @@
+name: Artifact CI
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  validate-artifact:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install LaTeX tooling
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y latexmk texlive-latex-base texlive-latex-recommended texlive-fonts-recommended poppler-utils
+
+      - name: Validate dataset hashes
+        run: python3 dataset/scripts/validate_hashes.py
+
+      - name: Build IEEEtran paper v5
+        working-directory: paper
+        run: latexmk -pdf -interaction=nonstopmode -halt-on-error article_ieee_v5.tex
+
+      - name: Check DOI in PDF text
+        run: |
+          pdftotext paper/article_ieee_v5.pdf - | grep '10.5281/zenodo.20541106'

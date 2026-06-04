@@ -177,6 +177,35 @@
           "bytes": 2106
         }
       }
+    },
+    "010_realtime_wallclock_capture": {
+      "source": "software-only wall-clock capture generated in dataset/experiments/010_realtime_wallclock_capture",
+      "files": {
+        "findings.md": {
+          "sha256": "b273e3b144cfdf75885c2446928b95a02717a16bd9cb58dfdc5a61e517774bf8",
+          "bytes": 503
+        },
+        "frames_normalized.csv": {
+          "sha256": "b943c54424086200c7f090a04fda7e78525499e124f24f121fd08b36bb369abf",
+          "bytes": 210711
+        },
+        "manifest.json": {
+          "sha256": "3113f5e059df9c2892c89c827279201e311fef2a7dd648bd779c8dbe936563a5",
+          "bytes": 764
+        },
+        "realtime_trace.log": {
+          "sha256": "a96d0f5ab2c1cb2927f82cc2090993a8c28c29d93f6a92d6251fbdbc7abdb41f",
+          "bytes": 44930
+        },
+        "run_realtime_capture.py": {
+          "sha256": "158052a3083e1f47c860d18accab5621fe05c8baa71c66473297d676a4228b30",
+          "bytes": 5012
+        },
+        "summary.json": {
+          "sha256": "139c71c5b140bc8ce364e908dc3c28e26d3941265a1b3b40b8a54b77577eec2a",
+          "bytes": 799
+        }
+      }
     }
   },
   "combined_dataset": {
@@ -290,12 +319,12 @@
       "bytes": 10058
     },
     "paper/index.html": {
-      "sha256": "944fbbd3cccc82a9983208a45644d7c40cf526856f9ac93bb8ad638b5b9bf99c",
-      "bytes": 1806
+      "sha256": "06a9b099eb0be870e8b3cc4c4e5e2d140660a68a2fc88f786bd7e034f033fdae",
+      "bytes": 1566
     },
     "index.html": {
-      "sha256": "0a8c116bc860a4031cee3821d0aef4695f4825bdab06c28a701fd641b76bd0aa",
-      "bytes": 30312
+      "sha256": "534f452847eecc34779c5f4c70fb890ba5ae9a02b59dbe0d0e537f3030408597",
+      "bytes": 30478
     },
     "paper/article_ieee_v3.html": {
       "sha256": "39411276e159f45017de29efecf4ebf14e0917be1ba469807401901270b24e77",
@@ -330,16 +359,16 @@
       "bytes": 2463
     },
     "paper/article_ieee_latest.pdf": {
-      "sha256": "bbd6e29e65edd334d0db0d968790c2b7e13461cdcfa16fd8585502b38adb03e6",
-      "bytes": 128974
+      "sha256": "3ce43d8ee18a507a99381a8ba0833a1d4e9367dd871eaa74ee50118474b52fc4",
+      "bytes": 784597
     },
     "paper/article_ieee_latest.tex": {
-      "sha256": "f8459cab475d17fc84dcf9f2d8d8fd59e528b6ac3cf4da5491eac75c6615b655",
-      "bytes": 21243
+      "sha256": "436e0925107677e62e1c8bdedebdf3e6284c203391ac2a947d07578e9d777344",
+      "bytes": 22504
     },
     "paper/article_ieee_latest.bib": {
-      "sha256": "4900c8dbbb38ca7ee92516bdb8534b53138835becf157e346dbb4daed4224525",
-      "bytes": 4867
+      "sha256": "1cee5481152dc4a1c2bc9f0ceb1aefab46d7a67844ea8fb558e08589dc32acef",
+      "bytes": 5030
     },
     "paper/IEEEtran.cls": {
       "sha256": "da751920a317ed318b7b5cd7fa585a6cc7d28502d457856382e9be24b10a3bd7",
@@ -348,6 +377,50 @@
     "paper/IEEEtran.bst": {
       "sha256": "314f0ece704568faf827011bac498650691b2b5ee06320720830e782416d5a5f",
       "bytes": 57748
+    },
+    ".github/workflows/artifact-ci.yml": {
+      "sha256": "9206c0e36ff25b4950efe611018afd2efa0db3583b713fc62abc46b6037e83fb",
+      "bytes": 786
+    },
+    "README.md": {
+      "sha256": "cc1187fb108f427d6abd2bde600d8fe27a8d043fa93ad2c8ed0d56b6ef827e15",
+      "bytes": 2087
+    },
+    "paper/article_ieee_v5.tex": {
+      "sha256": "436e0925107677e62e1c8bdedebdf3e6284c203391ac2a947d07578e9d777344",
+      "bytes": 22504
+    },
+    "paper/article_ieee_v5.bib": {
+      "sha256": "1cee5481152dc4a1c2bc9f0ceb1aefab46d7a67844ea8fb558e08589dc32acef",
+      "bytes": 5030
+    },
+    "paper/article_ieee_v5.pdf": {
+      "sha256": "3ce43d8ee18a507a99381a8ba0833a1d4e9367dd871eaa74ee50118474b52fc4",
+      "bytes": 784597
+    },
+    "paper/article_ieee_v5_notes.md": {
+      "sha256": "88805cbbd5455c6b719fa41c098e377d1de591a1087398b1339ae0f32d604de7",
+      "bytes": 1869
+    },
+    "paper/article_ieee_v5_adversarial_review.md": {
+      "sha256": "a94cdb08398215ca288717d18c4d885c2bf1e78771b28847a97e331bc68c87ff",
+      "bytes": 1407
+    },
+    "analysis/figures/reproducible_evidence_pipeline_v5.svg": {
+      "sha256": "e9cae543217dd6efe4e6de2d17d7cbb3c557a3a9ccd3b59a65d6b0e0c41494f2",
+      "bytes": 3701
+    },
+    "analysis/figures/reproducible_evidence_pipeline_v5.png": {
+      "sha256": "a95360b145ff6afd9b2fac01e6ff784768909ff8f1188a7636f2859a2acdeffa",
+      "bytes": 163366
+    },
+    "analysis/figures/reproducible_evidence_pipeline_v5.pdf": {
+      "sha256": "d7cd57cbfadd486de8addfe4616648f465798f0d63c79a0e51425a5b6799e02f",
+      "bytes": 680760
+    },
+    "demo-icsim-spoof/demo-icsim-spoof-preview.gif": {
+      "sha256": "a05e6d1ee2c5f62eb13e90e06883af29c0cd3ae0ce8509591e21cc987531f7ef",
+      "bytes": 338505
     }
   }
 }

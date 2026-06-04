@@ -1,54 +1,46 @@
 # CAN Forensic-Readiness Testbed
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20541107.svg)](https://doi.org/10.5281/zenodo.20541107)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20541106.svg)](https://doi.org/10.5281/zenodo.20541106)
+[![Artifact CI](https://github.com/ojaneri/can-forensic-readiness-testbed/actions/workflows/artifact-ci.yml/badge.svg)](https://github.com/ojaneri/can-forensic-readiness-testbed/actions/workflows/artifact-ci.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
-A software-defined, low-cost CAN testbed for automotive cybersecurity education and forensic-readiness analysis.
+A reproducible software-defined CAN testbed for automotive cybersecurity and forensic-readiness analysis.
 
-This repository accompanies the paper draft:
+Current paper candidate:
 
-**A Software-Defined Low-Cost CAN Testbed for Automotive Cybersecurity and Forensic-Readiness Analysis**
+**A Reproducible Software-Defined CAN Testbed for Automotive Cybersecurity and Forensic-Readiness Analysis**
+
+## Main links
+
+- Paper v5 PDF: `paper/article_ieee_v5.pdf`
+- Paper v5 LaTeX: `paper/article_ieee_v5.tex`
+- Zenodo concept DOI: https://doi.org/10.5281/zenodo.20541106
+- GitHub repository: https://github.com/ojaneri/can-forensic-readiness-testbed
+- Demo GIF: `demo-icsim-spoof/demo-icsim-spoof-preview.gif`
 
 ## Scope and safety boundary
 
-This artifact is for authorized education, reproducibility, and forensic-readiness workflow validation.
+This repository is for authorized cybersecurity education, reproducible experimentation, and forensic-readiness workflow validation.
 
-It is **not**:
+It is not:
 
 - a real-vehicle attack toolkit;
 - an operational IDS benchmark;
 - a claim of physical CAN fidelity;
 - a production automotive security assessment tool.
 
-All experiments are software-defined and observer-safe.
+All demos replay stored artifacts and do not transmit live CAN frames.
 
-## What is included
+## Included evidence packages
 
-- Internal labeled CAN experiments: baseline, spoofing, flooding, recovery.
+- Experiments 005/006: internal labeled CAN experiments.
 - Experiment 007: 10-run low/medium/high spoofing/flooding matrix.
 - Experiment 008: external ICSim `sample-can.log` ingestion and normalization.
 - Experiment 009: didactic spoof injection into external ICSim trace.
+- Experiment 010: software-only wall-clock timing capture.
 - SHA-256 manifests and validation scripts.
 - Normalized CSV datasets and data dictionary.
-- Browser demos for replay and visualization.
-- IEEE-style paper drafts and analysis tables/figures.
-
-## DOI
-
-- Concept DOI: https://doi.org/10.5281/zenodo.20541106
-- First version DOI: https://doi.org/10.5281/zenodo.20541107
-- Paper v4 release DOI: https://doi.org/10.5281/zenodo.20541255
-
-## Quick links
-
-- Paper v4 PDF: [`paper/article_ieee_v4.pdf`](paper/article_ieee_v4.pdf)
-- Paper v4 LaTeX: [`paper/article_ieee_v4.tex`](paper/article_ieee_v4.tex)
-- Paper v3 HTML: [`paper/article_ieee_v3.html`](paper/article_ieee_v3.html)
-- Latest paper alias: [`paper/article_ieee_latest.html`](paper/article_ieee_latest.html)
-- Dataset package: [`dataset/`](dataset/)
-- Experiment 007: [`dataset/experiments/007_second_round_matrix/`](dataset/experiments/007_second_round_matrix/)
-- Experiment 008: [`dataset/experiments/008_external_icsim_replay/`](dataset/experiments/008_external_icsim_replay/)
-- Experiment 009: [`dataset/experiments/009_icsim_spoof_injection/`](dataset/experiments/009_icsim_spoof_injection/)
-- ICSim spoof demo: [`demo-icsim-spoof/index.html`](demo-icsim-spoof/index.html)
+- Browser demos for safe replay and visualization.
 
 ## Validate artifact hashes
 
@@ -56,14 +48,9 @@ All experiments are software-defined and observer-safe.
 python3 dataset/scripts/validate_hashes.py
 ```
 
-Expected result: every listed experiment file should print `OK`.
+## Build paper
 
-## Reproduce / inspect
-
-See [`ARTIFACT.md`](ARTIFACT.md) for reproduction notes and artifact layout.
-
-## Licensing notes
-
-Repository code is MIT licensed unless otherwise noted.
-
-Experiment 008 imports the public ICSim `data/sample-can.log` trace from `https://github.com/zombieCraig/ICSim.git`, commit `2b3333ef866987d8adc9c15ff15b9b9189edf85b`. ICSim is distributed upstream under GPL-3.0; its license is preserved in `dataset/experiments/008_external_icsim_replay/ICSim_LICENSE`.
+```bash
+cd paper
+latexmk -pdf -interaction=nonstopmode -halt-on-error article_ieee_v5.tex
+```
