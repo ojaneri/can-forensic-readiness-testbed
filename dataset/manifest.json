@@ -359,12 +359,12 @@
       "bytes": 2463
     },
     "paper/article_ieee_latest.pdf": {
-      "sha256": "3ce43d8ee18a507a99381a8ba0833a1d4e9367dd871eaa74ee50118474b52fc4",
+      "sha256": "06ddee0ab2c8f9e8ce48d7821df0a39e4f226b5a7d384ca40ab5bf4f297a3da3",
       "bytes": 784597
     },
     "paper/article_ieee_latest.tex": {
-      "sha256": "436e0925107677e62e1c8bdedebdf3e6284c203391ac2a947d07578e9d777344",
-      "bytes": 22504
+      "sha256": "1367e532e6b63751b6ebe7541bfadb7b86ea261d6710dbb1774112c8e88ecf4d",
+      "bytes": 22482
     },
     "paper/article_ieee_latest.bib": {
       "sha256": "1cee5481152dc4a1c2bc9f0ceb1aefab46d7a67844ea8fb558e08589dc32acef",
@@ -379,23 +379,23 @@
       "bytes": 57748
     },
     ".github/workflows/artifact-ci.yml": {
-      "sha256": "9206c0e36ff25b4950efe611018afd2efa0db3583b713fc62abc46b6037e83fb",
-      "bytes": 786
+      "sha256": "373047cd3a192b890d87629034a6a3057ab9562b11da924ec47f6837482bcd37",
+      "bytes": 835
     },
     "README.md": {
       "sha256": "cc1187fb108f427d6abd2bde600d8fe27a8d043fa93ad2c8ed0d56b6ef827e15",
       "bytes": 2087
     },
     "paper/article_ieee_v5.tex": {
-      "sha256": "436e0925107677e62e1c8bdedebdf3e6284c203391ac2a947d07578e9d777344",
-      "bytes": 22504
+      "sha256": "1367e532e6b63751b6ebe7541bfadb7b86ea261d6710dbb1774112c8e88ecf4d",
+      "bytes": 22482
     },
     "paper/article_ieee_v5.bib": {
       "sha256": "1cee5481152dc4a1c2bc9f0ceb1aefab46d7a67844ea8fb558e08589dc32acef",
       "bytes": 5030
     },
     "paper/article_ieee_v5.pdf": {
-      "sha256": "3ce43d8ee18a507a99381a8ba0833a1d4e9367dd871eaa74ee50118474b52fc4",
+      "sha256": "06ddee0ab2c8f9e8ce48d7821df0a39e4f226b5a7d384ca40ab5bf4f297a3da3",
       "bytes": 784597
     },
     "paper/article_ieee_v5_notes.md": {
