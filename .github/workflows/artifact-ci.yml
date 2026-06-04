@@ -23,7 +23,7 @@ jobs:
       - name: Validate dataset hashes
         run: python3 dataset/scripts/validate_hashes.py
 
-      - name: Build IEEEtran paper v5
+      - name: Build IEEEtran paper v6
         working-directory: paper
         run: latexmk -pdf -interaction=nonstopmode -halt-on-error article_ieee_v6.tex
 
