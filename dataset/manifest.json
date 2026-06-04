@@ -310,32 +310,32 @@
       "bytes": 25201
     },
     "paper/article_ieee_v4.tex": {
-      "sha256": "290d1c63d2f2ae322afc305ca8e5ea0d8cf56ff4af5d20ed8b40784df1929cfc",
-      "bytes": 21314
+      "sha256": "26b8c674764655bea3766a7f9341d7791a68e7bf512fee3542bcccd85d0ada0f",
+      "bytes": 21253
     },
     "paper/article_ieee_v4.bib": {
       "sha256": "ab4fd2facfb481e5ab110a0f1b3296c2582cfefd4499cc860b202fcb2498c107",
       "bytes": 4867
     },
     "paper/article_ieee_v4.pdf": {
-      "sha256": "debca462f40a60212056019a0c199971165d28194a44c8dd9d35d4d63c33b270",
-      "bytes": 129008
+      "sha256": "46458e6ff48a7fc8db3931104473983e3c45fefbdccf098c89cfc00c8d352b8a",
+      "bytes": 128964
     },
     "paper/article_ieee_v4_notes.md": {
-      "sha256": "d78cd57c7c731986fe854430d9df9ea7ac447cd03beea15903f7a4f8f3c17523",
-      "bytes": 1629
+      "sha256": "e5178e9048925976920500fc11e971d7e8ceab0a80f4cc1107ee2e3695b0defa",
+      "bytes": 1840
     },
     "paper/article_ieee_v4_adversarial_review.md": {
       "sha256": "ad7812fd9a0bc18ff13d359e7f595443be827ec8dbb6c21c933c6d7e2b748938",
       "bytes": 2463
     },
     "paper/article_ieee_latest.pdf": {
-      "sha256": "debca462f40a60212056019a0c199971165d28194a44c8dd9d35d4d63c33b270",
-      "bytes": 129008
+      "sha256": "46458e6ff48a7fc8db3931104473983e3c45fefbdccf098c89cfc00c8d352b8a",
+      "bytes": 128964
     },
     "paper/article_ieee_latest.tex": {
-      "sha256": "290d1c63d2f2ae322afc305ca8e5ea0d8cf56ff4af5d20ed8b40784df1929cfc",
-      "bytes": 21314
+      "sha256": "26b8c674764655bea3766a7f9341d7791a68e7bf512fee3542bcccd85d0ada0f",
+      "bytes": 21253
     },
     "paper/article_ieee_latest.bib": {
       "sha256": "ab4fd2facfb481e5ab110a0f1b3296c2582cfefd4499cc860b202fcb2498c107",
