@@ -43,3 +43,9 @@ It claims:
 - Port the stabilized v3 text to official IEEEtran LaTeX.
 - Generate print-safe final figures if page limit requires.
 - Replace internal artifact URLs with public GitHub/Zenodo DOI.
+
+## Public repository
+
+- GitHub: https://github.com/ojaneri/can-forensic-readiness-testbed
+- Initial release target: https://github.com/ojaneri/can-forensic-readiness-testbed/releases/tag/v0.1.0-artifact
+- Zenodo DOI: pending.

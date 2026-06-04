@@ -298,16 +298,16 @@
       "bytes": 30037
     },
     "paper/article_ieee_v3.html": {
-      "sha256": "c00e49f1b102f858b4ab8a8d25ffe97f19871d060b941855d43c5e04a321dcb3",
-      "bytes": 25085
+      "sha256": "91d00e9b880a2ffc327e609bb15c4a3803d8e58ddb44bb83877a5f62e19a6370",
+      "bytes": 25189
     },
     "paper/article_ieee_v3_notes.md": {
-      "sha256": "a8788a60aacb285fbb008ffcb5c030bcc4d4bdb1e4528dc3fd28e918ed07124b",
-      "bytes": 1533
+      "sha256": "89c1d942bf8e17a39207c3168427b87c6e257f0096a7e5381c9581f889b1ab19",
+      "bytes": 1760
     },
     "paper/article_ieee_latest.html": {
-      "sha256": "c00e49f1b102f858b4ab8a8d25ffe97f19871d060b941855d43c5e04a321dcb3",
-      "bytes": 25085
+      "sha256": "91d00e9b880a2ffc327e609bb15c4a3803d8e58ddb44bb83877a5f62e19a6370",
+      "bytes": 25189
     }
   }
 }
