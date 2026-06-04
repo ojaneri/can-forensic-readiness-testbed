@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="620" viewBox="0 0 1200 620">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L0,6 L9,3 z" fill="#0f172a"/></marker>
+    <style>
+      .box{fill:#f8fafc;stroke:#0f172a;stroke-width:2;rx:18;ry:18}
+      .accent{fill:#e0f2fe;stroke:#0369a1;stroke-width:2;rx:18;ry:18}
+      .green{fill:#dcfce7;stroke:#15803d;stroke-width:2;rx:18;ry:18}
+      .warn{fill:#fef3c7;stroke:#b45309;stroke-width:2;rx:18;ry:18}
+      .txt{font-family:Arial,Helvetica,sans-serif;fill:#0f172a;font-size:24px;font-weight:700;text-anchor:middle}
+      .sub{font-family:Arial,Helvetica,sans-serif;fill:#334155;font-size:18px;text-anchor:middle}
+      .small{font-family:Arial,Helvetica,sans-serif;fill:#475569;font-size:15px;text-anchor:middle}
+      .arrow{stroke:#0f172a;stroke-width:3;fill:none;marker-end:url(#arrow)}
+      .dash{stroke:#64748b;stroke-width:2;stroke-dasharray:8 8;fill:none;marker-end:url(#arrow)}
+    </style>
+  </defs>
+  <rect width="1200" height="620" fill="#ffffff"/>
+  <text x="600" y="42" class="txt" font-size="30">Reproducible CAN Evidence Pipeline</text>
+  <text x="600" y="70" class="sub">software-defined experiments, external traces, wall-clock capture, manifests and observer-safe review</text>
+
+  <rect x="45" y="125" width="210" height="115" class="accent"/>
+  <text x="150" y="160" class="txt">Internal Runs</text>
+  <text x="150" y="190" class="sub">005/006/007</text>
+  <text x="150" y="217" class="small">477,738 labeled frames</text>
+
+  <rect x="45" y="315" width="210" height="115" class="accent"/>
+  <text x="150" y="350" class="txt">External Trace</text>
+  <text x="150" y="380" class="sub">ICSim / Exp. 008</text>
+  <text x="150" y="407" class="small">6,158 preserved frames</text>
+
+  <rect x="45" y="485" width="210" height="90" class="warn"/>
+  <text x="150" y="520" class="txt">Wall-clock</text>
+  <text x="150" y="550" class="sub">Exp. 010 / 20s</text>
+
+  <rect x="345" y="220" width="225" height="150" class="box"/>
+  <text x="457" y="260" class="txt">Normalization</text>
+  <text x="457" y="292" class="sub">CSV schema</text>
+  <text x="457" y="320" class="small">labels, IDs, payloads</text>
+  <text x="457" y="344" class="small">timestamps, provenance</text>
+
+  <rect x="660" y="220" width="225" height="150" class="green"/>
+  <text x="772" y="260" class="txt">Evidence Pack</text>
+  <text x="772" y="292" class="sub">SHA-256 manifests</text>
+  <text x="772" y="320" class="small">metadata + summaries</text>
+  <text x="772" y="344" class="small">GitHub + Zenodo DOI</text>
+
+  <rect x="965" y="125" width="195" height="115" class="box"/>
+  <text x="1062" y="160" class="txt">Paper</text>
+  <text x="1062" y="190" class="sub">IEEEtran v5</text>
+  <text x="1062" y="217" class="small">RQs + evaluation</text>
+
+  <rect x="965" y="315" width="195" height="115" class="box"/>
+  <text x="1062" y="350" class="txt">Safe Demos</text>
+  <text x="1062" y="380" class="sub">browser replay</text>
+  <text x="1062" y="407" class="small">no live attack</text>
+
+  <path d="M255 182 C300 182 305 295 345 295" class="arrow"/>
+  <path d="M255 372 C300 372 305 295 345 295" class="arrow"/>
+  <path d="M255 530 C315 530 310 330 345 330" class="arrow"/>
+  <path d="M570 295 L660 295" class="arrow"/>
+  <path d="M885 275 C930 260 930 190 965 182" class="arrow"/>
+  <path d="M885 315 C930 330 930 370 965 372" class="arrow"/>
+  <path d="M1062 430 C1062 535 770 570 455 565 C240 560 150 575 150 575" class="dash"/>
+  <text x="600" y="595" class="small">Review loop: observers inspect demos, hashes, source metadata and normalized traces</text>
+</svg>

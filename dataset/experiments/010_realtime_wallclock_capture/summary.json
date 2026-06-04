@@ -1,0 +1,26 @@
+{
+  "experiment_id": "010_realtime_wallclock_capture",
+  "created_utc": "2026-06-04T11:57:54.767102+00:00",
+  "purpose": "Short software-only wall-clock timing capture for reproducibility evidence; not physical CAN validation.",
+  "seed": 2026060411,
+  "requested_duration_s": 20.0,
+  "measured_duration_s": 20.000022,
+  "total_frames": 1167,
+  "unique_arbitration_ids": 4,
+  "id_counts": {
+    "100": 401,
+    "188": 400,
+    "120": 286,
+    "300": 80
+  },
+  "inter_arrival_s": {
+    "count": 1166,
+    "min": 7e-06,
+    "max": 0.052245,
+    "mean": 0.017153,
+    "median": 0.009923,
+    "stdev": 0.019126,
+    "negative_values": 0
+  },
+  "boundary": "Software-only wall-clock capture. It validates timing/logging workflow, not physical CAN arbitration, electrical behavior, or vehicle realism."
+}
