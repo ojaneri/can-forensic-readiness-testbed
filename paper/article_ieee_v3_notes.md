@@ -47,5 +47,6 @@ It claims:
 ## Public repository
 
 - GitHub: https://github.com/ojaneri/can-forensic-readiness-testbed
-- Initial release target: https://github.com/ojaneri/can-forensic-readiness-testbed/releases/tag/v0.1.0-artifact
-- Zenodo DOI: pending.
+- GitHub release: https://github.com/ojaneri/can-forensic-readiness-testbed/releases/tag/v0.1.1-zenodo
+- Zenodo version DOI: 10.5281/zenodo.20541107 — https://doi.org/10.5281/zenodo.20541107
+- Zenodo concept DOI: 10.5281/zenodo.20541106 — https://doi.org/10.5281/zenodo.20541106
