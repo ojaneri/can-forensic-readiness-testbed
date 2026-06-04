@@ -1,0 +1,25 @@
+{
+  "experiment_id": "012_python_can_icsim_replay",
+  "files": {
+    "run_python_can_icsim_replay.py": {
+      "sha256": "eba0ee247ea7b5d4ba961e35e0ee66b08523f81a99384a2bb22280e74663fa35",
+      "bytes": 4872
+    },
+    "frames_normalized.csv": {
+      "sha256": "cf1b5d9e89ce25bba89dda1ee6d017929f32e734e9f9e3859ae83301806a7310",
+      "bytes": 1169569
+    },
+    "python_can_icsim_replay.log": {
+      "sha256": "a90446a41da204d5fe95b243b1fa84433387218a33d075cf89823096012bc90b",
+      "bytes": 270411
+    },
+    "summary.json": {
+      "sha256": "06e824a7be31bad5a519203f26e7bfb43806e97545eff7db40ac979c1453e44e",
+      "bytes": 1307
+    },
+    "findings.md": {
+      "sha256": "43dc6770189a5c9e753be3b3876a0af51f3e7164f7568ea1dad366c521bdcade",
+      "bytes": 359
+    }
+  }
+}

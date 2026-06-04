@@ -25,8 +25,8 @@ jobs:
 
       - name: Build IEEEtran paper v5
         working-directory: paper
-        run: latexmk -pdf -interaction=nonstopmode -halt-on-error article_ieee_v5.tex
+        run: latexmk -pdf -interaction=nonstopmode -halt-on-error article_ieee_v6.tex
 
       - name: Check DOI in PDF text
         run: |
-          pdftotext paper/article_ieee_v5.pdf - | grep '10.5281/zenodo.20541106'
+          pdftotext paper/article_ieee_v6.pdf - | grep '10.5281/zenodo.20541106'

@@ -1,0 +1,52 @@
+{
+  "experiment_id": "012_python_can_icsim_replay",
+  "created_utc": "2026-06-04T12:20:39.733143+00:00",
+  "purpose": "Replay external ICSim normalized trace through python-can virtual bus preserving source inter-arrival timing; not IDS benchmark or vehicle validation.",
+  "base_experiment": "008_external_icsim_replay",
+  "python_can_version": "4.6.1",
+  "channel": "oc_vcan_012",
+  "input_frames": 6158,
+  "replayed_frames": 6158,
+  "measured_duration_s": 3.256474,
+  "unique_arbitration_ids": 34,
+  "id_counts_top20": {
+    "166": 326,
+    "158": 326,
+    "161": 326,
+    "191": 326,
+    "18E": 326,
+    "133": 326,
+    "136": 326,
+    "13A": 326,
+    "13F": 326,
+    "164": 326,
+    "17C": 326,
+    "183": 326,
+    "143": 326,
+    "95": 326,
+    "39": 215,
+    "1CF": 163,
+    "1DC": 163,
+    "1A4": 163,
+    "1AA": 162,
+    "1B0": 162
+  },
+  "inter_arrival_s": {
+    "count": 6157,
+    "min": 2.4e-05,
+    "max": 0.003698,
+    "mean": 0.000529,
+    "median": 0.000258,
+    "stdev": 0.000597,
+    "negative_values": 0
+  },
+  "send_to_recv_latency_s": {
+    "count": 6158,
+    "min": 1.3e-05,
+    "max": 0.000685,
+    "mean": 4.2e-05,
+    "median": 3.5e-05,
+    "stdev": 2.8e-05
+  },
+  "boundary": "External ICSim sample replayed on python-can virtual bus only. No live CAN adapter, ECU, or vehicle."
+}

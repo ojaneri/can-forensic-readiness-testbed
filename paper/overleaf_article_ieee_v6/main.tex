@@ -93,7 +93,7 @@ The bus layer uses \texttt{python-can} virtual channels and can be migrated to S
 
 \begin{figure}[t]
 \centering
-\includegraphics[width=\columnwidth]{../analysis/figures/reproducible_evidence_pipeline_v6.pdf}
+\includegraphics[width=\columnwidth]{figures/reproducible_evidence_pipeline_v6.pdf}
 \caption{Reproducible CAN evidence pipeline. Internal runs, external traces, and wall-clock capture feed a common normalization and evidence-packaging workflow with manifests, DOI-backed artifacts, and observer-safe demos.}
 \label{fig:pipeline}
 \end{figure}
@@ -156,7 +156,7 @@ The decoded speed on ID \texttt{0x100} remains in a didactic normal range during
 
 \begin{figure*}[t]
 \centering
-\includegraphics[width=0.95\textwidth]{../analysis/figures/evidence_coverage_dashboard_v6.pdf}
+\includegraphics[width=0.95\textwidth]{figures/evidence_coverage_dashboard_v6.pdf}
 \caption{Evidence coverage dashboard for the v5 artifact. The figure summarizes internal phase balance, external and injected packages, didactic speed contrast, and artifact-review posture.}
 \label{fig:evidence-dashboard}
 \end{figure*}
@@ -193,7 +193,7 @@ Experiment 010 addresses a narrow reproducibility concern left by deterministic 
 
 \begin{figure}[t]
 \centering
-\includegraphics[width=\columnwidth]{../analysis/figures/python_can_virtual_bus_timing_v6.pdf}
+\includegraphics[width=\columnwidth]{figures/python_can_virtual_bus_timing_v6.pdf}
 \caption{python-can virtual-bus timing evidence from Experiments 011 and 012: generated traffic and external ICSim replay with send-to-receive latency profiles.}
 \label{fig:exp010-timing}
 \end{figure}
@@ -290,5 +290,5 @@ This paper presented a reproducible software-defined CAN testbed for automotive 
 The software, experiment scripts, normalized datasets, manifests, validation scripts, paper drafts, and observer-safe demos are available in the public GitHub repository: \url{https://github.com/ojaneri/can-forensic-readiness-testbed}. The archival Zenodo concept DOI for all artifact versions is \url{https://doi.org/10.5281/zenodo.20541106} (DOI: \texttt{10.5281/zenodo.20541106}). The package includes SHA-256 manifests and instructions to inspect Experiments 005--009.
 
 \bibliographystyle{IEEEtran}
-\bibliography{article_ieee_v6}
+\bibliography{references}
 \end{document}
