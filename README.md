@@ -54,3 +54,18 @@ python3 dataset/scripts/validate_hashes.py
 cd paper
 latexmk -pdf -interaction=nonstopmode -halt-on-error article_ieee_v5.tex
 ```
+
+## Regenerate visual assets
+
+```bash
+python3 -m pip install -r requirements-viz.txt
+python3 analysis/scripts/generate_v5_visuals.py
+```
+
+Generated visual assets include:
+
+- `analysis/figures/reproducible_evidence_pipeline_v5.*`
+- `analysis/figures/evidence_coverage_dashboard_v5.*`
+- `analysis/figures/exp010_wallclock_timing_v5.*`
+- `demo-icsim-spoof/demo-icsim-spoof-preview.png`
+- `demo-icsim-spoof/demo-icsim-spoof-preview.gif`

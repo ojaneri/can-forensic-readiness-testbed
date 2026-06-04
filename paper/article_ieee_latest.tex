@@ -152,6 +152,13 @@ Across internal labeled experiments, the normalized dataset contains 477,738 fra
 
 The decoded speed on ID \texttt{0x100} remains in a didactic normal range during baseline and recovery and increases during spoofing. Across the combined internal dataset, baseline speed ranges from 27 to 92 km/h with mean 61.04 km/h; recovery has mean 61.56 km/h; spoofing ranges from 145 to 240 km/h with mean 203.72 km/h. These values are not vehicle-realism claims; they provide controlled contrast for teaching and trace review.
 
+\begin{figure*}[t]
+\centering
+\includegraphics[width=0.95\textwidth]{../analysis/figures/evidence_coverage_dashboard_v5.pdf}
+\caption{Evidence coverage dashboard for the v5 artifact. The figure summarizes internal phase balance, external and injected packages, didactic speed contrast, and artifact-review posture.}
+\label{fig:evidence-dashboard}
+\end{figure*}
+
 \subsection{Matrix 007}
 Matrix 007 added 435,450 frames over 6,000 seconds of synthetic schedule. It varies spoofing intensity and flooding intensity across low, medium, and high profiles. Flooding profiles produce approximately 6,000, 12,000, or 24,000 flooding frames per 120-second flooding phase. Mean spoofed speed is approximately 155 km/h in low profiles, 190 km/h in medium profiles, and 225 km/h in high profiles.
 
@@ -181,6 +188,13 @@ Experiment 009 injects 45 labeled didactic packets into the external ICSim trace
 
 \subsection{Wall-clock Timing Capture}
 Experiment 010 addresses a narrow reproducibility concern left by deterministic fast-run experiments. It generated 1,167 software-only CAN-like frames over 20.000022 seconds using wall-clock sleeps and monotonic timestamps. The package records four arbitration IDs, mean inter-arrival time of 0.017153 seconds, median inter-arrival time of 0.009923 seconds, and zero negative inter-arrival values. This does not validate physical CAN arbitration or electrical behavior; it demonstrates that the evidence workflow can preserve real elapsed timing when experiments are not fast-run.
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=\columnwidth]{../analysis/figures/exp010_wallclock_timing_v5.pdf}
+\caption{Experiment 010 wall-clock timing evidence: frame timeline and inter-arrival distribution from the software-only real-time capture.}
+\label{fig:exp010-timing}
+\end{figure}
 
 \section{Evaluation Against Research Questions}
 Table~\ref{tab:rq} maps each research question to evidence and limits. This form is intentionally conservative: a claim is included only when an artifact package supports it.

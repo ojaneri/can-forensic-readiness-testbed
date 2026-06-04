@@ -359,12 +359,12 @@
       "bytes": 2463
     },
     "paper/article_ieee_latest.pdf": {
-      "sha256": "95c2ee5f73c6bf480cbb0d38db3da2dab8f771b28203d0c71eb5842b06a2b261",
-      "bytes": 784597
+      "sha256": "4eb1bf1b1b5b34699b518e3ca4372aad322eca2920e9b7fc8b07ace173d5bf20",
+      "bytes": 193035
     },
     "paper/article_ieee_latest.tex": {
-      "sha256": "b6d801d86343dbe87cd0a56364e62597dbc60aa9fddaa0eab4f3c2bc6ef937ef",
-      "bytes": 22461
+      "sha256": "c0105645140a5e2e2f755c9246210c1636eae99b35f37126b4ccc4c039401ee0",
+      "bytes": 23122
     },
     "paper/article_ieee_latest.bib": {
       "sha256": "1cee5481152dc4a1c2bc9f0ceb1aefab46d7a67844ea8fb558e08589dc32acef",
@@ -383,44 +383,84 @@
       "bytes": 835
     },
     "README.md": {
-      "sha256": "cc1187fb108f427d6abd2bde600d8fe27a8d043fa93ad2c8ed0d56b6ef827e15",
-      "bytes": 2087
+      "sha256": "531d6f457347997ffbd4727dc92b33d5e983baac8af56e5902f7119df51c3b75",
+      "bytes": 2520
     },
     "paper/article_ieee_v5.tex": {
-      "sha256": "b6d801d86343dbe87cd0a56364e62597dbc60aa9fddaa0eab4f3c2bc6ef937ef",
-      "bytes": 22461
+      "sha256": "c0105645140a5e2e2f755c9246210c1636eae99b35f37126b4ccc4c039401ee0",
+      "bytes": 23122
     },
     "paper/article_ieee_v5.bib": {
       "sha256": "1cee5481152dc4a1c2bc9f0ceb1aefab46d7a67844ea8fb558e08589dc32acef",
       "bytes": 5030
     },
     "paper/article_ieee_v5.pdf": {
-      "sha256": "95c2ee5f73c6bf480cbb0d38db3da2dab8f771b28203d0c71eb5842b06a2b261",
-      "bytes": 784597
+      "sha256": "4eb1bf1b1b5b34699b518e3ca4372aad322eca2920e9b7fc8b07ace173d5bf20",
+      "bytes": 193035
     },
     "paper/article_ieee_v5_notes.md": {
-      "sha256": "88805cbbd5455c6b719fa41c098e377d1de591a1087398b1339ae0f32d604de7",
-      "bytes": 1869
+      "sha256": "9bc026ac39472cfdaaa59b65a6e841b245fde3c4b8f0a1e1c922118553e1c223",
+      "bytes": 2313
     },
     "paper/article_ieee_v5_adversarial_review.md": {
       "sha256": "a94cdb08398215ca288717d18c4d885c2bf1e78771b28847a97e331bc68c87ff",
       "bytes": 1407
     },
     "analysis/figures/reproducible_evidence_pipeline_v5.svg": {
-      "sha256": "e9cae543217dd6efe4e6de2d17d7cbb3c557a3a9ccd3b59a65d6b0e0c41494f2",
-      "bytes": 3701
+      "sha256": "d76c0287e0dd20c05a77f0d5512435ed3fd30c5e7188242d4c36c0962a98e7b0",
+      "bytes": 86422
     },
     "analysis/figures/reproducible_evidence_pipeline_v5.png": {
-      "sha256": "a95360b145ff6afd9b2fac01e6ff784768909ff8f1188a7636f2859a2acdeffa",
-      "bytes": 163366
+      "sha256": "c95cbbd3ee5ad281b9e692ef6eb90a96ebe1275d85fd06fa51b5bfeb476f238a",
+      "bytes": 302674
     },
     "analysis/figures/reproducible_evidence_pipeline_v5.pdf": {
-      "sha256": "d7cd57cbfadd486de8addfe4616648f465798f0d63c79a0e51425a5b6799e02f",
-      "bytes": 680760
+      "sha256": "e0752f819a40df9c3742ed2abe37e183df7a3f19f55c1fe1f46ee633aea34427",
+      "bytes": 34246
     },
     "demo-icsim-spoof/demo-icsim-spoof-preview.gif": {
       "sha256": "a05e6d1ee2c5f62eb13e90e06883af29c0cd3ae0ce8509591e21cc987531f7ef",
       "bytes": 338505
+    },
+    "requirements-viz.txt": {
+      "sha256": "dd52d827dcf30a6856b23afc88b163f86a4d6b4f7133d3463179d1f175924801",
+      "bytes": 83
+    },
+    "analysis/scripts/generate_v5_visuals.py": {
+      "sha256": "e41c702dd348b8e299bf12fc04d6a0923170f86683cd4bbdb634d54782d43a49",
+      "bytes": 9344
+    },
+    "analysis/figures/evidence_coverage_dashboard_v5.svg": {
+      "sha256": "d4c4836c9ca56abef502e6a754ff328c1c00de18b37f390adf7f64e522a1acfc",
+      "bytes": 111269
+    },
+    "analysis/figures/evidence_coverage_dashboard_v5.png": {
+      "sha256": "0cbc1b37a87a947af7beaf894bc7871575266c0c74672589b74739f2a767a6dc",
+      "bytes": 325804
+    },
+    "analysis/figures/evidence_coverage_dashboard_v5.pdf": {
+      "sha256": "fbbf83e5c377db539f776c9edfe4f86f66c79092c4776f8921e9c502efcfb81d",
+      "bytes": 30512
+    },
+    "analysis/figures/exp010_wallclock_timing_v5.svg": {
+      "sha256": "f6bf3f5e88077743cd4d72f47de1a54454a137037ad492368daf91c85e391211",
+      "bytes": 241057
+    },
+    "analysis/figures/exp010_wallclock_timing_v5.png": {
+      "sha256": "78cdd2368d46dbc5a3d6adad28f2713f5267f07c65e57cccec5b7bed46e9de13",
+      "bytes": 163259
+    },
+    "analysis/figures/exp010_wallclock_timing_v5.pdf": {
+      "sha256": "df77476f5a8240fb76635e974886ff214faa495b1f518e84d2b61e792fda60aa",
+      "bytes": 30818
+    },
+    "demo-icsim-spoof/demo-icsim-spoof-preview.png": {
+      "sha256": "875f251c782073e473d6b3cb0243278fa0fe241838f75b5732a83db7fcd8f039",
+      "bytes": 144552
+    },
+    "dataset/manifest.json": {
+      "sha256": "3eacc5b0b10048d2e9415ce5feca0d2b6400f9999726c557b2ad42f46a6a1a81",
+      "bytes": 18087
     }
   }
 }

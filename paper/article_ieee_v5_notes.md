@@ -47,3 +47,14 @@ Boundary: software-only wall-clock timing capture. It is not physical CAN or veh
 
 - `can-sleuth` remains cited conservatively as project/artifact documentation.
 - A real SocketCAN kernel-interface or HIL experiment would still strengthen external validity but is no longer necessary for the current reproducibility claim.
+
+
+## Visual polish update
+
+- Installed/used matplotlib, pandas, numpy, pillow, cairosvg and python-can locally.
+- Rebuilt v5 figures with professional matplotlib styling.
+- Inserted two additional figures into the PDF:
+  - `evidence_coverage_dashboard_v5.pdf`
+  - `exp010_wallclock_timing_v5.pdf`
+- PDF increased from 5 to 6 pages due to richer visual presentation.
+- Added `requirements-viz.txt` and `analysis/scripts/generate_v5_visuals.py`.
