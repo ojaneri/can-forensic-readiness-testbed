@@ -21,7 +21,7 @@ Email omitted for blind or camera-ready submission}}
 \maketitle
 
 \begin{abstract}
-Controller Area Network (CAN) remains common in production and legacy vehicles, but it does not provide native authentication, confidentiality, or sender verification. This paper presents a reproducible, software-defined CAN testbed for automotive cybersecurity and forensic-readiness analysis. The artifact packages labeled internal experiments, a 10-run intensity matrix, external ICSim trace ingestion, didactic spoof-packet injection, a short wall-clock timing capture, normalized datasets, source metadata, SHA-256 manifests, validation scripts, and observer-safe browser demos. Across internal labeled experiments, the testbed generated 477,738 CAN frames. External-source compatibility is demonstrated by importing 6,158 frames from the public ICSim \texttt{sample-can.log} trace, while a visual injection package adds 45 labeled spoofed speed, door, and turn-signal packets. A wall-clock package records 1,167 software-only frames over 20 seconds with no negative inter-arrival values. A rule-based triage heuristic is retained only as a label-consistency and forensic-screening sanity check, not as a real-world intrusion detection benchmark. The contribution is an evidence-preserving reproducibility workflow rather than a claim of physical CAN fidelity or operational IDS performance.
+Controller Area Network (CAN) remains common in production and legacy vehicles, but it does not provide native authentication, confidentiality, or sender verification. This paper presents a reproducible, software-defined CAN testbed for automotive cybersecurity and forensic-readiness analysis. The artifact packages labeled internal experiments, a 10-run intensity matrix, external ICSim trace ingestion, didactic spoof-packet injection, wall-clock timing capture, python-can virtual-bus experiments, normalized datasets, source metadata, SHA-256 manifests, validation scripts, GitHub Actions, and observer-safe browser demos. Across internal labeled experiments, the testbed generated 477,738 CAN frames. External-source compatibility is demonstrated by importing 6,158 frames from the public ICSim \texttt{sample-can.log} trace and replaying the same trace through a python-can virtual bus. Additional timing packages record 1,167 wall-clock frames, 1,750 generated python-can virtual-bus frames, and 6,158 replayed ICSim frames, all with zero negative inter-arrival values. A rule-based triage heuristic is retained only as a label-consistency and forensic-screening sanity check, not as a real-world intrusion detection benchmark. The contribution is an evidence-preserving reproducibility workflow rather than a claim of physical CAN fidelity or operational IDS performance.
 \end{abstract}
 
 \begin{IEEEkeywords}
@@ -93,7 +93,7 @@ The bus layer uses \texttt{python-can} virtual channels and can be migrated to S
 
 \begin{figure}[t]
 \centering
-\includegraphics[width=\columnwidth]{../analysis/figures/reproducible_evidence_pipeline_v5.pdf}
+\includegraphics[width=\columnwidth]{../analysis/figures/reproducible_evidence_pipeline_v6.pdf}
 \caption{Reproducible CAN evidence pipeline. Internal runs, external traces, and wall-clock capture feed a common normalization and evidence-packaging workflow with manifests, DOI-backed artifacts, and observer-safe demos.}
 \label{fig:pipeline}
 \end{figure}
@@ -123,7 +123,7 @@ Reviewability & HTML indexes and browser demos & Safe replay \\
 All experiments reported here are authorized and software-only. No vehicle, production ECU, CAN adapter, external network, or operational system is targeted. The demos replay stored artifacts and do not execute live attacks. The repository explicitly frames the work as an educational and forensic-readiness artifact; it should not be used against vehicles, ECUs, networks, or systems without explicit authorization.
 
 \section{Experimental Design}
-Table~\ref{tab:evidence} summarizes the evidence packages used in v5. Experiments 005 and 006 provide internal labeled traffic. Experiment 007 expands this into a 10-run matrix. Experiment 008 imports an external ICSim trace. Experiment 009 injects labeled didactic spoof packets into that external trace for visualization and workflow validation.
+Table~\ref{tab:evidence} summarizes the evidence packages used in v6. Experiments 005 and 006 provide internal labeled traffic. Experiment 007 expands this into a 10-run matrix. Experiment 008 imports an external ICSim trace. Experiment 009 injects labeled didactic spoof packets into that external trace for visualization and workflow validation.
 
 \begin{table*}[t]
 \caption{Evidence Package Coverage}
@@ -140,11 +140,13 @@ Exp. & Purpose & Frames & Manifest & Labels & Demo & Main limitation \\
 008 & External ICSim ingestion & 6,158 & Yes & No attack labels & Yes & Compatibility only \\
 009 & ICSim + spoof injection & 6,203 & Yes & Injected labels & Yes & Didactic injection \\
 010 & Wall-clock software capture & 1,167 & Yes & Baseline & No & Not physical CAN \\
+011 & python-can virtual bus & 1,750 & Yes & Baseline & No & Virtual bus \\
+012 & python-can ICSim replay & 6,158 & Yes & Replay & No & Virtual replay \\
 \bottomrule
 \end{tabular}
 \end{table*}
 
-Experiment 006 uses a 600.06-second virtual run with 180 seconds baseline, 120 seconds spoofing, 120 seconds flooding, and 180 seconds recovery. Matrix 007 uses the same phase structure across 10 runs. It should be interpreted as deterministic fast-run event simulation: timestamps follow the declared schedule, but the generator does not wait for real wall-clock execution. The internal environment used Python 3.12.3 and \texttt{python-can} 4.6.1. Validation uses \texttt{dataset/scripts/validate\_hashes.py}. Experiment 010 adds a dependency-light wall-clock timing capture using real sleeps and monotonic timestamps. It produced 1,167 software-only frames over 20.000022 seconds, four arbitration IDs, mean inter-arrival time of 0.017153 seconds, and zero negative inter-arrival values. This validates timing preservation in the logging workflow, not physical CAN behavior.
+Experiment 006 uses a 600.06-second virtual run with 180 seconds baseline, 120 seconds spoofing, 120 seconds flooding, and 180 seconds recovery. Matrix 007 uses the same phase structure across 10 runs. It should be interpreted as deterministic fast-run event simulation: timestamps follow the declared schedule, but the generator does not wait for real wall-clock execution. The internal environment used Python 3.12.3 and \texttt{python-can} 4.6.1. Validation uses \texttt{dataset/scripts/validate\_hashes.py}. Experiment 010 adds a dependency-light wall-clock timing capture using real sleeps and monotonic timestamps. It produced 1,167 software-only frames over 20.000022 seconds, four arbitration IDs, mean inter-arrival time of 0.017153 seconds, and zero negative inter-arrival values. Experiment 011 uses the installed python-can 4.6.1 virtual bus to generate 1,750 frames over 29.998787 seconds, with mean send-to-receive latency of 0.000104 seconds. Experiment 012 replays all 6,158 normalized ICSim frames through a python-can virtual bus over 3.256474 seconds, with mean send-to-receive latency of 0.000042 seconds. These experiments validate timing preservation and tool-backed virtual replay, not physical CAN behavior.
 
 \section{Results}
 \subsection{Internal Labeled Dataset}
@@ -154,7 +156,7 @@ The decoded speed on ID \texttt{0x100} remains in a didactic normal range during
 
 \begin{figure*}[t]
 \centering
-\includegraphics[width=0.95\textwidth]{../analysis/figures/evidence_coverage_dashboard_v5.pdf}
+\includegraphics[width=0.95\textwidth]{../analysis/figures/evidence_coverage_dashboard_v6.pdf}
 \caption{Evidence coverage dashboard for the v5 artifact. The figure summarizes internal phase balance, external and injected packages, didactic speed contrast, and artifact-review posture.}
 \label{fig:evidence-dashboard}
 \end{figure*}
@@ -186,13 +188,13 @@ The imported trace contains 6,158 frames over 3.257991 seconds, 34 unique arbitr
 \subsection{ICSim Spoof Injection Demo}
 Experiment 009 injects 45 labeled didactic packets into the external ICSim trace: 33 speed packets on ID \texttt{0x244}, seven door packets on ID \texttt{0x19B}, and five turn-signal packets on ID \texttt{0x188}. The resulting package has 6,203 frames. The visual dashboard highlights injected frames, displays speed, door state, turn signals, a live CAN frame table, and frame density. This demonstrates safe review of injected events without claiming real-vehicle exploitation.
 
-\subsection{Wall-clock Timing Capture}
-Experiment 010 addresses a narrow reproducibility concern left by deterministic fast-run experiments. It generated 1,167 software-only CAN-like frames over 20.000022 seconds using wall-clock sleeps and monotonic timestamps. The package records four arbitration IDs, mean inter-arrival time of 0.017153 seconds, median inter-arrival time of 0.009923 seconds, and zero negative inter-arrival values. This does not validate physical CAN arbitration or electrical behavior; it demonstrates that the evidence workflow can preserve real elapsed timing when experiments are not fast-run.
+\subsection{Wall-clock and python-can Virtual-Bus Evidence}
+Experiment 010 addresses a narrow reproducibility concern left by deterministic fast-run experiments. It generated 1,167 software-only CAN-like frames over 20.000022 seconds using wall-clock sleeps and monotonic timestamps, with zero negative inter-arrival values. Experiment 011 then uses the installed python-can virtual bus to generate and receive 1,750 CAN messages over 29.998787 seconds. Its mean inter-arrival time is 0.017152 seconds and its mean send-to-receive latency is 0.000104 seconds. Experiment 012 replays the external ICSim trace through the same python-can virtual-bus mechanism: all 6,158 input frames are replayed, 34 arbitration IDs are preserved, mean inter-arrival is 0.000529 seconds, and mean send-to-receive latency is 0.000042 seconds. These results do not validate physical CAN arbitration or electrical behavior; they demonstrate that the evidence workflow can preserve real elapsed timing and virtual-bus replay semantics.
 
 \begin{figure}[t]
 \centering
-\includegraphics[width=\columnwidth]{../analysis/figures/exp010_wallclock_timing_v5.pdf}
-\caption{Experiment 010 wall-clock timing evidence: frame timeline and inter-arrival distribution from the software-only real-time capture.}
+\includegraphics[width=\columnwidth]{../analysis/figures/python_can_virtual_bus_timing_v6.pdf}
+\caption{python-can virtual-bus timing evidence from Experiments 011 and 012: generated traffic and external ICSim replay with send-to-receive latency profiles.}
 \label{fig:exp010-timing}
 \end{figure}
 
@@ -209,7 +211,7 @@ Table~\ref{tab:rq} maps each research question to evidence and limits. This form
 RQ & Claim & Evidence & Limitation \\
 \midrule
 RQ1 & Evidence can be preserved for later review. & Raw/source files, normalized CSV, summaries, SHA-256 manifests, DOI-backed repository. & File-level integrity, not full forensic standard certification. \\
-RQ2 & Controlled spoofing/flooding variation is supported. & Exp. 006/007 plus Exp. 010; 477,738 internal frames; 10-run intensity matrix; 20s wall-clock capture. & Synthetic labels and fast-run timing. \\
+RQ2 & Controlled spoofing/flooding variation is supported. & Exp. 006/007 plus Exp. 010/011/012; 477,738 internal frames; 10-run matrix; wall-clock and python-can virtual-bus captures. & Synthetic labels and fast-run timing. \\
 RQ3 & External traces can enter the same pipeline. & Exp. 008 imports 6,158 ICSim frames with source metadata/hash/license. & Compatibility evidence only; not vehicle validation. \\
 RQ4 & Review can occur without live hardware. & Observer-safe demos and HTML indexes; Exp. 009 injected-event replay. & Demos are didactic, not live CAN exercises. \\
 \bottomrule
@@ -282,11 +284,11 @@ The main trade-off remains fidelity. Physical benches and real datasets provide 
 The current artifact is software-defined and observer-safe. It does not claim physical CAN fidelity, production-vehicle attack realism, or operational IDS performance. Future work includes SocketCAN/\texttt{vcan} capture with kernel interfaces, ROAD or can-train-and-test import into the same schema, larger multi-run wall-clock timing campaigns, and HIL validation with documented legacy ECUs.
 
 \section{Conclusion}
-This paper presented a reproducible software-defined CAN testbed for automotive cybersecurity and forensic-readiness analysis. The artifact generates labeled internal traces, expands them through a 10-run intensity matrix, imports an external ICSim trace, supports didactic spoof injection, preserves evidence through manifests and hashes, and provides observer-safe browser demos. The v5 framing avoids overclaiming detection or physical realism and emphasizes reproducible, low-cost, evidence-aware learning and review.
+This paper presented a reproducible software-defined CAN testbed for automotive cybersecurity and forensic-readiness analysis. The artifact generates labeled internal traces, expands them through a 10-run intensity matrix, imports an external ICSim trace, supports didactic spoof injection, preserves evidence through manifests and hashes, and provides observer-safe browser demos. The v6 framing avoids overclaiming detection or physical realism and emphasizes reproducible, low-cost, evidence-aware learning and review.
 
 \section*{Artifact Availability}
 The software, experiment scripts, normalized datasets, manifests, validation scripts, paper drafts, and observer-safe demos are available in the public GitHub repository: \url{https://github.com/ojaneri/can-forensic-readiness-testbed}. The archival Zenodo concept DOI for all artifact versions is \url{https://doi.org/10.5281/zenodo.20541106} (DOI: \texttt{10.5281/zenodo.20541106}). The package includes SHA-256 manifests and instructions to inspect Experiments 005--009.
 
 \bibliographystyle{IEEEtran}
-\bibliography{article_ieee_v5}
+\bibliography{article_ieee_v6}
 \end{document}

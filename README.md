@@ -12,11 +12,12 @@ Current paper candidate:
 
 ## Main links
 
-- Paper v5 PDF: `paper/article_ieee_v5.pdf`
-- Paper v5 LaTeX: `paper/article_ieee_v5.tex`
+- Paper v6 PDF: `paper/article_ieee_v6.pdf`
+- Paper v6 LaTeX: `paper/article_ieee_v6.tex`
 - Zenodo concept DOI: https://doi.org/10.5281/zenodo.20541106
 - GitHub repository: https://github.com/ojaneri/can-forensic-readiness-testbed
 - Demo GIF: `demo-icsim-spoof/demo-icsim-spoof-preview.gif`
+- Overleaf package: `paper/overleaf_article_ieee_v6.zip`
 
 ## Scope and safety boundary
 
