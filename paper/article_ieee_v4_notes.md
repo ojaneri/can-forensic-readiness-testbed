@@ -50,3 +50,5 @@ Files:
 
 - v0.2.0 Paper v4 DOI detected: `10.5281/zenodo.20541255`.
 - Manuscript cites the Zenodo concept DOI `10.5281/zenodo.20541106` to avoid stale version-specific DOI after later releases.
+
+- BibTeX artifact citation now uses concept DOI `10.5281/zenodo.20541106` for consistency.

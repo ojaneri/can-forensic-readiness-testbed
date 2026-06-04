@@ -314,23 +314,23 @@
       "bytes": 21253
     },
     "paper/article_ieee_v4.bib": {
-      "sha256": "ab4fd2facfb481e5ab110a0f1b3296c2582cfefd4499cc860b202fcb2498c107",
+      "sha256": "4900c8dbbb38ca7ee92516bdb8534b53138835becf157e346dbb4daed4224525",
       "bytes": 4867
     },
     "paper/article_ieee_v4.pdf": {
-      "sha256": "46458e6ff48a7fc8db3931104473983e3c45fefbdccf098c89cfc00c8d352b8a",
+      "sha256": "d3b26bd3f32dbbacb3fcb431e234d9d9d1f67b51ef898adcac1a7ba6a27c9048",
       "bytes": 128964
     },
     "paper/article_ieee_v4_notes.md": {
-      "sha256": "e5178e9048925976920500fc11e971d7e8ceab0a80f4cc1107ee2e3695b0defa",
-      "bytes": 1840
+      "sha256": "2e3b6afaaf05a11add80a7afdb04f4decdb7dec5d0d596c23cad575be74a890b",
+      "bytes": 1932
     },
     "paper/article_ieee_v4_adversarial_review.md": {
       "sha256": "ad7812fd9a0bc18ff13d359e7f595443be827ec8dbb6c21c933c6d7e2b748938",
       "bytes": 2463
     },
     "paper/article_ieee_latest.pdf": {
-      "sha256": "46458e6ff48a7fc8db3931104473983e3c45fefbdccf098c89cfc00c8d352b8a",
+      "sha256": "d3b26bd3f32dbbacb3fcb431e234d9d9d1f67b51ef898adcac1a7ba6a27c9048",
       "bytes": 128964
     },
     "paper/article_ieee_latest.tex": {
@@ -338,7 +338,7 @@
       "bytes": 21253
     },
     "paper/article_ieee_latest.bib": {
-      "sha256": "ab4fd2facfb481e5ab110a0f1b3296c2582cfefd4499cc860b202fcb2498c107",
+      "sha256": "4900c8dbbb38ca7ee92516bdb8534b53138835becf157e346dbb4daed4224525",
       "bytes": 4867
     },
     "paper/IEEEtran.cls": {
