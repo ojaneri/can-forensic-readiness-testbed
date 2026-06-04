@@ -1,0 +1,138 @@
+{
+  "experiment_id": "008_external_icsim_replay",
+  "created_utc": "2026-06-04T09:55:55.257763+00:00",
+  "external_source": {
+    "name": "ICSim",
+    "repository": "https://github.com/zombieCraig/ICSim.git",
+    "commit": "2b3333ef866987d8adc9c15ff15b9b9189edf85b",
+    "source_file": "data/sample-can.log",
+    "license": "GPL-3.0 as distributed by upstream repository",
+    "source_sha256": "6fbaf2f78e4d9eef30cafc8c39c837390ae9534771cd3cb74768d4594641270c"
+  },
+  "purpose": "External trace ingestion/replay-readiness check for the forensic workflow; not IDS benchmarking.",
+  "total_frames": 6158,
+  "duration_s": 3.257991,
+  "unique_arbitration_ids": 34,
+  "top_arbitration_ids": [
+    [
+      "166",
+      326
+    ],
+    [
+      "158",
+      326
+    ],
+    [
+      "161",
+      326
+    ],
+    [
+      "191",
+      326
+    ],
+    [
+      "18E",
+      326
+    ],
+    [
+      "133",
+      326
+    ],
+    [
+      "136",
+      326
+    ],
+    [
+      "13A",
+      326
+    ],
+    [
+      "13F",
+      326
+    ],
+    [
+      "164",
+      326
+    ],
+    [
+      "17C",
+      326
+    ],
+    [
+      "183",
+      326
+    ],
+    [
+      "143",
+      326
+    ],
+    [
+      "95",
+      326
+    ],
+    [
+      "39",
+      215
+    ],
+    [
+      "1CF",
+      163
+    ],
+    [
+      "1DC",
+      163
+    ],
+    [
+      "1A4",
+      163
+    ],
+    [
+      "1AA",
+      162
+    ],
+    [
+      "1B0",
+      162
+    ],
+    [
+      "1D0",
+      162
+    ],
+    [
+      "294",
+      81
+    ],
+    [
+      "21E",
+      81
+    ],
+    [
+      "320",
+      33
+    ],
+    [
+      "324",
+      33
+    ]
+  ],
+  "dlc_distribution": {
+    "4": 815,
+    "8": 3626,
+    "7": 612,
+    "3": 370,
+    "5": 326,
+    "2": 246,
+    "6": 163
+  },
+  "payload_byte_entropy_bits": 3.361537,
+  "inter_arrival_s": {
+    "count": 6157,
+    "min": 0.000112,
+    "max": 0.002865,
+    "mean": 0.000529152,
+    "median": 0.000249,
+    "stdev": 0.00057758,
+    "negative_values": 0
+  },
+  "boundary": "This is an upstream sample trace. It has no attack phase labels in this package, so it is used for ingestion, normalization, hashing, and replay-readiness evidence only."
+}

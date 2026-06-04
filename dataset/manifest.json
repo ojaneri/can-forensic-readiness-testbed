@@ -1,0 +1,313 @@
+{
+  "schema": "software-defined-can-testbed.dataset.v1",
+  "created_by": "OpenClaw assistant for SSV 2026 paper",
+  "experiments": {
+    "005_short_attack": {
+      "source": "/var/www/html/admin.janeri.com.br/adriana/artigo/testbed/software-testbed/experiments/005_real_attack_software",
+      "files": {
+        "findings.md": {
+          "sha256": "87988c6dac2e8bf83c27048924d85a89f3a1b96ddedcf9f7d468920c5336cad6",
+          "bytes": 1816
+        },
+        "summary.json": {
+          "sha256": "df12755edfdcf520a3bd973df86e007d531ed54ac2b3bef310f01cc82623847d",
+          "bytes": 2683
+        },
+        "execution_stdout.json": {
+          "sha256": "b9f0778ab87ca02fbc2f7a91fe422516b6320f8c4c69ebe31b6ea79d77d7c8fd",
+          "bytes": 2546
+        },
+        "input_attack_plan.json": {
+          "sha256": "3fe3bb864d343a3dd136c6260a99a6e5a4d37dd8bb7f6a96f0ded91b83b27659",
+          "bytes": 1233
+        },
+        "frames_normalized.csv": {
+          "sha256": "ce31cf296b64aa94eca00407c136be41cba894b492d5d7f5639833c92083aa11",
+          "bytes": 295627
+        },
+        "findings.json": {
+          "sha256": "b9f0778ab87ca02fbc2f7a91fe422516b6320f8c4c69ebe31b6ea79d77d7c8fd",
+          "bytes": 2546
+        },
+        "output_candump_annotated.log": {
+          "sha256": "9d278a7e2eb52dcbd6ffebd32d249244c95d82da1d41335b88e6d8bc5d936e9b",
+          "bytes": 199088
+        },
+        "manifest.json": {
+          "sha256": "d870fb9d20378d480d06d52e54fa842d62d54de28d579ee411c930fe78ec9409",
+          "bytes": 968
+        }
+      }
+    },
+    "006_10min_attack": {
+      "source": "/var/www/html/admin.janeri.com.br/adriana/artigo/testbed/software-testbed/experiments/006_10min_attack_software",
+      "files": {
+        "findings.md": {
+          "sha256": "5d1ae3e301cea2fc451e5de10ca5da501d22bb22f600ff752d1dc1a223c1d08b",
+          "bytes": 1447
+        },
+        "summary.json": {
+          "sha256": "7f0fbe4d33be0c4c43cfc2f1a101d261db00e38e94437f1c2ee9bb9b9cdb5b51",
+          "bytes": 2744
+        },
+        "execution_stdout.json": {
+          "sha256": "cb442850fb668938f5d185ee8eee39cb9d42867f68e54cf10741212aa88c3e13",
+          "bytes": 2386
+        },
+        "input_attack_plan.json": {
+          "sha256": "2f908b0c57065713d09762e0504231ba7a9dc9e430446672b3d3db9886f96c7a",
+          "bytes": 599
+        },
+        "frames_normalized.csv": {
+          "sha256": "40f971edd794fb1d4991da1c249cae65306953b6d78b27259005033a977ac3a0",
+          "bytes": 5325058
+        },
+        "findings.json": {
+          "sha256": "cb442850fb668938f5d185ee8eee39cb9d42867f68e54cf10741212aa88c3e13",
+          "bytes": 2386
+        },
+        "output_candump_annotated.log": {
+          "sha256": "f92e20eaffb978d2b3762d3f338047703aa3e06eeba3ce80b529557bea081906",
+          "bytes": 3660478
+        },
+        "manifest.json": {
+          "sha256": "ece5f3c99fabb66de6469746c2920d7bcd833312cd94e31405ee3a507bc268da",
+          "bytes": 970
+        }
+      }
+    },
+    "007_second_round_matrix": {
+      "source": "/var/www/html/admin.janeri.com.br/adriana/artigo/testbed/software-testbed/experiments/007_second_round_matrix",
+      "method": "deterministic fast-run event simulation; 10 runs, 600s synthetic schedule each",
+      "files": {
+        "experiment_matrix.csv": {
+          "sha256": "a09d27e96116ad31417058ba810b18cb47fe4a06f2b315c5b1dce9ffe135a0c9",
+          "bytes": 1180
+        },
+        "index.html": {
+          "sha256": "50e7a5a8c9c14b0ab0303ee812cc14b94cdcf7a44a365d0e9b04bd89f0f168b2",
+          "bytes": 2613
+        },
+        "manifest.json": {
+          "sha256": "7f6935e7c3a1c899efbb2e4598a9d744d6bf7126987732b0133ceb492e10db4e",
+          "bytes": 897
+        },
+        "second_round_frames_normalized.csv": {
+          "sha256": "5a84e380ae716072be78b4450ac90c009c9941149df38f2f4a78fae05b81d0a8",
+          "bytes": 75540861
+        },
+        "second_round_summary.json": {
+          "sha256": "de359e9301b823c09e3d169ff8b2e674cd3743dccc87232d0785f6d34560175a",
+          "bytes": 21341
+        },
+        "second_round_summary.md": {
+          "sha256": "aed2e99d7e8cf2931b3ee3d7b170cc9229ef177f65c6479bbd5d5e5347e33749",
+          "bytes": 2103
+        }
+      }
+    },
+    "008_external_icsim_replay": {
+      "source": "/var/www/html/admin.janeri.com.br/adriana/artigo/testbed/software-testbed/experiments/008_external_icsim_replay",
+      "method": "external ICSim sample-can.log ingestion and replay-readiness normalization",
+      "files": {
+        "ICSim_LICENSE": {
+          "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+          "bytes": 35149
+        },
+        "external_source_metadata.json": {
+          "sha256": "fd017c5ec9a4e329de890d6f7a20b27ecd66c5ef449348384611b180a0ff3001",
+          "bytes": 327
+        },
+        "findings.md": {
+          "sha256": "d95ba47e644e1130359910caacc2ea25fb2514e5a3ffaba4731a18bf2e8a33d4",
+          "bytes": 1730
+        },
+        "frames_normalized.csv": {
+          "sha256": "f200538209de7de0572fc7015068f864ef22f0de4ac5c463281b75487df83cba",
+          "bytes": 1368154
+        },
+        "index.html": {
+          "sha256": "75e7613c7995b6851741990bd7e27d463d27802b00bdfc6e5f5add7e0c8ec953",
+          "bytes": 1966
+        },
+        "manifest.json": {
+          "sha256": "9f0130c068958ebaf37a059abcca39397af13d7bee36d724c3fcf2743c77d0e9",
+          "bytes": 1156
+        },
+        "raw_icsim_sample-can.log": {
+          "sha256": "6fbaf2f78e4d9eef30cafc8c39c837390ae9534771cd3cb74768d4594641270c",
+          "bytes": 266264
+        },
+        "summary.json": {
+          "sha256": "785aa499920984818b5ed672a573f7c772cfc4f1364d8a8cb8abd10170aff75b",
+          "bytes": 2130
+        }
+      }
+    },
+    "009_icsim_spoof_injection": {
+      "source": "/var/www/html/admin.janeri.com.br/adriana/artigo/testbed/software-testbed/experiments/009_icsim_spoof_injection",
+      "method": "labeled didactic spoof packet injection into external ICSim trace",
+      "files": {
+        "findings.md": {
+          "sha256": "5367c7c051fe3195e16e747a755d47add726fd990b101b10bce7f518f9a4beca",
+          "bytes": 1170
+        },
+        "frames_normalized.csv": {
+          "sha256": "542ec402714ec8b21904cbc347e9a4713704976191e7b86d995cfee4203414bb",
+          "bytes": 1432584
+        },
+        "index.html": {
+          "sha256": "20b49ef4769503819cda351ab855b0e1265e135cc3402b7702416120399196d3",
+          "bytes": 1246
+        },
+        "manifest.json": {
+          "sha256": "5a22a960fd29f4d31a426cfb7ec01f65ae36ce28d41be72cdcea527fcf166dc3",
+          "bytes": 1010
+        },
+        "spoof_injection_plan.json": {
+          "sha256": "c8db3f53df4b4467289bae426b117ce5e38ff69b4fc776fda4fe05ac2d78930d",
+          "bytes": 771
+        },
+        "spoofed_packets.csv": {
+          "sha256": "24c3ec8373d6983b15cfb91ca63e85052f5aa1c6ad0ccc65f847e066ae086740",
+          "bytes": 9157
+        },
+        "summary.json": {
+          "sha256": "1ca3e114dbb1acdcb0a2ae90529b40f33d128a22a4617e08cd61b173edc23c96",
+          "bytes": 2106
+        }
+      }
+    }
+  },
+  "combined_dataset": {
+    "path": "dataset/all_frames_normalized.csv",
+    "sha256": "0c96d06e6c5ec0adc8a07a58e895c157e1c0fb4d00a1813bbf5664469aba9069",
+    "bytes": 81402433
+  },
+  "derived_files": {
+    "dataset/all_frames_normalized.csv": {
+      "sha256": "0c96d06e6c5ec0adc8a07a58e895c157e1c0fb4d00a1813bbf5664469aba9069",
+      "bytes": 81402433
+    },
+    "dataset/dataset_summary.json": {
+      "sha256": "de3ee0fa9259c37adf441bce338c45304733f896a8659efc2b0d14297d69577b",
+      "bytes": 1258
+    },
+    "dataset/scripts/summarize_dataset.py": {
+      "sha256": "29268c0502d77d76f51378a995e2756cdc03160e8175ddd9504f0889c2b6dff6",
+      "bytes": 1161
+    },
+    "analysis/tables/second_round_matrix_summary.csv": {
+      "sha256": "96d0ffece27917ffa984eba1ea3f2bb36ddd0bfa180d6951b5555ba9a0bdd563",
+      "bytes": 565
+    },
+    "analysis/tables/rule_based_triage_metrics.json": {
+      "sha256": "b72681ddd993a71367f297c0b2b62117e71d21364841e8e2147ebab5b4eaf1af",
+      "bytes": 719
+    },
+    "analysis/tables/rule_based_triage_confusion_matrix.csv": {
+      "sha256": "ed3c3bebe8ba3d8a78312bbfcb6dcabf7266010478f8cc1510cca417ed8ccdba",
+      "bytes": 96
+    },
+    "analysis/tables/rule_based_triage_windows.csv": {
+      "sha256": "3659a46a6cde8007cda219ebdf21e0f4c34d14cd5b487d64f0d6ce22d8fc0c8a",
+      "bytes": 867017
+    },
+    "analysis/tables/external_source_008_summary.csv": {
+      "sha256": "77a08ee3c3646a29becb2b10825a96ccf1d92de0f4f402d2961c561a93ef3b1b",
+      "bytes": 440
+    },
+    "demo-external-icsim/index.html": {
+      "sha256": "32d684befc7bb0f5346d10f9ccf314d1b6c2c7b4f2721048e368c42d2009067d",
+      "bytes": 9111
+    },
+    "demo-external-icsim/README.md": {
+      "sha256": "3c62f1fb774a82a770c8c5cc8ac80e51ceda2111966afb3af8e51b36270f4b25",
+      "bytes": 800
+    },
+    "demo-external-icsim/assets/icsim_frames.json": {
+      "sha256": "9e4716e46e44649c0691da5420759038718b9e3f44b8f552b2686ee66da8b31c",
+      "bytes": 739173
+    },
+    "demo-external-icsim/assets/summary.json": {
+      "sha256": "7d868bb4ae091de674dfd458903c4d7a34ae1b42e307051355e4d4657b99537d",
+      "bytes": 2129
+    },
+    "demo-external-icsim/assets/external_source_metadata.json": {
+      "sha256": "9bdf4197f622974f4a50bcace3ee4b8126a839be7f09a391538f2c6f210dfd4b",
+      "bytes": 326
+    },
+    "demo-external-icsim/assets/viz_stats.json": {
+      "sha256": "204c534ee61dc877dfe9f73b695a1ed523a199f0c0b0b35f992e75a560b310c0",
+      "bytes": 2825
+    },
+    "demo-external-icsim/assets/manifest.json": {
+      "sha256": "c3062c73ec2a5708e0f7e85f928cffe2c65cb54448642ccbce2737a08bf95c64",
+      "bytes": 666
+    },
+    "software-testbed/experiments/009_icsim_spoof_injection/create_icsim_spoof_injection.py": {
+      "sha256": "ea2801dcb9b636c99b51854e56fcaef70f639f497d46b3bb187552ec2dbb70a5",
+      "bytes": 12819
+    },
+    "demo-icsim-spoof/index.html": {
+      "sha256": "d6d4e74e3901432da88d29af739c90aa2596cb51e49dc318edd43a5a07361cd9",
+      "bytes": 11934
+    },
+    "demo-icsim-spoof/README.md": {
+      "sha256": "3ad400ad43abb5e4bf55cf639a08e3a819132e8620eae44426f3e747f055814d",
+      "bytes": 623
+    },
+    "demo-icsim-spoof/assets/frames.json": {
+      "sha256": "39aab83725f65ccd95b3049df95aeef63c32af461a295738758fcbf6d3a7d33e",
+      "bytes": 1443801
+    },
+    "demo-icsim-spoof/assets/summary.json": {
+      "sha256": "1ca3e114dbb1acdcb0a2ae90529b40f33d128a22a4617e08cd61b173edc23c96",
+      "bytes": 2106
+    },
+    "demo-icsim-spoof/assets/spoof_injection_plan.json": {
+      "sha256": "c8db3f53df4b4467289bae426b117ce5e38ff69b4fc776fda4fe05ac2d78930d",
+      "bytes": 771
+    },
+    "demo-icsim-spoof/assets/viz_stats.json": {
+      "sha256": "55da355debb454498c0dc81fed5a38dbb0ee80c67fe2e5ef75b3ee72251ba77c",
+      "bytes": 3383
+    },
+    "demo-icsim-spoof/assets/manifest.json": {
+      "sha256": "5a22a960fd29f4d31a426cfb7ec01f65ae36ce28d41be72cdcea527fcf166dc3",
+      "bytes": 1010
+    },
+    "demo-icsim-spoof/assets/asset_manifest.json": {
+      "sha256": "4f1de4d2554629641fe97c4f9bc49a7bc27395f962db9dab8121677cd72af57d",
+      "bytes": 788
+    },
+    "paper/pre_v3_adversarial_closure.md": {
+      "sha256": "336e97aea4821c9146a342a7a308707638ade46ace8391735b23f0a2a997b77b",
+      "bytes": 10247
+    },
+    "paper/pre_v3_adversarial_closure.html": {
+      "sha256": "abf6bb6d0d2033d2f8ae974f25cd48902d3eb5d517e0aeb06559f7a9f1dbf377",
+      "bytes": 10058
+    },
+    "paper/index.html": {
+      "sha256": "7a8f6588699d4fd25dc2f18fbaeb2dd52f9fe108492615145f817b83ab5d0542",
+      "bytes": 1598
+    },
+    "index.html": {
+      "sha256": "30b57e9128412302ea77d657e60c253c029515a8d6595a57149142b3eed1e7ae",
+      "bytes": 30037
+    },
+    "paper/article_ieee_v3.html": {
+      "sha256": "c00e49f1b102f858b4ab8a8d25ffe97f19871d060b941855d43c5e04a321dcb3",
+      "bytes": 25085
+    },
+    "paper/article_ieee_v3_notes.md": {
+      "sha256": "a8788a60aacb285fbb008ffcb5c030bcc4d4bdb1e4528dc3fd28e918ed07124b",
+      "bytes": 1533
+    },
+    "paper/article_ieee_latest.html": {
+      "sha256": "c00e49f1b102f858b4ab8a8d25ffe97f19871d060b941855d43c5e04a321dcb3",
+      "bytes": 25085
+    }
+  }
+}

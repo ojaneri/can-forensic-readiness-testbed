@@ -1,0 +1,158 @@
+{
+  "total_frames": 42288,
+  "phase_counts": {
+    "baseline": 11477,
+    "spoofing": 6536,
+    "flooding": 13038,
+    "recovery": 11237
+  },
+  "top_arbitration_ids": [
+    [
+      "100",
+      10408
+    ],
+    [
+      "188",
+      10404
+    ],
+    [
+      "120",
+      7546
+    ],
+    [
+      "300",
+      919
+    ],
+    [
+      "50A",
+      17
+    ],
+    [
+      "64",
+      16
+    ],
+    [
+      "5C6",
+      15
+    ],
+    [
+      "346",
+      15
+    ],
+    [
+      "4B2",
+      15
+    ],
+    [
+      "4EE",
+      14
+    ],
+    [
+      "52E",
+      14
+    ],
+    [
+      "459",
+      14
+    ],
+    [
+      "427",
+      14
+    ],
+    [
+      "294",
+      14
+    ],
+    [
+      "50D",
+      14
+    ],
+    [
+      "391",
+      14
+    ],
+    [
+      "5CB",
+      14
+    ],
+    [
+      "61D",
+      14
+    ],
+    [
+      "2FB",
+      13
+    ],
+    [
+      "2C4",
+      13
+    ]
+  ],
+  "speed_stats_by_phase_for_id_0x100": {
+    "baseline": {
+      "count": 3670,
+      "min": 27.0,
+      "max": 92.0,
+      "mean": 61.03,
+      "stdev": 18.41
+    },
+    "spoofing": {
+      "count": 3119,
+      "min": 180.0,
+      "max": 200.0,
+      "mean": 195.24,
+      "stdev": 8.52
+    },
+    "flooding": {
+      "count": 9,
+      "min": 1192.0,
+      "max": 61453.0,
+      "mean": 27987.33,
+      "stdev": 18016.48
+    },
+    "recovery": {
+      "count": 3610,
+      "min": 27.0,
+      "max": 92.0,
+      "mean": 61.44,
+      "stdev": 18.87
+    }
+  },
+  "payload_entropy_bits_by_phase": {
+    "baseline": 2.9408,
+    "spoofing": 2.4835,
+    "flooding": 7.998,
+    "recovery": 2.9411
+  },
+  "inter_arrival_time_by_phase_corrected": {
+    "baseline": {
+      "count": 11469,
+      "mean_ms": 64.489,
+      "median_ms": 50.393,
+      "min_ms": 50.229,
+      "max_ms": 408.147
+    },
+    "spoofing": {
+      "count": 6531,
+      "mean_ms": 56.032,
+      "median_ms": 40.359,
+      "min_ms": 20.189,
+      "max_ms": 427.543
+    },
+    "flooding": {
+      "count": 9990,
+      "mean_ms": 16110.454,
+      "median_ms": 11276.319,
+      "min_ms": 2.154,
+      "max_ms": 105075.01
+    },
+    "recovery": {
+      "count": 11231,
+      "mean_ms": 64.452,
+      "median_ms": 50.394,
+      "min_ms": 50.251,
+      "max_ms": 406.816
+    }
+  },
+  "note": "Inter-arrival time was recomputed within experiment+phase+arbitration_id groups to avoid discontinuities across experiments and phase boundaries."
+}

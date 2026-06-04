@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+logs/
+experiments/*/candump.log
+experiments/*/frames.csv
+experiments/*/manifest.json

@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Demo — External ICSim CAN Trace Replay</title>
+<style>
+:root{--bg:#08111f;--panel:#101b2f;--panel2:#0d1728;--line:#233551;--text:#e6eefc;--muted:#93a8c8;--cyan:#4cc9f0;--green:#38d77b;--yellow:#ffd166;--red:#ff5b74;--blue:#8ea2ff}*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at top,#132746,#08111f 52%,#050914);color:var(--text);font-family:Inter,system-ui,-apple-system,Segoe UI,Arial,sans-serif;min-height:100vh}.wrap{max-width:1280px;margin:0 auto;padding:22px}.top{display:flex;justify-content:space-between;gap:16px;align-items:flex-start;margin-bottom:16px}h1{font-size:25px;margin:0 0 5px}p{margin:0;color:var(--muted)}.controls{display:flex;gap:10px;flex-wrap:wrap}.btn{border:0;border-radius:12px;padding:12px 16px;font-weight:850;cursor:pointer;background:linear-gradient(135deg,var(--cyan),var(--blue));color:#06101d;box-shadow:0 10px 28px #0007}.btn.secondary{background:#16233b;color:var(--text);border:1px solid var(--line);box-shadow:none}.btn:disabled{opacity:.55;cursor:not-allowed}.grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}.card{background:linear-gradient(180deg,var(--panel),var(--panel2));border:1px solid var(--line);border-radius:18px;padding:16px;box-shadow:0 14px 38px #0006}.card h2{margin:0 0 12px;font-size:14px;letter-spacing:.05em;text-transform:uppercase;color:#bdd0ef}.metrics{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.metric{background:#091326;border:1px solid #1c2b47;border-radius:13px;padding:12px}.metric span{display:block;color:var(--muted);font-size:12px}.metric strong{display:block;font-size:23px;margin-top:3px}.console{height:400px;background:#030711;border:1px solid #1b2b4d;border-radius:14px;padding:12px;overflow:auto;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:12px;line-height:1.45}.line{white-space:pre-wrap;word-break:break-word}.ok{color:var(--green)}.warn{color:var(--yellow)}.cmd{color:var(--cyan)}.muted{color:var(--muted)}.bad{color:var(--red)}table{width:100%;border-collapse:collapse;font-family:ui-monospace,monospace;font-size:12px}th,td{padding:7px 8px;border-bottom:1px solid #1b2b4d;text-align:left}th{position:sticky;top:0;background:#111d34;color:#b7c6e8}.frames{height:350px;overflow:auto;border:1px solid var(--line);border-radius:14px;background:#07101f}.barbox{height:250px;display:flex;gap:3px;align-items:end;border:1px solid var(--line);border-radius:14px;padding:10px;background:#07101f}.bar{flex:1;min-width:4px;background:linear-gradient(180deg,var(--cyan),#2862d9);border-radius:5px 5px 0 0;position:relative}.bar:hover:after{content:attr(data-tip);position:absolute;bottom:100%;left:50%;transform:translateX(-50%);background:#000;color:#fff;padding:4px 6px;border-radius:6px;white-space:nowrap;font-size:11px}.pill{display:inline-block;border:1px solid var(--line);border-radius:999px;padding:5px 9px;color:#c8d6f5;background:#0b1327;margin:4px 5px 0 0;font-size:12px}.progress{height:8px;background:#101a31;border-radius:99px;overflow:hidden;margin-top:12px}.progress span{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--cyan),var(--green),var(--yellow));transition:width .1s}.note{background:#2a250d;border:1px solid #6b5a19;color:#ffe9a6;border-radius:14px;padding:12px;margin-top:12px;font-size:13px}.idgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:8px}.idpill{background:#091326;border:1px solid #1c2b47;border-radius:10px;padding:8px;font-family:ui-monospace,monospace}.idpill b{color:var(--cyan)}@media(max-width:900px){.grid{grid-template-columns:1fr}.top{flex-direction:column}.console{height:320px}.metrics{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="top">
+    <div>
+      <h1>Demo — External ICSim CAN Trace Replay</h1>
+      <p>Observer-safe replay of a public ICSim <code>sample-can.log</code> trace through our forensic-readiness workflow.</p>
+      <span class="pill">External source</span><span class="pill">No attack labels</span><span class="pill">Normalization + SHA-256</span><span class="pill">Replay-readiness</span>
+    </div>
+    <div class="controls">
+      <button id="start" class="btn">▶ Start replay</button>
+      <button id="fast" class="btn secondary">⚡ Fast mode</button>
+      <button id="reset" class="btn secondary">↺ Reset</button>
+    </div>
+  </div>
+
+  <div class="grid">
+    <section class="card">
+      <h2>External trace summary</h2>
+      <div class="metrics">
+        <div class="metric"><span>Frames</span><strong id="mFrames">—</strong></div>
+        <div class="metric"><span>Duration</span><strong id="mDuration">—</strong></div>
+        <div class="metric"><span>Unique IDs</span><strong id="mIds">—</strong></div>
+        <div class="metric"><span>Payload entropy</span><strong id="mEntropy">—</strong></div>
+      </div>
+      <div class="progress"><span id="progress"></span></div>
+      <div class="note">This demo intentionally does <strong>not</strong> claim IDS performance. The ICSim sample has no attack labels here; it demonstrates external-source ingestion, metadata preservation, hashing, normalization, and safe replay.</div>
+    </section>
+
+    <section class="card">
+      <h2>Observer console</h2>
+      <div id="console" class="console"></div>
+    </section>
+  </div>
+
+  <div class="grid" style="margin-top:16px">
+    <section class="card">
+      <h2>Replay frames</h2>
+      <div class="frames"><table><thead><tr><th>t(s)</th><th>ID</th><th>DLC</th><th>DATA</th></tr></thead><tbody id="frameBody"></tbody></table></div>
+    </section>
+    <section class="card">
+      <h2>Frame density / 100 ms</h2>
+      <div id="bars" class="barbox"></div>
+    </section>
+  </div>
+
+  <section class="card" style="margin-top:16px">
+    <h2>Top arbitration IDs</h2>
+    <div id="ids" class="idgrid"></div>
+  </section>
+</div>
+<script>
+const $=id=>document.getElementById(id);
+let frames=[], summary=null, meta=null, viz=null, idx=0, timer=null, fast=false;
+function log(text, cls=''){const d=document.createElement('div');d.className='line '+cls;d.textContent=text;$('console').appendChild(d);$('console').scrollTop=$('console').scrollHeight;}
+function reset(){clearInterval(timer);idx=0;$('console').innerHTML='';$('frameBody').innerHTML='';$('progress').style.width='0%';$('start').disabled=false;bootConsole();}
+function addFrame(r){const tr=document.createElement('tr');tr.innerHTML=`<td>${r.t.toFixed(6)}</td><td>0x${r.id}</td><td>${r.dlc}</td><td>${r.data}</td>`;$('frameBody').prepend(tr);while($('frameBody').children.length>120)$('frameBody').removeChild($('frameBody').lastChild)}
+function tick(){const step=fast?24:5;for(let n=0;n<step && idx<frames.length;n++){const r=frames[idx++];addFrame(r);if(idx%80===0||idx<10)log(`(${r.t.toFixed(6)}) can0 ${r.id.padStart(3,'0')}#${r.data} source=ICSim`, idx<10?'muted':'cmd');}
+$('progress').style.width=(idx/frames.length*100).toFixed(2)+'%';
+if(idx>=frames.length){clearInterval(timer);$('start').disabled=false;log('','');log('[done] External trace replay completed in browser observer.', 'ok');log('[evidence] raw log + normalized CSV + source metadata + SHA-256 manifest available.', 'ok');}}
+function start(){clearInterval(timer);$('start').disabled=true;log('','');log('$ fetch dataset/experiments/008_external_icsim_replay/raw_icsim_sample-can.log','cmd');log('$ normalize → frames_normalized.csv','cmd');log('$ sha256sum → manifest.json','cmd');log('[scope] external-source compatibility evidence; not IDS benchmark','warn');timer=setInterval(tick, fast?18:45)}
+function draw(){summary && ($('mFrames').textContent=summary.total_frames.toLocaleString('en-US'),$('mDuration').textContent=summary.duration_s+' s',$('mIds').textContent=summary.unique_arbitration_ids,$('mEntropy').textContent=summary.payload_byte_entropy_bits+' bits');
+const max=Math.max(...viz.bins_100ms.map(x=>x.frames));$('bars').innerHTML=viz.bins_100ms.map(x=>`<div class="bar" style="height:${Math.max(3,x.frames/max*100)}%" data-tip="t=${x.t.toFixed(1)}s frames=${x.frames}"></div>`).join('');
+$('ids').innerHTML=viz.top_ids.slice(0,20).map(x=>`<div class="idpill"><b>0x${x.id}</b><br>${x.frames} frames</div>`).join('');}
+function bootConsole(){log('[ready] External ICSim demo loaded. Click Start replay.','ok');if(meta){log(`[source] ${meta.repository}`,'muted');log(`[commit] ${meta.commit}`,'muted');log(`[sha256] ${meta.source_sha256}`,'muted');}}
+async function boot(){[frames,summary,meta,viz]=await Promise.all([fetch('assets/icsim_frames.json').then(r=>r.json()),fetch('assets/summary.json').then(r=>r.json()),fetch('assets/external_source_metadata.json').then(r=>r.json()),fetch('assets/viz_stats.json').then(r=>r.json())]);draw();bootConsole();}
+$('start').onclick=start;$('reset').onclick=reset;$('fast').onclick=()=>{fast=!fast;$('fast').textContent=fast?'🐢 Normal mode':'⚡ Fast mode';};
+boot().catch(e=>log('Error loading demo: '+e,'bad'));
+</script>
+</body>
+</html>

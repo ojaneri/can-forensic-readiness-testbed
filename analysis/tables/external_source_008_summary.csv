@@ -1,0 +1,2 @@
+experiment_id,source,commit,frames,duration_s,unique_arbitration_ids,payload_byte_entropy_bits,inter_arrival_mean_s,source_sha256,purpose
+008_external_icsim_replay,ICSim/data/sample-can.log,2b3333ef866987d8adc9c15ff15b9b9189edf85b,6158,3.257991,34,3.361537,0.000529152,6fbaf2f78e4d9eef30cafc8c39c837390ae9534771cd3cb74768d4594641270c,"external-source ingestion, normalization, hashing, replay-readiness evidence; no IDS benchmark labels"

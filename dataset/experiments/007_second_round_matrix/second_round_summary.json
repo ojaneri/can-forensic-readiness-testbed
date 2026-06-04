@@ -1,0 +1,1130 @@
+{
+  "batch_id": "007_second_round_matrix",
+  "created_utc": "2026-06-04T09:49:05.466100+00:00",
+  "method": "deterministic fast-run event simulation; timestamps and relative timing are generated from the declared experiment schedule rather than real wall-clock waiting",
+  "runs": 10,
+  "duration_per_run_s": 600,
+  "total_synthetic_duration_s": 6000.0,
+  "total_frames": 435450,
+  "phase_counts": {
+    "baseline": 112500,
+    "spoofing": 72450,
+    "flooding": 138000,
+    "recovery": 112500
+  },
+  "matrix_summary": [
+    {
+      "spoof_intensity": "high",
+      "flood_intensity": "high",
+      "runs": 1,
+      "mean_total_frames": 59100,
+      "mean_flood_frames": 24000,
+      "mean_unique_ids_flooding": 2045,
+      "mean_unknown_id_ratio_flooding": 0.998125,
+      "mean_spoof_speed": 225.082
+    },
+    {
+      "spoof_intensity": "high",
+      "flood_intensity": "low",
+      "runs": 1,
+      "mean_total_frames": 41100,
+      "mean_flood_frames": 6000,
+      "mean_unique_ids_flooding": 1942,
+      "mean_unknown_id_ratio_flooding": 0.998,
+      "mean_spoof_speed": 224.908
+    },
+    {
+      "spoof_intensity": "high",
+      "flood_intensity": "medium",
+      "runs": 1,
+      "mean_total_frames": 47100,
+      "mean_flood_frames": 12000,
+      "mean_unique_ids_flooding": 2041,
+      "mean_unknown_id_ratio_flooding": 0.9975,
+      "mean_spoof_speed": 224.93
+    },
+    {
+      "spoof_intensity": "low",
+      "flood_intensity": "high",
+      "runs": 1,
+      "mean_total_frames": 49650,
+      "mean_flood_frames": 24000,
+      "mean_unique_ids_flooding": 2045,
+      "mean_unknown_id_ratio_flooding": 0.997792,
+      "mean_spoof_speed": 155.221
+    },
+    {
+      "spoof_intensity": "low",
+      "flood_intensity": "low",
+      "runs": 1,
+      "mean_total_frames": 31650,
+      "mean_flood_frames": 6000,
+      "mean_unique_ids_flooding": 1923,
+      "mean_unknown_id_ratio_flooding": 0.998,
+      "mean_spoof_speed": 155.347
+    },
+    {
+      "spoof_intensity": "low",
+      "flood_intensity": "medium",
+      "runs": 1,
+      "mean_total_frames": 37650,
+      "mean_flood_frames": 12000,
+      "mean_unique_ids_flooding": 2039,
+      "mean_unknown_id_ratio_flooding": 0.998333,
+      "mean_spoof_speed": 155.175
+    },
+    {
+      "spoof_intensity": "medium",
+      "flood_intensity": "high",
+      "runs": 1,
+      "mean_total_frames": 52800,
+      "mean_flood_frames": 24000,
+      "mean_unique_ids_flooding": 2045,
+      "mean_unknown_id_ratio_flooding": 0.998042,
+      "mean_spoof_speed": 190.036
+    },
+    {
+      "spoof_intensity": "medium",
+      "flood_intensity": "low",
+      "runs": 1,
+      "mean_total_frames": 34800,
+      "mean_flood_frames": 6000,
+      "mean_unique_ids_flooding": 1939,
+      "mean_unknown_id_ratio_flooding": 0.997833,
+      "mean_spoof_speed": 190.248
+    },
+    {
+      "spoof_intensity": "medium",
+      "flood_intensity": "medium",
+      "runs": 2,
+      "mean_total_frames": 40800,
+      "mean_flood_frames": 12000,
+      "mean_unique_ids_flooding": 2038.5,
+      "mean_unknown_id_ratio_flooding": 0.99825,
+      "mean_spoof_speed": 189.871
+    }
+  ],
+  "run_summaries": [
+    {
+      "experiment_id": "007_matrix_run_01_low_spoof_low_flood",
+      "seed": 2026060408,
+      "duration_s": 600.0,
+      "spoof_intensity": "low",
+      "flood_intensity": "low",
+      "total_frames": 31650,
+      "phase_counts": {
+        "baseline": 11250,
+        "spoofing": 3150,
+        "flooding": 6000,
+        "recovery": 11250
+      },
+      "top_arbitration_ids": [
+        [
+          "100",
+          8704
+        ],
+        [
+          "188",
+          8702
+        ],
+        [
+          "120",
+          7353
+        ],
+        [
+          "300",
+          903
+        ],
+        [
+          "123",
+          10
+        ],
+        [
+          "2B",
+          10
+        ],
+        [
+          "4B",
+          10
+        ],
+        [
+          "359",
+          10
+        ],
+        [
+          "38C",
+          9
+        ],
+        [
+          "25E",
+          9
+        ],
+        [
+          "61D",
+          9
+        ],
+        [
+          "361",
+          8
+        ],
+        [
+          "533",
+          8
+        ],
+        [
+          "1E3",
+          8
+        ],
+        [
+          "7F",
+          8
+        ]
+      ],
+      "unique_ids_total": 1923,
+      "unique_ids_flooding": 1923,
+      "unknown_id_ratio_flooding": 0.998,
+      "speed_stats_by_phase_for_id_0x100": {
+        "baseline": {
+          "count": 3600,
+          "min": 27.0,
+          "max": 92.0,
+          "mean": 61.04,
+          "stdev": 18.507
+        },
+        "spoofing": {
+          "count": 1500,
+          "min": 145.0,
+          "max": 165.0,
+          "mean": 155.347,
+          "stdev": 6.09
+        },
+        "recovery": {
+          "count": 3600,
+          "min": 27.0,
+          "max": 92.0,
+          "mean": 61.561,
+          "stdev": 18.936
+        }
+      }
+    },
+    {
+      "experiment_id": "007_matrix_run_02_low_spoof_medium_flood",
+      "seed": 2026060409,
+      "duration_s": 600.0,
+      "spoof_intensity": "low",
+      "flood_intensity": "medium",
+      "total_frames": 37650,
+      "phase_counts": {
+        "baseline": 11250,
+        "spoofing": 3150,
+        "flooding": 12000,
+        "recovery": 11250
+      },
+      "top_arbitration_ids": [
+        [
+          "100",
+          8708
+        ],
+        [
+          "188",
+          8703
+        ],
+        [
+          "120",
+          7355
+        ],
+        [
+          "300",
+          904
+        ],
+        [
+          "294",
+          15
+        ],
+        [
+          "36C",
+          14
+        ],
+        [
+          "60E",
+          14
+        ],
+        [
+          "267",
+          14
+        ],
+        [
+          "2E4",
+          14
+        ],
+        [
+          "1BC",
+          14
+        ],
+        [
+          "4A8",
+          14
+        ],
+        [
+          "160",
+          13
+        ],
+        [
+          "22E",
+          13
+        ],
+        [
+          "490",
+          13
+        ],
+        [
+          "CB",
+          13
+        ]
+      ],
+      "unique_ids_total": 2039,
+      "unique_ids_flooding": 2039,
+      "unknown_id_ratio_flooding": 0.998333,
+      "speed_stats_by_phase_for_id_0x100": {
+        "baseline": {
+          "count": 3600,
+          "min": 27.0,
+          "max": 92.0,
+          "mean": 61.04,
+          "stdev": 18.507
+        },
+        "spoofing": {
+          "count": 1500,
+          "min": 145.0,
+          "max": 165.0,
+          "mean": 155.175,
+          "stdev": 6.048
+        },
+        "recovery": {
+          "count": 3600,
+          "min": 27.0,
+          "max": 92.0,
+          "mean": 61.561,
+          "stdev": 18.936
+        }
+      }
+    },
+    {
+      "experiment_id": "007_matrix_run_03_low_spoof_high_flood",
+      "seed": 2026060410,
+      "duration_s": 600.0,
+      "spoof_intensity": "low",
+      "flood_intensity": "high",
+      "total_frames": 49650,
+      "phase_counts": {
+        "baseline": 11250,
+        "spoofing": 3150,
+        "flooding": 24000,
+        "recovery": 11250
+      },
+      "top_arbitration_ids": [
+        [
+          "188",
+          8713
+        ],
+        [
+          "100",
+          8708
+        ],
+        [
+          "120",
+          7367
+        ],
+        [
+          "300",
+          915
+        ],
+        [
+          "374",
+          25
+        ],
+        [
+          "153",
+          23
+        ],
+        [
+          "511",
+          23
+        ],
+        [
+          "28",
+          23
+        ],
+        [
+          "44A",
+          22
+        ],
+        [
+          "3D8",
+          22
+        ],
+        [
+          "F4",
+          22
+        ],
+        [
+          "31F",
+          22
+        ],
+        [
+          "31B",
+          21
+        ],
+        [
+          "550",
+          21
+        ],
+        [
+          "752",
+          21
+        ]
+      ],
+      "unique_ids_total": 2045,
+      "unique_ids_flooding": 2045,
+      "unknown_id_ratio_flooding": 0.997792,
+      "speed_stats_by_phase_for_id_0x100": {
+        "baseline": {
+          "count": 3600,
+          "min": 27.0,
+          "max": 92.0,
+          "mean": 61.04,
+          "stdev": 18.507
+        },
+        "spoofing": {
+          "count": 1500,
+          "min": 145.0,
+          "max": 165.0,
+          "mean": 155.221,
+          "stdev": 6.115
+        },
+        "recovery": {
+          "count": 3600,
+          "min": 27.0,
+          "max": 92.0,
+          "mean": 61.561,
+          "stdev": 18.936
+        }
+      }
+    },
+    {
+      "experiment_id": "007_matrix_run_04_medium_spoof_low_flood",
+      "seed": 2026060411,
+      "duration_s": 600.0,
+      "spoof_intensity": "medium",
+      "flood_intensity": "low",
+      "total_frames": 34800,
+      "phase_counts": {
+        "baseline": 11250,
+        "spoofing": 6300,
+        "flooding": 6000,
+        "recovery": 11250
+      },
+      "top_arbitration_ids": [
+        [
+          "100",
+          10205
+        ],
+        [
+          "188",
+          10203
+        ],
+        [
+          "120",
+          7502
+        ],
+        [
+          "300",
+          903
+        ],
+        [
+          "4B0",
+          10
+        ],
+        [
+          "1D8",
+          9
+        ],
+        [
+          "6F9",
+          9
+        ],
+        [
+          "44C",
+          9
+        ],
+        [
+          "64E",
+          9
+        ],
+        [
+          "2F7",
+          8
+        ],
+        [
+          "1EF",
+          8
+        ],
+        [
+          "140",
+          8
+        ],
+        [
+          "5D5",
+          8
+        ],
+        [
+          "514",
+          8
+        ],
+        [
+          "94",
+          8
+        ]
+      ],
+      "unique_ids_total": 1939,
+      "unique_ids_flooding": 1939,
+      "unknown_id_ratio_flooding": 0.997833,
+      "speed_stats_by_phase_for_id_0x100": {
+        "baseline": {
+          "count": 3600,
+          "min": 27.0,
+          "max": 92.0,
+          "mean": 61.04,
+          "stdev": 18.507
+        },
+        "spoofing": {
+          "count": 3000,
+          "min": 180.0,
+          "max": 200.0,
+          "mean": 190.248,
+          "stdev": 5.991
+        },
+        "recovery": {
+          "count": 3600,
+          "min": 27.0,
+          "max": 92.0,
+          "mean": 61.561,
+          "stdev": 18.936
+        }
+      }
+    },
+    {
+      "experiment_id": "007_matrix_run_05_medium_spoof_medium_flood",
+      "seed": 2026060412,
+      "duration_s": 600.0,
+      "spoof_intensity": "medium",
+      "flood_intensity": "medium",
+      "total_frames": 40800,
+      "phase_counts": {
+        "baseline": 11250,
+        "spoofing": 6300,
+        "flooding": 12000,
+        "recovery": 11250
+      },
+      "top_arbitration_ids": [
+        [
+          "100",
+          10207
+        ],
+        [
+          "188",
+          10206
+        ],
+        [
+          "120",
+          7506
+        ],
+        [
+          "300",
+          903
+        ],
+        [
+          "3B9",
+          17
+        ],
+        [
+          "4C8",
+          15
+        ],
+        [
+          "703",
+          15
+        ],
+        [
+          "A3",
+          15
+        ],
+        [
+          "E",
+          14
+        ],
+        [
+          "3CA",
+          14
+        ],
+        [
+          "2D4",
+          13
+        ],
+        [
+          "20",
+          13
+        ],
+        [
+          "641",
+          13
+        ],
+        [
+          "7CC",
+          13
+        ],
+        [
+          "1FF",
+          13
+        ]
+      ],
+      "unique_ids_total": 2039,
+      "unique_ids_flooding": 2039,
+      "unknown_id_ratio_flooding": 0.998167,
+      "speed_stats_by_phase_for_id_0x100": {
+        "baseline": {
+          "count": 3600,
+          "min": 27.0,
+          "max": 92.0,
+          "mean": 61.04,
+          "stdev": 18.507
+        },
+        "spoofing": {
+          "count": 3000,
+          "min": 180.0,
+          "max": 200.0,
+          "mean": 189.909,
+          "stdev": 5.965
+        },
+        "recovery": {
+          "count": 3600,
+          "min": 27.0,
+          "max": 92.0,
+          "mean": 61.561,
+          "stdev": 18.936
+        }
+      }
+    },
+    {
+      "experiment_id": "007_matrix_run_06_medium_spoof_high_flood",
+      "seed": 2026060413,
+      "duration_s": 600.0,
+      "spoof_intensity": "medium",
+      "flood_intensity": "high",
+      "total_frames": 52800,
+      "phase_counts": {
+        "baseline": 11250,
+        "spoofing": 6300,
+        "flooding": 24000,
+        "recovery": 11250
+      },
+      "top_arbitration_ids": [
+        [
+          "100",
+          10215
+        ],
+        [
+          "188",
+          10214
+        ],
+        [
+          "120",
+          7510
+        ],
+        [
+          "300",
+          908
+        ],
+        [
+          "1A7",
+          25
+        ],
+        [
+          "3C6",
+          24
+        ],
+        [
+          "32A",
+          23
+        ],
+        [
+          "354",
+          23
+        ],
+        [
+          "23A",
+          23
+        ],
+        [
+          "4D0",
+          22
+        ],
+        [
+          "3AD",
+          22
+        ],
+        [
+          "13C",
+          22
+        ],
+        [
+          "414",
+          22
+        ],
+        [
+          "6DE",
+          21
+        ],
+        [
+          "303",
+          21
+        ]
+      ],
+      "unique_ids_total": 2045,
+      "unique_ids_flooding": 2045,
+      "unknown_id_ratio_flooding": 0.998042,
+      "speed_stats_by_phase_for_id_0x100": {
+        "baseline": {
+          "count": 3600,
+          "min": 27.0,
+          "max": 92.0,
+          "mean": 61.04,
+          "stdev": 18.507
+        },
+        "spoofing": {
+          "count": 3000,
+          "min": 180.0,
+          "max": 200.0,
+          "mean": 190.036,
+          "stdev": 6.1
+        },
+        "recovery": {
+          "count": 3600,
+          "min": 27.0,
+          "max": 92.0,
+          "mean": 61.561,
+          "stdev": 18.936
+        }
+      }
+    },
+    {
+      "experiment_id": "007_matrix_run_07_high_spoof_low_flood",
+      "seed": 2026060414,
+      "duration_s": 600.0,
+      "spoof_intensity": "high",
+      "flood_intensity": "low",
+      "total_frames": 41100,
+      "phase_counts": {
+        "baseline": 11250,
+        "spoofing": 12600,
+        "flooding": 6000,
+        "recovery": 11250
+      },
+      "top_arbitration_ids": [
+        [
+          "100",
+          13203
+        ],
+        [
+          "188",
+          13200
+        ],
+        [
+          "120",
+          7805
+        ],
+        [
+          "300",
+          904
+        ],
+        [
+          "6C5",
+          12
+        ],
+        [
+          "6A9",
+          10
+        ],
+        [
+          "21",
+          9
+        ],
+        [
+          "67A",
+          9
+        ],
+        [
+          "796",
+          9
+        ],
+        [
+          "697",
+          9
+        ],
+        [
+          "420",
+          8
+        ],
+        [
+          "3A8",
+          8
+        ],
+        [
+          "430",
+          8
+        ],
+        [
+          "52C",
+          8
+        ],
+        [
+          "2E2",
+          8
+        ]
+      ],
+      "unique_ids_total": 1943,
+      "unique_ids_flooding": 1942,
+      "unknown_id_ratio_flooding": 0.998,
+      "speed_stats_by_phase_for_id_0x100": {
+        "baseline": {
+          "count": 3600,
+          "min": 27.0,
+          "max": 92.0,
+          "mean": 61.04,
+          "stdev": 18.507
+        },
+        "spoofing": {
+          "count": 6000,
+          "min": 210.0,
+          "max": 240.0,
+          "mean": 224.908,
+          "stdev": 8.916
+        },
+        "recovery": {
+          "count": 3600,
+          "min": 27.0,
+          "max": 92.0,
+          "mean": 61.561,
+          "stdev": 18.936
+        }
+      }
+    },
+    {
+      "experiment_id": "007_matrix_run_08_high_spoof_medium_flood",
+      "seed": 2026060415,
+      "duration_s": 600.0,
+      "spoof_intensity": "high",
+      "flood_intensity": "medium",
+      "total_frames": 47100,
+      "phase_counts": {
+        "baseline": 11250,
+        "spoofing": 12600,
+        "flooding": 12000,
+        "recovery": 11250
+      },
+      "top_arbitration_ids": [
+        [
+          "188",
+          13208
+        ],
+        [
+          "100",
+          13206
+        ],
+        [
+          "120",
+          7811
+        ],
+        [
+          "300",
+          905
+        ],
+        [
+          "430",
+          17
+        ],
+        [
+          "FC",
+          15
+        ],
+        [
+          "20F",
+          15
+        ],
+        [
+          "46D",
+          14
+        ],
+        [
+          "75C",
+          14
+        ],
+        [
+          "254",
+          14
+        ],
+        [
+          "5A4",
+          14
+        ],
+        [
+          "D2",
+          13
+        ],
+        [
+          "385",
+          13
+        ],
+        [
+          "7BA",
+          13
+        ],
+        [
+          "1E5",
+          13
+        ]
+      ],
+      "unique_ids_total": 2041,
+      "unique_ids_flooding": 2041,
+      "unknown_id_ratio_flooding": 0.9975,
+      "speed_stats_by_phase_for_id_0x100": {
+        "baseline": {
+          "count": 3600,
+          "min": 27.0,
+          "max": 92.0,
+          "mean": 61.04,
+          "stdev": 18.507
+        },
+        "spoofing": {
+          "count": 6000,
+          "min": 210.0,
+          "max": 240.0,
+          "mean": 224.93,
+          "stdev": 8.935
+        },
+        "recovery": {
+          "count": 3600,
+          "min": 27.0,
+          "max": 92.0,
+          "mean": 61.561,
+          "stdev": 18.936
+        }
+      }
+    },
+    {
+      "experiment_id": "007_matrix_run_09_high_spoof_high_flood",
+      "seed": 2026060416,
+      "duration_s": 600.0,
+      "spoof_intensity": "high",
+      "flood_intensity": "high",
+      "total_frames": 59100,
+      "phase_counts": {
+        "baseline": 11250,
+        "spoofing": 12600,
+        "flooding": 24000,
+        "recovery": 11250
+      },
+      "top_arbitration_ids": [
+        [
+          "100",
+          13215
+        ],
+        [
+          "188",
+          13207
+        ],
+        [
+          "120",
+          7811
+        ],
+        [
+          "300",
+          912
+        ],
+        [
+          "6AF",
+          26
+        ],
+        [
+          "69",
+          23
+        ],
+        [
+          "556",
+          23
+        ],
+        [
+          "5BD",
+          22
+        ],
+        [
+          "210",
+          22
+        ],
+        [
+          "326",
+          22
+        ],
+        [
+          "6C0",
+          22
+        ],
+        [
+          "56D",
+          21
+        ],
+        [
+          "7D7",
+          21
+        ],
+        [
+          "328",
+          21
+        ],
+        [
+          "3D5",
+          21
+        ]
+      ],
+      "unique_ids_total": 2045,
+      "unique_ids_flooding": 2045,
+      "unknown_id_ratio_flooding": 0.998125,
+      "speed_stats_by_phase_for_id_0x100": {
+        "baseline": {
+          "count": 3600,
+          "min": 27.0,
+          "max": 92.0,
+          "mean": 61.04,
+          "stdev": 18.507
+        },
+        "spoofing": {
+          "count": 6000,
+          "min": 210.0,
+          "max": 240.0,
+          "mean": 225.082,
+          "stdev": 8.941
+        },
+        "recovery": {
+          "count": 3600,
+          "min": 27.0,
+          "max": 92.0,
+          "mean": 61.561,
+          "stdev": 18.936
+        }
+      }
+    },
+    {
+      "experiment_id": "007_matrix_run_10_medium_spoof_medium_flood",
+      "seed": 2026060417,
+      "duration_s": 600.0,
+      "spoof_intensity": "medium",
+      "flood_intensity": "medium",
+      "total_frames": 40800,
+      "phase_counts": {
+        "baseline": 11250,
+        "spoofing": 6300,
+        "flooding": 12000,
+        "recovery": 11250
+      },
+      "top_arbitration_ids": [
+        [
+          "100",
+          10205
+        ],
+        [
+          "188",
+          10205
+        ],
+        [
+          "120",
+          7501
+        ],
+        [
+          "300",
+          909
+        ],
+        [
+          "44",
+          18
+        ],
+        [
+          "31C",
+          15
+        ],
+        [
+          "53C",
+          15
+        ],
+        [
+          "32C",
+          14
+        ],
+        [
+          "583",
+          14
+        ],
+        [
+          "711",
+          14
+        ],
+        [
+          "359",
+          14
+        ],
+        [
+          "2B2",
+          14
+        ],
+        [
+          "182",
+          14
+        ],
+        [
+          "3C9",
+          14
+        ],
+        [
+          "C4",
+          13
+        ]
+      ],
+      "unique_ids_total": 2038,
+      "unique_ids_flooding": 2038,
+      "unknown_id_ratio_flooding": 0.998333,
+      "speed_stats_by_phase_for_id_0x100": {
+        "baseline": {
+          "count": 3600,
+          "min": 27.0,
+          "max": 92.0,
+          "mean": 61.04,
+          "stdev": 18.507
+        },
+        "spoofing": {
+          "count": 3000,
+          "min": 180.0,
+          "max": 200.0,
+          "mean": 189.833,
+          "stdev": 6.091
+        },
+        "recovery": {
+          "count": 3600,
+          "min": 27.0,
+          "max": 92.0,
+          "mean": 61.561,
+          "stdev": 18.936
+        }
+      }
+    }
+  ],
+  "boundary": "software-only authorized CAN traffic generation; not physical CAN fidelity or operational IDS benchmarking"
+}

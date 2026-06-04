@@ -1,0 +1,9 @@
+experiment_id,phase,frame_count
+005_short_attack,baseline,320
+005_short_attack,spoofing,296
+005_short_attack,flooding,1392
+005_short_attack,recovery,80
+006_10min_attack,baseline,11157
+006_10min_attack,spoofing,6240
+006_10min_attack,flooding,11646
+006_10min_attack,recovery,11157

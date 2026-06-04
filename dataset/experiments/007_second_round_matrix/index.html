@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Second Experimental Round — Matrix 007</title>
+<style>body{font-family:Arial,sans-serif;max-width:1100px;margin:32px auto;line-height:1.45;color:#0f172a}table{border-collapse:collapse;width:100%;margin:16px 0}td,th{border:1px solid #cbd5e1;padding:8px;text-align:left}th{background:#e2e8f0}code{background:#f1f5f9;padding:2px 4px;border-radius:4px}.note{background:#fef9c3;border:1px solid #fde68a;padding:12px;border-radius:8px}</style>
+</head><body>
+<h1>Second Experimental Round — Matrix 007</h1>
+<p class="note">Deterministic fast-run event simulation: timestamps follow a declared 10-minute schedule per run, but the generator does not wait for real wall-clock execution.</p>
+<ul>
+<li>Total runs: <strong>10</strong></li>
+<li>Total synthetic duration: <strong>6000.0 s</strong></li>
+<li>Total frames: <strong>435450</strong></li>
+<li>Boundary: software-only CAN simulation; not physical CAN fidelity.</li>
+</ul>
+<h2>Files</h2>
+<ul>
+<li><a href="second_round_frames_normalized.csv">second_round_frames_normalized.csv</a></li>
+<li><a href="second_round_summary.json">second_round_summary.json</a></li>
+<li><a href="second_round_summary.md">second_round_summary.md</a></li>
+<li><a href="experiment_matrix.csv">experiment_matrix.csv</a></li>
+<li><a href="manifest.json">manifest.json</a></li>
+</ul>
+<h2>Matrix summary</h2>
+<table><thead><tr><th>Spoof</th><th>Flood</th><th>Runs</th><th>Mean total frames</th><th>Mean flood frames</th><th>Mean unique flood IDs</th><th>Mean spoof speed</th></tr></thead><tbody>
+<tr><td>high</td><td>high</td><td>1</td><td>59100</td><td>24000</td><td>2045</td><td>225.082</td></tr>
+<tr><td>high</td><td>low</td><td>1</td><td>41100</td><td>6000</td><td>1942</td><td>224.908</td></tr>
+<tr><td>high</td><td>medium</td><td>1</td><td>47100</td><td>12000</td><td>2041</td><td>224.93</td></tr>
+<tr><td>low</td><td>high</td><td>1</td><td>49650</td><td>24000</td><td>2045</td><td>155.221</td></tr>
+<tr><td>low</td><td>low</td><td>1</td><td>31650</td><td>6000</td><td>1923</td><td>155.347</td></tr>
+<tr><td>low</td><td>medium</td><td>1</td><td>37650</td><td>12000</td><td>2039</td><td>155.175</td></tr>
+<tr><td>medium</td><td>high</td><td>1</td><td>52800</td><td>24000</td><td>2045</td><td>190.036</td></tr>
+<tr><td>medium</td><td>low</td><td>1</td><td>34800</td><td>6000</td><td>1939</td><td>190.248</td></tr>
+<tr><td>medium</td><td>medium</td><td>2</td><td>40800</td><td>12000</td><td>2038.5</td><td>189.871</td></tr>
+</tbody></table>
+</body></html>

@@ -1,0 +1,43 @@
+{
+  "experiment_id": "005_real_attack_software",
+  "scope": "Authorized 100% software CAN attack simulation using python-can virtual backend; no physical vehicle or ECU.",
+  "channel": "ssv2026-attack-virtual-can",
+  "interface": "python-can virtual",
+  "phases": [
+    {
+      "name": "baseline",
+      "duration_s": 5,
+      "description": "Normal simulated ECU traffic: IDs 0x100, 0x120, 0x188, 0x300."
+    },
+    {
+      "name": "spoofing",
+      "duration_s": 3,
+      "description": "Fabricated speed frames on ID 0x100 and display-related ID 0x188; speed forced to 200 km/h."
+    },
+    {
+      "name": "flooding",
+      "duration_s": 3,
+      "description": "Controlled high-rate fabrication using random IDs and payloads."
+    },
+    {
+      "name": "recovery",
+      "duration_s": 2,
+      "description": "Return to normal simulated ECU traffic."
+    }
+  ],
+  "spoof": {
+    "speed_kmh": 200,
+    "ids": [
+      "0x100",
+      "0x188"
+    ],
+    "period_s": 0.02
+  },
+  "flood": {
+    "period_s": 0.002,
+    "duration_s": 3,
+    "id_range": "0x001-0x7FE"
+  },
+  "safety": "Software-only virtual CAN. No hardware. No external target. No persistence beyond saved logs.",
+  "created_utc": "2026-06-04T00:21:59.273147+00:00"
+}

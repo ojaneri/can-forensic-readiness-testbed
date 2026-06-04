@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "If you use this artifact, please cite it."
+title: "CAN Forensic-Readiness Testbed"
+authors:
+  - family-names: "Janeri Filho"
+    given-names: "Osvaldo"
+year: 2026
+repository-code: "https://github.com/ojaneri/can-forensic-readiness-testbed"
+license: "MIT"

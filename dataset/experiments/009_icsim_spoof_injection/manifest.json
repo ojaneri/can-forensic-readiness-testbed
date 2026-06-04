@@ -1,0 +1,31 @@
+{
+  "schema": "software-defined-can-testbed.spoof-injection.v1",
+  "experiment_id": "009_icsim_spoof_injection",
+  "created_utc": "2026-06-04T10:06:36.611901+00:00",
+  "files": {
+    "findings.md": {
+      "sha256": "5367c7c051fe3195e16e747a755d47add726fd990b101b10bce7f518f9a4beca",
+      "bytes": 1170
+    },
+    "frames_normalized.csv": {
+      "sha256": "542ec402714ec8b21904cbc347e9a4713704976191e7b86d995cfee4203414bb",
+      "bytes": 1432584
+    },
+    "index.html": {
+      "sha256": "20b49ef4769503819cda351ab855b0e1265e135cc3402b7702416120399196d3",
+      "bytes": 1246
+    },
+    "spoof_injection_plan.json": {
+      "sha256": "c8db3f53df4b4467289bae426b117ce5e38ff69b4fc776fda4fe05ac2d78930d",
+      "bytes": 771
+    },
+    "spoofed_packets.csv": {
+      "sha256": "24c3ec8373d6983b15cfb91ca63e85052f5aa1c6ad0ccc65f847e066ae086740",
+      "bytes": 9157
+    },
+    "summary.json": {
+      "sha256": "1ca3e114dbb1acdcb0a2ae90529b40f33d128a22a4617e08cd61b173edc23c96",
+      "bytes": 2106
+    }
+  }
+}

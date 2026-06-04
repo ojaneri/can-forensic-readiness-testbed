@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Demo — Software-Defined CAN Attack</title>
+<style>
+:root{--bg:#0b1020;--panel:#10182d;--panel2:#131f3a;--text:#e8eefc;--muted:#9fb0d0;--green:#38d77b;--red:#ff4f67;--yellow:#ffd166;--cyan:#4cc9f0;--blue:#7189ff;--border:#253557}*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at top,#17264a 0,#0b1020 45%,#070a14 100%);color:var(--text);font-family:Inter,system-ui,-apple-system,Segoe UI,Arial,sans-serif;min-height:100vh}.wrap{max-width:1280px;margin:0 auto;padding:22px}.top{display:flex;gap:16px;align-items:center;justify-content:space-between;margin-bottom:18px}.title h1{font-size:24px;margin:0 0 4px}.title p{margin:0;color:var(--muted)}.controls{display:flex;gap:10px;align-items:center}.btn{border:0;border-radius:12px;padding:12px 18px;background:linear-gradient(135deg,#38d77b,#16a85a);color:#04100a;font-weight:800;cursor:pointer;box-shadow:0 12px 30px #0006}.btn:disabled{opacity:.55;cursor:not-allowed}.btn.secondary{background:#1c294a;color:var(--text);border:1px solid var(--border);box-shadow:none}.grid{display:grid;grid-template-columns:1.05fr .95fr;gap:16px}.card{background:linear-gradient(180deg,var(--panel),#0d1427);border:1px solid var(--border);border-radius:18px;padding:16px;box-shadow:0 15px 45px #0005}.card h2{font-size:15px;letter-spacing:.04em;text-transform:uppercase;color:#b7c6e8;margin:0 0 12px}.dash{display:grid;grid-template-columns:1fr 1fr;gap:14px}.gauge{height:260px;position:relative;display:grid;place-items:center;background:radial-gradient(circle,#18284b,#0d1427 68%);border:1px solid var(--border);border-radius:18px;overflow:hidden}.dial{width:210px;height:210px;border-radius:50%;border:10px solid #26395f;position:relative;background:#08101f}.dial:before{content:"";position:absolute;inset:12px;border-radius:50%;border:1px dashed #536a99}.needle{position:absolute;width:5px;height:86px;background:var(--green);left:50%;bottom:50%;transform-origin:bottom center;transform:translateX(-50%) rotate(-120deg);border-radius:5px;box-shadow:0 0 12px currentColor}.gauge.alert .needle{background:var(--red)}.center{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);text-align:center}.num{font-size:36px;font-weight:900}.unit{color:var(--muted);font-size:12px}.ticks{position:absolute;inset:0}.tick{position:absolute;font-size:11px;color:#9fb0d0}.t0{left:18px;bottom:46px}.t60{left:42px;top:50px}.t120{right:42px;top:50px}.t200{right:16px;bottom:46px;color:var(--red)}.status{display:grid;gap:10px}.pill{display:flex;justify-content:space-between;gap:12px;padding:12px;border-radius:12px;background:#0b1327;border:1px solid #223252}.pill strong{font-size:18px}.phase{font-weight:900;color:var(--cyan)}.phase.spoofing{color:var(--red)}.phase.flooding{color:var(--yellow)}.phase.recovery{color:var(--green)}.console{height:520px;background:#030711;border:1px solid #1b2b4d;border-radius:14px;padding:12px;overflow:auto;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:12px;line-height:1.45}.line{white-space:pre-wrap;word-break:break-word}.cmd{color:var(--cyan)}.ok{color:var(--green)}.warn{color:var(--yellow)}.bad{color:var(--red)}.muted{color:var(--muted)}.frames{height:245px;overflow:auto;border-radius:12px;background:#08101f;border:1px solid var(--border)}table{width:100%;border-collapse:collapse;font-family:ui-monospace,monospace;font-size:12px}th,td{padding:7px 8px;border-bottom:1px solid #1b2b4d;text-align:left}th{position:sticky;top:0;background:#111b33;color:#b7c6e8}tr.spoofing td{color:#ff9aaa}tr.flooding td{color:#ffe09b}tr.recovery td{color:#91f2b6}.bar{height:8px;background:#101a31;border-radius:99px;overflow:hidden}.bar span{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--green),var(--yellow),var(--red));transition:width .15s}.footer{margin-top:14px;color:var(--muted);font-size:12px}.badge{display:inline-block;border:1px solid var(--border);border-radius:999px;padding:5px 9px;color:#c8d6f5;background:#0b1327;margin-right:6px}@media(max-width:900px){.grid{grid-template-columns:1fr}.dash{grid-template-columns:1fr}.console{height:420px}.top{align-items:flex-start;flex-direction:column}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="top">
+    <div class="title">
+      <h1>Demo — Software-Defined CAN Attack</h1>
+      <p>Safe replay of experiment 005: baseline → spoofing → flooding → recovery.</p>
+    </div>
+    <div class="controls">
+      <button id="start" class="btn">▶ Start attack</button>
+      <button id="reset" class="btn secondary">↺ Reset</button>
+    </div>
+  </div>
+
+  <div class="grid">
+    <section class="card">
+      <h2>Simulated vehicle dashboard</h2>
+      <div class="dash">
+        <div id="gauge" class="gauge">
+          <div class="dial">
+            <div class="ticks"><span class="tick t0">0</span><span class="tick t60">60</span><span class="tick t120">120</span><span class="tick t200">200</span></div>
+            <div id="needle" class="needle"></div>
+            <div class="center"><div id="speed" class="num">0</div><div class="unit">km/h</div></div>
+          </div>
+        </div>
+        <div class="status">
+          <div class="pill"><span>Attack time</span><strong id="clock">--:--:--</strong></div>
+          <div class="pill"><span>Phase</span><strong id="phase" class="phase">idle</strong></div>
+          <div class="pill"><span>Frames</span><strong id="framesCount">0</strong></div>
+          <div class="pill"><span>Current ID</span><strong id="currentId">---</strong></div>
+          <div class="pill"><span>Payload</span><strong id="payload" style="font-size:13px">---</strong></div>
+          <div><div class="bar"><span id="progress"></span></div></div>
+        </div>
+      </div>
+      <div class="footer">
+        <span class="badge">vcan/software</span><span class="badge">python-can</span><span class="badge">forensic logging</span>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Observer console</h2>
+      <div id="console" class="console"></div>
+    </section>
+  </div>
+
+  <div class="grid" style="margin-top:16px">
+    <section class="card">
+      <h2>Live CAN frames</h2>
+      <div class="frames"><table><thead><tr><th>t(s)</th><th>fase</th><th>ID</th><th>DLC</th><th>DATA</th></tr></thead><tbody id="frameBody"></tbody></table></div>
+    </section>
+    <section class="card">
+      <h2>Experiment findings</h2>
+      <div id="findings" class="console" style="height:245px"></div>
+    </section>
+  </div>
+</div>
+<script>
+const $ = (id)=>document.getElementById(id);
+let rows=[], findings=null, manifest=null, timer=null, idx=0, running=false, startedAt=0;
+const consoleEl=$('console'), findingsEl=$('findings'), body=$('frameBody');
+function log(text, cls=''){ const d=document.createElement('div'); d.className='line '+cls; d.textContent=text; consoleEl.appendChild(d); consoleEl.scrollTop=consoleEl.scrollHeight; }
+function fLog(text, cls=''){ const d=document.createElement('div'); d.className='line '+cls; d.textContent=text; findingsEl.appendChild(d); findingsEl.scrollTop=findingsEl.scrollHeight; }
+function speedFrom(row){ if(row.arbitration_id_hex !== '100') return null; const h=row.data_hex; if(!h || h.length<4) return null; return parseInt(h.slice(2,4)+h.slice(0,2),16); }
+function setSpeed(v, phase){ v=Math.max(0,Math.min(220,v)); $('speed').textContent=Math.round(v); const deg=-120+(v/220)*240; $('needle').style.transform=`translateX(-50%) rotate(${deg}deg)`; $('gauge').classList.toggle('alert', phase==='spoofing' || v>130); }
+function setPhase(p){ const el=$('phase'); el.textContent=p; el.className='phase '+p; }
+function reset(){ clearInterval(timer); running=false; idx=0; consoleEl.innerHTML=''; findingsEl.innerHTML=''; body.innerHTML=''; $('framesCount').textContent='0'; $('currentId').textContent='---'; $('payload').textContent='---'; $('progress').style.width='0%'; setPhase('idle'); setSpeed(0,'idle'); $('start').disabled=false; $('clock').textContent='--:--:--'; }
+function addFrame(row){ const tr=document.createElement('tr'); tr.className=row.phase; tr.innerHTML=`<td>${Number(row.relative_s).toFixed(3)}</td><td>${row.phase}</td><td>0x${row.arbitration_id_hex}</td><td>${row.dlc}</td><td>${row.data_hex}</td>`; body.prepend(tr); while(body.children.length>80) body.removeChild(body.lastChild); }
+function commandIntro(){
+ log('$ cd software-testbed', 'cmd');
+ log('$ python3 -m venv .venv && source .venv/bin/activate', 'cmd');
+ log('$ pip install -r requirements.txt', 'cmd');
+ log('OK python-can 4.6.1', 'ok');
+ log('$ python experiments/005_real_attack_software/run_experiment.py', 'cmd');
+ log('');
+ log('[input] carregando input_attack_plan.json', 'muted');
+ log('[scope] Authorized 100% software CAN attack simulation; no physical vehicle or ECU.', 'warn');
+ log('[phases] baseline → spoofing → flooding → recovery', 'muted');
+}
+function showFindings(){
+ findingsEl.innerHTML='';
+ fLog('Quantitative summary', 'ok');
+ fLog(`total_frames: ${findings.total_frames}`);
+ fLog(`duration_s: ${findings.total_duration_s}`);
+ fLog(`phase_counts: ${JSON.stringify(findings.phase_counts)}`);
+ fLog('');
+ fLog('Speed ID 0x100', 'ok');
+ fLog(JSON.stringify(findings.speed_stats_by_phase_for_id_0x100, null, 2));
+ fLog('');
+ fLog('Hashes SHA-256', 'ok');
+ Object.entries(manifest.files).forEach(([k,v])=>fLog(`${k}: ${v.sha256.slice(0,24)}…`));
+}
+function tick(){
+ if(idx>=rows.length){
+   clearInterval(timer); running=false; $('start').disabled=false; setPhase('done');
+   log(''); log('[done] experiment replayed in the web observer', 'ok');
+   log('[output] output_candump_annotated.log, output_frames.csv, findings.json, manifest.json', 'ok');
+   showFindings(); return;
+ }
+ const row=rows[idx++];
+ const p=row.phase; setPhase(p);
+ $('clock').textContent=new Date().toLocaleTimeString('pt-BR');
+ $('framesCount').textContent=idx;
+ $('currentId').textContent='0x'+row.arbitration_id_hex;
+ $('payload').textContent=row.data_hex;
+ $('progress').style.width=(idx/rows.length*100).toFixed(1)+'%';
+ const sp=speedFrom(row); if(sp!==null) setSpeed(sp,p);
+ addFrame(row);
+ if(idx%7===0 || p==='spoofing' || (p==='flooding' && idx%15===0)){
+   const cls=p==='spoofing'?'bad':p==='flooding'?'warn':p==='recovery'?'ok':'muted';
+   log(`(${Number(row.relative_s).toFixed(6)}) vcan_sim ${row.arbitration_id_hex.padStart(3,'0')}#${row.data_hex} phase=${p} note=${row.note}`, cls);
+ }
+}
+async function start(){
+ if(running) return; reset(); running=true; $('start').disabled=true; startedAt=Date.now(); commandIntro();
+ timer=setInterval(tick, 28);
+}
+async function boot(){
+ const [r,f,m]=await Promise.all([
+   fetch('assets/sample_frames.json').then(r=>r.json()),
+   fetch('assets/findings.json').then(r=>r.json()),
+   fetch('assets/manifest.json').then(r=>r.json())
+ ]);
+ rows=r; findings=f; manifest=m;
+ log('[ready] Demo loaded. Click Start attack.', 'ok');
+ fLog('Waiting for execution…', 'muted');
+}
+$('start').onclick=start; $('reset').onclick=reset; boot().catch(e=>log('Erro ao carregar demo: '+e, 'bad'));
+</script>
+</body>
+</html>

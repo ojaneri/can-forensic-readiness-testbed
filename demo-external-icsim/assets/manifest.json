@@ -1,0 +1,22 @@
+{
+  "schema": "external-icsim-demo.v1",
+  "source_experiment": "008_external_icsim_replay",
+  "files": {
+    "external_source_metadata.json": {
+      "sha256": "9bdf4197f622974f4a50bcace3ee4b8126a839be7f09a391538f2c6f210dfd4b",
+      "bytes": 326
+    },
+    "icsim_frames.json": {
+      "sha256": "9e4716e46e44649c0691da5420759038718b9e3f44b8f552b2686ee66da8b31c",
+      "bytes": 739173
+    },
+    "summary.json": {
+      "sha256": "7d868bb4ae091de674dfd458903c4d7a34ae1b42e307051355e4d4657b99537d",
+      "bytes": 2129
+    },
+    "viz_stats.json": {
+      "sha256": "204c534ee61dc877dfe9f73b695a1ed523a199f0c0b0b35f992e75a560b310c0",
+      "bytes": 2825
+    }
+  }
+}
