@@ -1,5 +1,7 @@
 # CAN Forensic-Readiness Testbed
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20541107.svg)](https://doi.org/10.5281/zenodo.20541107)
+
 A software-defined, low-cost CAN testbed for automotive cybersecurity education and forensic-readiness analysis.
 
 This repository accompanies the paper draft:
@@ -29,6 +31,11 @@ All experiments are software-defined and observer-safe.
 - Normalized CSV datasets and data dictionary.
 - Browser demos for replay and visualization.
 - IEEE-style paper drafts and analysis tables/figures.
+
+## DOI
+
+- Version DOI: https://doi.org/10.5281/zenodo.20541107
+- Concept DOI: https://doi.org/10.5281/zenodo.20541106
 
 ## Quick links
 
