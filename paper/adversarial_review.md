@@ -385,7 +385,7 @@ Even one such scenario would significantly reduce the “toy simulator” critic
 
 Best title remains:
 
-**A Software-Defined Low-Cost CAN Testbed for Automotive Cybersecurity Education and Forensic-Readiness Analysis**
+**A Software-Defined Low-Cost CAN Testbed for Automotive Cybersecurity and Forensic-Readiness Analysis**
 
 This title is slightly safer than “Forensic Analysis” because it does not overclaim full forensic capability.
 
