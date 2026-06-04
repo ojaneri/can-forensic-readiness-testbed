@@ -34,12 +34,14 @@ All experiments are software-defined and observer-safe.
 
 ## DOI
 
-- Version DOI: https://doi.org/10.5281/zenodo.20541107
 - Concept DOI: https://doi.org/10.5281/zenodo.20541106
+- First version DOI: https://doi.org/10.5281/zenodo.20541107
 
 ## Quick links
 
-- Paper v3: [`paper/article_ieee_v3.html`](paper/article_ieee_v3.html)
+- Paper v4 PDF: [`paper/article_ieee_v4.pdf`](paper/article_ieee_v4.pdf)
+- Paper v4 LaTeX: [`paper/article_ieee_v4.tex`](paper/article_ieee_v4.tex)
+- Paper v3 HTML: [`paper/article_ieee_v3.html`](paper/article_ieee_v3.html)
 - Latest paper alias: [`paper/article_ieee_latest.html`](paper/article_ieee_latest.html)
 - Dataset package: [`dataset/`](dataset/)
 - Experiment 007: [`dataset/experiments/007_second_round_matrix/`](dataset/experiments/007_second_round_matrix/)

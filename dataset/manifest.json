@@ -290,12 +290,12 @@
       "bytes": 10058
     },
     "paper/index.html": {
-      "sha256": "7a8f6588699d4fd25dc2f18fbaeb2dd52f9fe108492615145f817b83ab5d0542",
-      "bytes": 1598
+      "sha256": "944fbbd3cccc82a9983208a45644d7c40cf526856f9ac93bb8ad638b5b9bf99c",
+      "bytes": 1806
     },
     "index.html": {
-      "sha256": "30b57e9128412302ea77d657e60c253c029515a8d6595a57149142b3eed1e7ae",
-      "bytes": 30037
+      "sha256": "0a8c116bc860a4031cee3821d0aef4695f4825bdab06c28a701fd641b76bd0aa",
+      "bytes": 30312
     },
     "paper/article_ieee_v3.html": {
       "sha256": "cb514a584aa40865f5a7fca022eba675a8f735268b7147b840eca187f119f617",
@@ -308,6 +308,46 @@
     "paper/article_ieee_latest.html": {
       "sha256": "cb514a584aa40865f5a7fca022eba675a8f735268b7147b840eca187f119f617",
       "bytes": 25201
+    },
+    "paper/article_ieee_v4.tex": {
+      "sha256": "290d1c63d2f2ae322afc305ca8e5ea0d8cf56ff4af5d20ed8b40784df1929cfc",
+      "bytes": 21314
+    },
+    "paper/article_ieee_v4.bib": {
+      "sha256": "ab4fd2facfb481e5ab110a0f1b3296c2582cfefd4499cc860b202fcb2498c107",
+      "bytes": 4867
+    },
+    "paper/article_ieee_v4.pdf": {
+      "sha256": "debca462f40a60212056019a0c199971165d28194a44c8dd9d35d4d63c33b270",
+      "bytes": 129008
+    },
+    "paper/article_ieee_v4_notes.md": {
+      "sha256": "d78cd57c7c731986fe854430d9df9ea7ac447cd03beea15903f7a4f8f3c17523",
+      "bytes": 1629
+    },
+    "paper/article_ieee_v4_adversarial_review.md": {
+      "sha256": "ad7812fd9a0bc18ff13d359e7f595443be827ec8dbb6c21c933c6d7e2b748938",
+      "bytes": 2463
+    },
+    "paper/article_ieee_latest.pdf": {
+      "sha256": "debca462f40a60212056019a0c199971165d28194a44c8dd9d35d4d63c33b270",
+      "bytes": 129008
+    },
+    "paper/article_ieee_latest.tex": {
+      "sha256": "290d1c63d2f2ae322afc305ca8e5ea0d8cf56ff4af5d20ed8b40784df1929cfc",
+      "bytes": 21314
+    },
+    "paper/article_ieee_latest.bib": {
+      "sha256": "ab4fd2facfb481e5ab110a0f1b3296c2582cfefd4499cc860b202fcb2498c107",
+      "bytes": 4867
+    },
+    "paper/IEEEtran.cls": {
+      "sha256": "da751920a317ed318b7b5cd7fa585a6cc7d28502d457856382e9be24b10a3bd7",
+      "bytes": 281957
+    },
+    "paper/IEEEtran.bst": {
+      "sha256": "314f0ece704568faf827011bac498650691b2b5ee06320720830e782416d5a5f",
+      "bytes": 57748
     }
   }
 }

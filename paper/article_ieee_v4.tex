@@ -1,0 +1,269 @@
+\documentclass[conference]{IEEEtran}
+\IEEEoverridecommandlockouts
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{cite}
+\usepackage{url}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{graphicx}
+\usepackage{balance}
+\usepackage{amsmath}
+\usepackage{xcolor}
+
+\title{A Software-Defined Low-Cost CAN Testbed for Automotive Cybersecurity Education and Forensic-Readiness Analysis}
+
+\author{\IEEEauthorblockN{Osvaldo Janeri Filho}
+\IEEEauthorblockA{Independent Researcher / Digital Forensics Practitioner\\
+Fortaleza, Cear\'{a}, Brazil\\
+Email omitted for blind or camera-ready submission}}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Controller Area Network (CAN) remains common in production and legacy vehicles, but its legacy design does not provide native authentication, confidentiality, or sender verification. Practical experimentation with automotive cybersecurity and forensic procedures is difficult for classrooms, small laboratories, and independent practitioners because physical vehicles, documented electronic control units, and commercial hardware-in-the-loop platforms can be costly, unsafe, or operationally fragile. This paper presents a software-defined, low-cost CAN testbed focused on cybersecurity education and forensic-readiness analysis. The artifact packages internal labeled experiments, a second-round intensity matrix, external ICSim trace ingestion, didactic spoof-packet injection, normalized datasets, source metadata, SHA-256 manifests, validation scripts, and observer-safe browser demos. Across internal labeled experiments, the testbed generated 477,738 CAN frames, including a 10-run intensity matrix. External-source compatibility is demonstrated by importing 6,158 frames from the public ICSim \texttt{sample-can.log} trace, and a visual injection package adds 45 labeled spoofed speed, door, and turn-signal packets for safe review. A rule-based triage heuristic is retained only as a label-consistency and forensic-screening sanity check, not as a real-world intrusion detection benchmark. The contribution is therefore an evidence-preserving educational workflow rather than a claim of physical CAN fidelity or operational IDS performance.
+\end{abstract}
+
+\begin{IEEEkeywords}
+automotive cybersecurity, CAN bus, forensic readiness, testbed, ICSim, virtual CAN, reproducibility, cybersecurity education
+\end{IEEEkeywords}
+
+\section{Introduction}
+Modern vehicles use multiple electronic control units connected through in-vehicle networks. CAN was designed for robust and low-cost communication, but not for cryptographic authentication or strong origin verification. A receiver typically processes frames according to identifiers and payload semantics, not authenticated sender identity.
+
+This creates a useful teaching and forensic-analysis problem: students and practitioners need to understand spoofing, flooding, replay, evidence preservation, and trace interpretation, but safe and reproducible access to automotive networks is uneven. Real vehicles can be expensive and risky to manipulate; used ECUs may require proprietary pinouts and immobilizer pairing; and commercial hardware-in-the-loop (HIL) platforms often exceed small-lab budgets.
+
+This paper addresses that gap with a software-defined CAN testbed designed for low-cost cybersecurity education and forensic-readiness analysis. The goal is explicitly bounded: the artifact does not claim physical CAN fidelity, production-vehicle realism, or operational intrusion-detection performance. Instead, it provides a reproducible workflow for generating and preserving traces, importing external traffic, injecting didactic events, validating hashes, and replaying evidence safely in a browser.
+
+The paper is organized around four research questions:
+\begin{itemize}
+  \item \textbf{RQ1:} Can a low-cost software-defined CAN testbed preserve evidence needed for later review?
+  \item \textbf{RQ2:} Can the workflow generate controlled spoofing and flooding variations with explicit labels and manifests?
+  \item \textbf{RQ3:} Can the same pipeline ingest and preserve an external CAN trace without changing the evidence schema?
+  \item \textbf{RQ4:} Can observers review the resulting artifacts safely without live CAN hardware or vehicle access?
+\end{itemize}
+
+The contributions are: (i) a software-defined CAN testbed architecture and evidence workflow; (ii) labeled internal experiments with baseline, spoofing, flooding, and recovery phases; (iii) a 10-run intensity matrix for parameter-sensitivity evidence; (iv) external-source compatibility through ICSim trace ingestion; (v) didactic spoof-packet injection for speed, door, and turn-signal visualization; and (vi) a public artifact with DOI, SHA-256 validation, normalized CSV files, a data dictionary, and observer-safe demos \cite{janeri2026artifact}.
+
+\section{Background and Related Work}
+Classic automotive security studies showed that in-vehicle networks can be manipulated after attackers obtain access to relevant interfaces \cite{koscher2010experimental,checkoway2011comprehensive,miller2015remote}. Subsequent work surveyed CAN security challenges such as replay, fabrication, bus availability, and proprietary signal interpretation \cite{bozdal2020evaluation,lokman2019survey}. Standards including ISO/SAE 21434 and UNECE R155 provide broader cybersecurity engineering and management context \cite{iso21434,uneceR155}.
+
+Educational and experimental tools include ICSim, which provides a visual CAN training environment, and Caring Caribou, which supports CAN and diagnostic exploration \cite{icsim,caringcaribou,smith2016carhackers}. Physical and hybrid benches such as VitroBench and CAN bus security testbeds support stronger realism but require more hardware and setup effort \cite{yeo2023vitrobench,zhu2022canbus}. Public datasets such as ROAD, can-train-and-test, and can-sleuth support IDS research and dataset analysis \cite{verma2024road,lampe2024cantrain,cansleuth2024}.
+
+The gap targeted here is not the absence of simulators or datasets. It is the lack of a compact workflow that combines low-cost software-only experimentation, explicit forensic evidence packaging, source-trace metadata, hash validation, DOI-backed availability, and safe observer replay. Table~\ref{tab:positioning} positions the artifact accordingly.
+
+\begin{table}[t]
+\caption{Positioning Against Related Artifacts}
+\label{tab:positioning}
+\centering
+\footnotesize
+\begin{tabular}{p{0.20\columnwidth}ccccc}
+\toprule
+Artifact & SW & Data & Hash & Demo & Real. \\
+\midrule
+ICSim & Yes & Sample & No & Visual & Low \\
+Caring Caribou & Partial & No & No & No & Tooling \\
+ROAD / can-train & N/A & Yes & No & No & Trace \\
+VitroBench / HIL & No & Limited & Limited & No & Higher \\
+Proposed & Yes & Yes & Yes & Yes & Future HIL \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\section{Testbed and Evidence Workflow}
+\subsection{Architecture}
+The bus layer uses \texttt{python-can} virtual channels and can be migrated to SocketCAN/\texttt{vcan}. Simulated ECUs generate periodic engine/cluster, body, display, and background frames. Attack modules inject fabricated state or randomized high-cardinality traffic. External importers normalize upstream traces into the same schema. The logger and packaging scripts produce raw/source logs, normalized CSV files, summaries, and manifests.
+
+\begin{figure}[t]
+\centering
+\fbox{\begin{minipage}{0.92\columnwidth}
+\centering\footnotesize
+Simulated ECUs / External Trace\\[2pt]
+$\downarrow$\\[-1pt]
+Virtual CAN bus and importers\\[2pt]
+$\downarrow$\\[-1pt]
+Logger $+$ normalizer $+$ metadata\\[2pt]
+$\downarrow$\\[-1pt]
+CSV datasets $+$ SHA-256 manifests $+$ demos\\[2pt]
+$\downarrow$\\[-1pt]
+Forensic-readiness review and education
+\end{minipage}}
+\caption{Software-defined CAN evidence workflow. The artifact emphasizes reproducible virtual experiments, evidence preservation, external trace ingestion, and observer-safe replay rather than physical CAN fidelity.}
+\label{fig:pipeline}
+\end{figure}
+
+\subsection{Forensic-Readiness Definition}
+For this artifact, forensic readiness means that experiments are designed so relevant evidence is already organized for later review. Each package should preserve traceability, integrity, repeatability, normalization, and reviewability. Table~\ref{tab:forensic} maps these properties to concrete files.
+
+\begin{table}[t]
+\caption{Forensic-Readiness Mapping}
+\label{tab:forensic}
+\centering
+\footnotesize
+\begin{tabular}{p{0.22\columnwidth}p{0.40\columnwidth}p{0.21\columnwidth}}
+\toprule
+Requirement & Implemented artifact & Boundary \\
+\midrule
+Traceability & Input plans, injection plans, source metadata & Scenario provenance \\
+Integrity & SHA-256 manifests & File integrity \\
+Repeatability & Scripts, seeds, matrix configs & Software behavior \\
+Normalization & CSV schema and data dictionary & Didactic semantics \\
+Reviewability & HTML indexes and browser demos & Safe replay \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Safety Boundary}
+All experiments reported here are authorized and software-only. No vehicle, production ECU, CAN adapter, external network, or operational system is targeted. The demos replay stored artifacts and do not execute live attacks.
+
+\section{Experimental Design}
+Table~\ref{tab:evidence} summarizes the evidence packages used in v4. Experiments 005 and 006 provide internal labeled traffic. Experiment 007 expands this into a 10-run matrix. Experiment 008 imports an external ICSim trace. Experiment 009 injects labeled didactic spoof packets into that external trace for visualization and workflow validation.
+
+\begin{table*}[t]
+\caption{Evidence Package Coverage}
+\label{tab:evidence}
+\centering
+\footnotesize
+\begin{tabular}{clrrrrl}
+\toprule
+Exp. & Purpose & Frames & Manifest & Labels & Demo & Main limitation \\
+\midrule
+005 & Short internal proof-of-concept & 2,088 & Yes & Yes & Yes & Short; synthetic \\
+006 & 10-minute internal run & 40,200 & Yes & Yes & Figures & Single seed \\
+007 & 10-run intensity matrix & 435,450 & Yes & Yes & No & Fast-run schedule \\
+008 & External ICSim ingestion & 6,158 & Yes & No attack labels & Yes & Compatibility only \\
+009 & ICSim + spoof injection & 6,203 & Yes & Injected labels & Yes & Didactic injection \\
+\bottomrule
+\end{tabular}
+\end{table*}
+
+Experiment 006 uses a 600.06-second virtual run with 180 seconds baseline, 120 seconds spoofing, 120 seconds flooding, and 180 seconds recovery. Matrix 007 uses the same phase structure across 10 runs. It should be interpreted as deterministic fast-run event simulation: timestamps follow the declared schedule, but the generator does not wait for real wall-clock execution. The internal environment used Python 3.12.3 and \texttt{python-can} 4.6.1. Validation uses \texttt{dataset/scripts/validate\_hashes.py}.
+
+\section{Results}
+\subsection{Internal Labeled Dataset}
+Across internal labeled experiments, the normalized dataset contains 477,738 frames. Phase counts are 123,977 baseline frames, 78,986 spoofing frames, 151,038 flooding frames, and 123,737 recovery frames. The most frequent IDs are \texttt{0x100}, \texttt{0x188}, \texttt{0x120}, and \texttt{0x300}, representing stable simulated traffic. Flooding adds many low-count randomized IDs, increasing arbitration-ID diversity.
+
+The decoded speed on ID \texttt{0x100} remains in a didactic normal range during baseline and recovery and increases during spoofing. Across the combined internal dataset, baseline speed ranges from 27 to 92 km/h with mean 61.04 km/h; recovery has mean 61.56 km/h; spoofing ranges from 145 to 240 km/h with mean 203.72 km/h. These values are not vehicle-realism claims; they provide controlled contrast for teaching and trace review.
+
+\subsection{Matrix 007}
+Matrix 007 added 435,450 frames over 6,000 seconds of synthetic schedule. It varies spoofing intensity and flooding intensity across low, medium, and high profiles. Flooding profiles produce approximately 6,000, 12,000, or 24,000 flooding frames per 120-second flooding phase. Mean spoofed speed is approximately 155 km/h in low profiles, 190 km/h in medium profiles, and 225 km/h in high profiles.
+
+\begin{table}[t]
+\caption{Matrix 007 Summary by Intensity}
+\label{tab:matrix}
+\centering
+\footnotesize
+\begin{tabular}{lcccr}
+\toprule
+Spoof & Flood levels & Runs & Flood frames & Speed mean \\
+\midrule
+Low & L/M/H & 3 & 6k--24k & 155.2 \\
+Medium & L/M/H & 4 & 6k--24k & 190.0 \\
+High & L/M/H & 3 & 6k--24k & 225.0 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{External ICSim Compatibility}
+Experiment 008 imports the public ICSim \texttt{data/sample-can.log} trace from commit \texttt{2b3333ef866987d8adc9c15ff15b9b9189edf85b}. The upstream SHA-256 is preserved in the source-metadata file and manifest. The importer preserves the raw log, source metadata, license information, normalized CSV, summary, and manifest.
+
+The imported trace contains 6,158 frames over 3.257991 seconds, 34 unique arbitration IDs, and payload byte entropy of 3.361537 bits. Mean inter-arrival time is 0.000529152 seconds, with no negative values. Since the upstream sample does not include attack labels in this package, this experiment is used for external-source compatibility and replay-readiness, not IDS evaluation.
+
+\subsection{ICSim Spoof Injection Demo}
+Experiment 009 injects 45 labeled didactic packets into the external ICSim trace: 33 speed packets on ID \texttt{0x244}, seven door packets on ID \texttt{0x19B}, and five turn-signal packets on ID \texttt{0x188}. The resulting package has 6,203 frames. The visual dashboard highlights injected frames, displays speed, door state, turn signals, a live CAN frame table, and frame density. This demonstrates safe review of injected events without claiming real-vehicle exploitation.
+
+\section{Evaluation Against Research Questions}
+Table~\ref{tab:rq} maps each research question to evidence and limits. This form is intentionally conservative: a claim is included only when an artifact package supports it.
+
+\begin{table*}[t]
+\caption{Research Question Evaluation Matrix}
+\label{tab:rq}
+\centering
+\footnotesize
+\begin{tabular}{p{0.08\textwidth}p{0.28\textwidth}p{0.34\textwidth}p{0.20\textwidth}}
+\toprule
+RQ & Claim & Evidence & Limitation \\
+\midrule
+RQ1 & Evidence can be preserved for later review. & Raw/source files, normalized CSV, summaries, SHA-256 manifests, DOI-backed repository. & File-level integrity, not full forensic standard certification. \\
+RQ2 & Controlled spoofing/flooding variation is supported. & Exp. 006 and 007; 477,738 internal frames; 10-run intensity matrix. & Synthetic labels and fast-run timing. \\
+RQ3 & External traces can enter the same pipeline. & Exp. 008 imports 6,158 ICSim frames with source metadata/hash/license. & Compatibility evidence only; not vehicle validation. \\
+RQ4 & Review can occur without live hardware. & Observer-safe demos and HTML indexes; Exp. 009 injected-event replay. & Demos are didactic, not live CAN exercises. \\
+\bottomrule
+\end{tabular}
+\end{table*}
+
+\section{Triage Sanity Check}
+A rule-based heuristic is retained only as a forensic triage sanity check. The rules classify flooding using high arbitration-ID cardinality or unknown-ID ratio, spoofing using decoded speed above a didactic threshold on ID \texttt{0x100}, and other windows as normal. Because the rules are intentionally aligned with the didactic generation process, high performance indicates label and workflow consistency rather than real-world IDS robustness.
+
+Across the combined internal labeled dataset, 6,615 one-second windows were evaluated. The heuristic achieved 0.9998 accuracy and 0.9998 macro-F1, with one normal window flagged as flooding. These values are secondary artifact-validation evidence and should not be interpreted as an intrusion-detection benchmark.
+
+\begin{table}[t]
+\caption{Rule-Based Triage Sanity-Check Matrix}
+\label{tab:triage}
+\centering
+\footnotesize
+\begin{tabular}{lrrr}
+\toprule
+Expected & Normal & Spoofing & Flooding \\
+\midrule
+Normal & 3968 & 0 & 1 \\
+Spoofing & 0 & 1323 & 0 \\
+Flooding & 0 & 0 & 1323 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\section{Artifact Evaluation Checklist}
+The public artifact is intended to satisfy common artifact-review expectations. It is available through GitHub and Zenodo, functional through documented scripts and browser demos, reusable through normalized CSV and metadata files, and auditable through SHA-256 manifests. It does not require special automotive hardware for the reported software-defined experiments. Table~\ref{tab:artifactcheck} summarizes the checklist.
+
+\begin{table}[t]
+\caption{Artifact Evaluation Checklist}
+\label{tab:artifactcheck}
+\centering
+\footnotesize
+\begin{tabular}{p{0.33\columnwidth}p{0.55\columnwidth}}
+\toprule
+Criterion & Evidence \\
+\midrule
+Available & GitHub repository and Zenodo DOI \\
+Functional & Validation script and browser demos \\
+Reusable & CSV schema, summaries, source metadata \\
+Documented & README, ARTIFACT, ETHICS, SECURITY \\
+Integrity-aware & SHA-256 manifests and source hashes \\
+No special hardware & Software-only experiments and replay \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\section{Discussion}
+The artifact is strongest as a reproducible educational and forensic-readiness package. A reviewer can inspect plans, raw/source logs, normalized CSV files, source metadata, manifests, summaries, and safe demos. This differentiates the work from a closed simulator or a detector script: the paper's core claim is evidence packaging and reproducible review rather than detection novelty.
+
+Experiment 008 directly addresses the synthetic-only critique by showing that an external ICSim trace can be preserved, normalized, hashed, summarized, and replayed through the same workflow. Experiment 009 extends this into a didactic injection package, demonstrating how labeled events can be added to an external trace for teaching and visualization while preserving provenance and boundaries.
+
+The main trade-off remains fidelity. Physical benches and real datasets provide stronger realism; the proposed artifact provides safety, cost control, transparent semantics, and artifact reviewability. The intended progression is incremental: software-defined education first, then SocketCAN/\texttt{vcan} wall-clock capture, additional public dataset import, and finally HIL validation.
+
+\section{Threats to Validity}
+\textit{Internal validity.} Internal labels are generated by the same framework that creates internal traces. Matrix 007 adds parameter variation, and Experiments 008 and 009 add external-source compatibility and separately labeled injected packets. Nevertheless, internal triage metrics remain label-consistency evidence only.
+
+\textit{External validity.} Software-only traces do not model physical CAN arbitration, electrical noise, termination, bus-off behavior, gateway filtering, ECU timing constraints, or OEM signal accuracy. The external ICSim import improves compatibility evidence but does not replace real-vehicle or HIL validation.
+
+\textit{Construct validity.} Forensic readiness is operationalized as traceability, integrity, repeatability, normalization, and reviewability. This is a practical artifact definition rather than a complete forensic standard.
+
+\textit{Conclusion validity.} High triage scores could be overinterpreted if reported as detection performance. The paper therefore frames the heuristic as a sanity check and keeps it secondary to artifact reproducibility.
+
+\textit{Reproducibility.} The project provides scripts, manifests, a GitHub repository, and a Zenodo DOI. Reproducibility still depends on readers using the documented artifact release rather than local unpublished files.
+
+\section{Limitations and Future Work}
+The current artifact is software-defined and observer-safe. It does not claim physical CAN fidelity, production-vehicle attack realism, or operational IDS performance. Future work includes SocketCAN/\texttt{vcan} wall-clock capture, ROAD or can-train-and-test import into the same schema, print-safe figure refinement, and HIL validation with documented legacy ECUs.
+
+\section{Conclusion}
+This paper presented a software-defined low-cost CAN testbed for automotive cybersecurity education and forensic-readiness analysis. The artifact generates labeled internal traces, expands them through a 10-run intensity matrix, imports an external ICSim trace, supports didactic spoof injection, preserves evidence through manifests and hashes, and provides observer-safe browser demos. The v4 framing avoids overclaiming detection or physical realism and emphasizes reproducible, low-cost, evidence-aware learning and review.
+
+\section*{Artifact Availability}
+The software, experiment scripts, normalized datasets, manifests, validation scripts, paper drafts, and observer-safe demos are available in the public GitHub repository: \url{https://github.com/ojaneri/can-forensic-readiness-testbed}. The archival Zenodo concept DOI for all artifact versions is \url{https://doi.org/10.5281/zenodo.20541106} (DOI: \texttt{10.5281/zenodo.20541106}); the first versioned DOI is \texttt{10.5281/zenodo.20541107}. The package includes SHA-256 manifests and instructions to inspect Experiments 005--009.
+
+\bibliographystyle{IEEEtran}
+\bibliography{article_ieee_v4}
+\end{document}
