@@ -1,0 +1,9 @@
+experiment_id,phase,count,min_kmh,max_kmh,mean_kmh,stdev_kmh
+005_short_attack,baseline,100,40.0,79.0,60.56,14.63
+005_short_attack,spoofing,148,200.0,200.0,200.0,0.0
+005_short_attack,flooding,1,33859.0,33859.0,33859.0,0.0
+005_short_attack,recovery,40,45.0,59.0,50.25,4.46
+006_10min_attack,baseline,3570,27.0,92.0,61.04,18.5
+006_10min_attack,spoofing,2971,180.0,200.0,195.0,8.66
+006_10min_attack,flooding,8,1192.0,61453.0,27253.38,18982.09
+006_10min_attack,recovery,3570,27.0,92.0,61.56,18.93

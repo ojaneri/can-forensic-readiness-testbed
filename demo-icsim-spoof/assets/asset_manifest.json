@@ -1,0 +1,26 @@
+{
+  "schema": "icsim-spoof-demo.v1",
+  "source_experiment": "009_icsim_spoof_injection",
+  "files": {
+    "frames.json": {
+      "sha256": "39aab83725f65ccd95b3049df95aeef63c32af461a295738758fcbf6d3a7d33e",
+      "bytes": 1443801
+    },
+    "manifest.json": {
+      "sha256": "5a22a960fd29f4d31a426cfb7ec01f65ae36ce28d41be72cdcea527fcf166dc3",
+      "bytes": 1010
+    },
+    "spoof_injection_plan.json": {
+      "sha256": "c8db3f53df4b4467289bae426b117ce5e38ff69b4fc776fda4fe05ac2d78930d",
+      "bytes": 771
+    },
+    "summary.json": {
+      "sha256": "1ca3e114dbb1acdcb0a2ae90529b40f33d128a22a4617e08cd61b173edc23c96",
+      "bytes": 2106
+    },
+    "viz_stats.json": {
+      "sha256": "55da355debb454498c0dc81fed5a38dbb0ee80c67fe2e5ef75b3ee72251ba77c",
+      "bytes": 3383
+    }
+  }
+}

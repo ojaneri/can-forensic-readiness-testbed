@@ -1,0 +1,20 @@
+{
+  "experiment_id": "009_icsim_spoof_injection",
+  "created_utc": "2026-06-04T10:06:36.608238+00:00",
+  "base_experiment": "008_external_icsim_replay",
+  "base_source_metadata": {
+    "name": "ICSim",
+    "repository": "https://github.com/zombieCraig/ICSim.git",
+    "commit": "2b3333ef866987d8adc9c15ff15b9b9189edf85b",
+    "source_file": "data/sample-can.log",
+    "license": "GPL-3.0 as distributed by upstream repository",
+    "source_sha256": "6fbaf2f78e4d9eef30cafc8c39c837390ae9534771cd3cb74768d4594641270c"
+  },
+  "intensity": "medium",
+  "injected_semantics": {
+    "speed_id": "0x244",
+    "door_id": "0x19B",
+    "turn_signal_id": "0x188"
+  },
+  "safety_boundary": "software-only labeled packet injection for visualization and forensic workflow validation"
+}

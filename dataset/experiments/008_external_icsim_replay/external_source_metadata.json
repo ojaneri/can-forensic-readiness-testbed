@@ -1,0 +1,8 @@
+{
+  "name": "ICSim",
+  "repository": "https://github.com/zombieCraig/ICSim.git",
+  "commit": "2b3333ef866987d8adc9c15ff15b9b9189edf85b",
+  "source_file": "data/sample-can.log",
+  "license": "GPL-3.0 as distributed by upstream repository",
+  "source_sha256": "6fbaf2f78e4d9eef30cafc8c39c837390ae9534771cd3cb74768d4594641270c"
+}

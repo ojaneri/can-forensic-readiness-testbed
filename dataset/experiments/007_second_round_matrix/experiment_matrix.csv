@@ -1,0 +1,11 @@
+experiment_id,seed,duration_s,baseline_s,spoofing_s,flooding_s,recovery_s,spoof_intensity,spoof_period_s,flood_intensity,flood_period_s
+007_matrix_run_01_low_spoof_low_flood,2026060408,600.0,180.0,120.0,120.0,180.0,low,0.08,low,0.02
+007_matrix_run_02_low_spoof_medium_flood,2026060409,600.0,180.0,120.0,120.0,180.0,low,0.08,medium,0.01
+007_matrix_run_03_low_spoof_high_flood,2026060410,600.0,180.0,120.0,120.0,180.0,low,0.08,high,0.005
+007_matrix_run_04_medium_spoof_low_flood,2026060411,600.0,180.0,120.0,120.0,180.0,medium,0.04,low,0.02
+007_matrix_run_05_medium_spoof_medium_flood,2026060412,600.0,180.0,120.0,120.0,180.0,medium,0.04,medium,0.01
+007_matrix_run_06_medium_spoof_high_flood,2026060413,600.0,180.0,120.0,120.0,180.0,medium,0.04,high,0.005
+007_matrix_run_07_high_spoof_low_flood,2026060414,600.0,180.0,120.0,120.0,180.0,high,0.02,low,0.02
+007_matrix_run_08_high_spoof_medium_flood,2026060415,600.0,180.0,120.0,120.0,180.0,high,0.02,medium,0.01
+007_matrix_run_09_high_spoof_high_flood,2026060416,600.0,180.0,120.0,120.0,180.0,high,0.02,high,0.005
+007_matrix_run_10_medium_spoof_medium_flood,2026060417,600.0,180.0,120.0,120.0,180.0,medium,0.04,medium,0.01

@@ -1,0 +1,29 @@
+{
+  "schema": "software-can-testbed.attack-run.v1",
+  "experiment_id": "006_10min_attack_software",
+  "created_utc": "2026-06-04T00:38:07.210073+00:00",
+  "python": "3.12.3 (main, Jan 22 2026, 20:57:42) [GCC 13.3.0]",
+  "python_can_version": "4.6.1",
+  "files": {
+    "input_attack_plan.json": {
+      "sha256": "2f908b0c57065713d09762e0504231ba7a9dc9e430446672b3d3db9886f96c7a",
+      "bytes": 599
+    },
+    "output_candump_annotated.log": {
+      "sha256": "f92e20eaffb978d2b3762d3f338047703aa3e06eeba3ce80b529557bea081906",
+      "bytes": 3660478
+    },
+    "output_frames.csv": {
+      "sha256": "e434b641041671a0c54732b47a0703ef0ff5f83c8696594c8f6cf6d49da04f52",
+      "bytes": 3330548
+    },
+    "findings.json": {
+      "sha256": "cb442850fb668938f5d185ee8eee39cb9d42867f68e54cf10741212aa88c3e13",
+      "bytes": 2386
+    },
+    "findings.md": {
+      "sha256": "0d2176e4f1a10e3d97b44a8842789c8f3762100bb379cb70d2a8da0f1178cbff",
+      "bytes": 1633
+    }
+  }
+}

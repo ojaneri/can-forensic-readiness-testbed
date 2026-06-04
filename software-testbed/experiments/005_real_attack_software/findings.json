@@ -1,0 +1,122 @@
+{
+  "experiment_id": "005_real_attack_software",
+  "started_utc": "2026-06-04T00:21:59.273147+00:00",
+  "ended_utc": "2026-06-04T00:22:12.347901+00:00",
+  "total_duration_s": 13.018649,
+  "total_frames": 2088,
+  "phase_counts": {
+    "baseline": 320,
+    "spoofing": 296,
+    "flooding": 1392,
+    "recovery": 80
+  },
+  "top_ids": [
+    [
+      "100",
+      289
+    ],
+    [
+      "188",
+      288
+    ],
+    [
+      "120",
+      100
+    ],
+    [
+      "300",
+      20
+    ],
+    [
+      "799",
+      5
+    ],
+    [
+      "A0",
+      4
+    ],
+    [
+      "683",
+      4
+    ],
+    [
+      "327",
+      4
+    ],
+    [
+      "654",
+      4
+    ],
+    [
+      "346",
+      4
+    ],
+    [
+      "134",
+      4
+    ],
+    [
+      "665",
+      4
+    ],
+    [
+      "180",
+      3
+    ],
+    [
+      "1B7",
+      3
+    ],
+    [
+      "73B",
+      3
+    ]
+  ],
+  "speed_stats_by_phase_for_id_0x100": {
+    "baseline": {
+      "count": 100,
+      "min": 40,
+      "max": 79,
+      "mean": 60.56
+    },
+    "spoofing": {
+      "count": 148,
+      "min": 200,
+      "max": 200,
+      "mean": 200
+    },
+    "flooding": {
+      "count": 1,
+      "min": 33859,
+      "max": 33859,
+      "mean": 33859
+    },
+    "recovery": {
+      "count": 40,
+      "min": 45,
+      "max": 59,
+      "mean": 50.25
+    }
+  },
+  "observations": [
+    "Baseline generated stable periodic IDs 0x100, 0x120 and 0x188 plus low-rate background ID 0x300.",
+    "Spoofing phase forced decoded speed on ID 0x100 to 200 km/h and increased RPM/throttle fields, demonstrating fabrication of safety-relevant state in an unauthenticated CAN-like stream.",
+    "Flooding phase injected high-cardinality random arbitration IDs, increasing frame volume and noise for forensic triage.",
+    "Recovery phase returned speed values to normal range, allowing before/during/after comparison.",
+    "Because this run used python-can virtual backend, findings are valid for software workflow, logging, replay and forensic pipeline, but not for physical-layer arbitration, transceiver errors, bus load saturation or electrical fault behavior."
+  ],
+  "files": {
+    "input_attack_plan.json": {
+      "sha256": "3fe3bb864d343a3dd136c6260a99a6e5a4d37dd8bb7f6a96f0ded91b83b27659",
+      "bytes": 1233
+    },
+    "output_candump_annotated.log": {
+      "sha256": "9d278a7e2eb52dcbd6ffebd32d249244c95d82da1d41335b88e6d8bc5d936e9b",
+      "bytes": 199088
+    },
+    "output_frames.csv": {
+      "sha256": "25355d3e72c8ff9567eb2b41ab8ed2dbb296db64e6f89f68c88c4f37609d354c",
+      "bytes": 178660
+    }
+  }
+}

@@ -1,0 +1,8 @@
+cff-version: 1.2.0
+title: Software-Defined CAN Attack Dataset for Automotive Cybersecurity Education and Forensic Analysis
+message: If you use this dataset, please cite the associated SSV 2026 paper.
+authors:
+  - family-names: Janeri Filho
+    given-names: Osvaldo
+version: 0.1.0
+date-released: '2026-06-04'

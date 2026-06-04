@@ -1,0 +1,42 @@
+{
+  "confusion_matrix": {
+    "normal": {
+      "normal": 3968,
+      "spoofing": 0,
+      "flooding": 1
+    },
+    "spoofing": {
+      "normal": 0,
+      "spoofing": 1323,
+      "flooding": 0
+    },
+    "flooding": {
+      "normal": 0,
+      "spoofing": 0,
+      "flooding": 1323
+    }
+  },
+  "accuracy": 0.9998,
+  "macro_f1": 0.9998,
+  "per_class": {
+    "normal": {
+      "precision": 1.0,
+      "recall": 0.9997,
+      "f1": 0.9999,
+      "support": 3969
+    },
+    "spoofing": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 1323
+    },
+    "flooding": {
+      "precision": 0.9992,
+      "recall": 1.0,
+      "f1": 0.9996,
+      "support": 1323
+    }
+  },
+  "window_count": 6615
+}

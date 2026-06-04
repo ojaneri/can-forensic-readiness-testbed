@@ -1,0 +1,10 @@
+spoof_intensity,flood_intensity,runs,mean_total_frames,mean_flood_frames,mean_unique_ids_flooding,mean_unknown_id_ratio_flooding,mean_spoof_speed
+high,high,1,59100,24000,2045,0.998125,225.082
+high,low,1,41100,6000,1942,0.998,224.908
+high,medium,1,47100,12000,2041,0.9975,224.93
+low,high,1,49650,24000,2045,0.997792,155.221
+low,low,1,31650,6000,1923,0.998,155.347
+low,medium,1,37650,12000,2039,0.998333,155.175
+medium,high,1,52800,24000,2045,0.998042,190.036
+medium,low,1,34800,6000,1939,0.997833,190.248
+medium,medium,2,40800,12000,2038.5,0.99825,189.871

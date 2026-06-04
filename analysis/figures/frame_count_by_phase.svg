@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="460" viewBox="0 0 900 460">
+<rect width="100%" height="100%" fill="#f8fafc"/>
+<text x="450.0" y="34" text-anchor="middle" font-family="Arial" font-size="22" font-weight="700">Experiment 006 — Frame Count by Phase</text>
+<line x1="70" y1="390" x2="830" y2="390" stroke="#334155"/>
+<line x1="70" y1="70" x2="70" y2="390" stroke="#334155"/>
+<rect x="103.2" y="83.4" width="123.5" height="306.6" fill="#0369a1" rx="4"/>
+<text x="165.0" y="75.4" text-anchor="middle" font-family="Arial" font-size="13">11157</text>
+<text x="165.0" y="412" text-anchor="middle" font-family="Arial" font-size="13">baseline</text>
+<rect x="293.2" y="218.5" width="123.5" height="171.5" fill="#0369a1" rx="4"/>
+<text x="355.0" y="210.5" text-anchor="middle" font-family="Arial" font-size="13">6240</text>
+<text x="355.0" y="412" text-anchor="middle" font-family="Arial" font-size="13">spoofing</text>
+<rect x="483.2" y="70.0" width="123.5" height="320.0" fill="#0369a1" rx="4"/>
+<text x="545.0" y="62.0" text-anchor="middle" font-family="Arial" font-size="13">11646</text>
+<text x="545.0" y="412" text-anchor="middle" font-family="Arial" font-size="13">flooding</text>
+<rect x="673.2" y="83.4" width="123.5" height="306.6" fill="#0369a1" rx="4"/>
+<text x="735.0" y="75.4" text-anchor="middle" font-family="Arial" font-size="13">11157</text>
+<text x="735.0" y="412" text-anchor="middle" font-family="Arial" font-size="13">recovery</text>
+</svg>

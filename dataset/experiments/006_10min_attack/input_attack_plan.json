@@ -1,0 +1,30 @@
+{
+  "experiment_id": "006_10min_attack_software",
+  "scope": "Authorized 10-minute 100% software CAN attack simulation using python-can virtual backend; no physical vehicle or ECU.",
+  "channel": "ssv2026-attack-10min-virtual-can",
+  "duration_s": 600,
+  "phases": [
+    [
+      "baseline",
+      180.0
+    ],
+    [
+      "spoofing",
+      120.0
+    ],
+    [
+      "flooding",
+      120.0
+    ],
+    [
+      "recovery",
+      180.0
+    ]
+  ],
+  "created_utc": "2026-06-04T00:28:06.928449+00:00",
+  "rates": {
+    "normal_period_s": 0.05,
+    "spoof_period_s": 0.04,
+    "flood_period_s": 0.01
+  }
+}

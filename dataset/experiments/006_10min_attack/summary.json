@@ -1,0 +1,183 @@
+{
+  "total_frames": 40200,
+  "phase_counts": {
+    "baseline": 11157,
+    "spoofing": 6240,
+    "flooding": 11646,
+    "recovery": 11157
+  },
+  "top_arbitration_ids": [
+    [
+      "100",
+      10119
+    ],
+    [
+      "188",
+      10116
+    ],
+    [
+      "120",
+      7446
+    ],
+    [
+      "300",
+      899
+    ],
+    [
+      "50A",
+      16
+    ],
+    [
+      "64",
+      16
+    ],
+    [
+      "4B2",
+      15
+    ],
+    [
+      "391",
+      14
+    ],
+    [
+      "5CB",
+      14
+    ],
+    [
+      "61D",
+      14
+    ],
+    [
+      "5F7",
+      13
+    ],
+    [
+      "13C",
+      13
+    ],
+    [
+      "459",
+      13
+    ],
+    [
+      "52C",
+      13
+    ],
+    [
+      "5C6",
+      13
+    ],
+    [
+      "52E",
+      12
+    ],
+    [
+      "401",
+      12
+    ],
+    [
+      "4EE",
+      12
+    ],
+    [
+      "74F",
+      12
+    ],
+    [
+      "50D",
+      12
+    ]
+  ],
+  "speed_stats_by_phase_for_id_0x100": {
+    "baseline": {
+      "count": 3570,
+      "min": 27.0,
+      "max": 92.0,
+      "mean": 61.04,
+      "stdev": 18.5
+    },
+    "spoofing": {
+      "count": 2971,
+      "min": 180.0,
+      "max": 200.0,
+      "mean": 195.0,
+      "stdev": 8.66
+    },
+    "flooding": {
+      "count": 8,
+      "min": 1192.0,
+      "max": 61453.0,
+      "mean": 27253.38,
+      "stdev": 18982.09
+    },
+    "recovery": {
+      "count": 3570,
+      "min": 27.0,
+      "max": 92.0,
+      "mean": 61.56,
+      "stdev": 18.93
+    }
+  },
+  "payload_entropy_bits_by_phase": {
+    "baseline": 2.9353,
+    "spoofing": 2.4514,
+    "flooding": 7.9978,
+    "recovery": 2.9364
+  },
+  "inter_arrival_time_by_phase": {
+    "baseline": {
+      "count": 11156,
+      "mean_ms": 16.133,
+      "median_ms": 0.067,
+      "min_ms": 0.018,
+      "max_ms": 53.281
+    },
+    "spoofing": {
+      "count": 6239,
+      "mean_ms": 19.232,
+      "median_ms": 0.137,
+      "min_ms": 0.02,
+      "max_ms": 64.113
+    },
+    "flooding": {
+      "count": 11645,
+      "mean_ms": 10.304,
+      "median_ms": 10.288,
+      "min_ms": 10.119,
+      "max_ms": 13.701
+    },
+    "recovery": {
+      "count": 11156,
+      "mean_ms": 16.134,
+      "median_ms": 0.068,
+      "min_ms": 0.018,
+      "max_ms": 53.494
+    }
+  },
+  "id_cardinality_10s_windows": {
+    "baseline": {
+      "windows": 18,
+      "min_unique_ids": 4,
+      "max_unique_ids": 4,
+      "mean_unique_ids": 4
+    },
+    "spoofing": {
+      "windows": 13,
+      "min_unique_ids": 3,
+      "max_unique_ids": 3,
+      "mean_unique_ids": 3
+    },
+    "flooding": {
+      "windows": 13,
+      "min_unique_ids": 6,
+      "max_unique_ids": 788,
+      "mean_unique_ids": 715.62
+    },
+    "recovery": {
+      "windows": 19,
+      "min_unique_ids": 4,
+      "max_unique_ids": 4,
+      "mean_unique_ids": 4
+    }
+  }
+}

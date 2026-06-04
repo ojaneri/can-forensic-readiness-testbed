@@ -1,0 +1,183 @@
+{
+  "total_frames": 2088,
+  "phase_counts": {
+    "baseline": 320,
+    "spoofing": 296,
+    "flooding": 1392,
+    "recovery": 80
+  },
+  "top_arbitration_ids": [
+    [
+      "100",
+      289
+    ],
+    [
+      "188",
+      288
+    ],
+    [
+      "120",
+      100
+    ],
+    [
+      "300",
+      20
+    ],
+    [
+      "799",
+      5
+    ],
+    [
+      "A0",
+      4
+    ],
+    [
+      "683",
+      4
+    ],
+    [
+      "327",
+      4
+    ],
+    [
+      "654",
+      4
+    ],
+    [
+      "346",
+      4
+    ],
+    [
+      "134",
+      4
+    ],
+    [
+      "665",
+      4
+    ],
+    [
+      "180",
+      3
+    ],
+    [
+      "1B7",
+      3
+    ],
+    [
+      "73B",
+      3
+    ],
+    [
+      "299",
+      3
+    ],
+    [
+      "731",
+      3
+    ],
+    [
+      "57B",
+      3
+    ],
+    [
+      "2FB",
+      3
+    ],
+    [
+      "9",
+      3
+    ]
+  ],
+  "speed_stats_by_phase_for_id_0x100": {
+    "baseline": {
+      "count": 100,
+      "min": 40.0,
+      "max": 79.0,
+      "mean": 60.56,
+      "stdev": 14.63
+    },
+    "spoofing": {
+      "count": 148,
+      "min": 200.0,
+      "max": 200.0,
+      "mean": 200.0,
+      "stdev": 0.0
+    },
+    "flooding": {
+      "count": 1,
+      "min": 33859.0,
+      "max": 33859.0,
+      "mean": 33859.0,
+      "stdev": 0.0
+    },
+    "recovery": {
+      "count": 40,
+      "min": 45.0,
+      "max": 59.0,
+      "mean": 50.25,
+      "stdev": 4.46
+    }
+  },
+  "payload_entropy_bits_by_phase": {
+    "baseline": 2.8767,
+    "spoofing": 2.375,
+    "flooding": 7.9828,
+    "recovery": 2.5563
+  },
+  "inter_arrival_time_by_phase": {
+    "baseline": {
+      "count": 319,
+      "mean_ms": 15.648,
+      "median_ms": 0.067,
+      "min_ms": 0.019,
+      "max_ms": 52.049
+    },
+    "spoofing": {
+      "count": 295,
+      "mean_ms": 10.132,
+      "median_ms": 0.19,
+      "min_ms": 0.035,
+      "max_ms": 21.5
+    },
+    "flooding": {
+      "count": 1391,
+      "mean_ms": 2.156,
+      "median_ms": 2.143,
+      "min_ms": 2.091,
+      "max_ms": 4.288
+    },
+    "recovery": {
+      "count": 79,
+      "mean_ms": 24.873,
+      "median_ms": 0.207,
+      "min_ms": 0.038,
+      "max_ms": 51.179
+    }
+  },
+  "id_cardinality_10s_windows": {
+    "baseline": {
+      "windows": 1,
+      "min_unique_ids": 4,
+      "max_unique_ids": 4,
+      "mean_unique_ids": 4
+    },
+    "spoofing": {
+      "windows": 1,
+      "min_unique_ids": 2,
+      "max_unique_ids": 2,
+      "mean_unique_ids": 2
+    },
+    "flooding": {
+      "windows": 2,
+      "min_unique_ids": 432,
+      "max_unique_ids": 732,
+      "mean_unique_ids": 582
+    },
+    "recovery": {
+      "windows": 1,
+      "min_unique_ids": 2,
+      "max_unique_ids": 2,
+      "mean_unique_ids": 2
+    }
+  }
+}

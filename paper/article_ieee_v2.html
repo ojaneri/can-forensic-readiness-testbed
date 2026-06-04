@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>A Software-Defined Low-Cost CAN Testbed for Automotive Cybersecurity Education and Forensic-Readiness Analysis</title>
+<style>
+@page { size: A4; margin: 19mm 13mm 25mm 13mm; }
+* { box-sizing: border-box; }
+body { margin:0; background:#e5e7eb; color:#000; font-family:"Times New Roman", Times, serif; font-size:10pt; line-height:1.16; }
+.print-toolbar { position:sticky; top:0; z-index:20; padding:10px 14px; background:#0f172a; color:#fff; font-family:Arial,sans-serif; font-size:14px; display:flex; gap:10px; align-items:center; justify-content:center; }
+.print-toolbar button { border:0; border-radius:6px; padding:8px 12px; background:#38bdf8; color:#082f49; font-weight:700; cursor:pointer; }
+.page { width:210mm; min-height:297mm; margin:16px auto; background:#fff; box-shadow:0 10px 30px rgba(0,0,0,.18); }
+.header { text-align:center; padding-top:4mm; margin-bottom:7pt; }
+h1.title { font-size:23pt; line-height:1.05; font-weight:400; margin:0 0 10pt; }
+.authors { font-size:10pt; line-height:1.22; margin-bottom:4pt; }
+.note { font-size:8pt; color:#333; margin-top:3pt; }
+.abstract-keywords { margin:0 0 8pt; font-size:10pt; line-height:1.16; }
+.abstract-keywords p { margin:0 0 4pt; text-align:justify; }
+.abstract-keywords b { font-style:italic; }
+.columns { column-count:2; column-gap:6mm; column-fill:auto; }
+h2 { font-size:10pt; text-transform:uppercase; text-align:center; font-weight:400; margin:8pt 0 4pt; break-after:avoid; }
+h3 { font-size:10pt; font-style:italic; font-weight:400; margin:6pt 0 3pt; break-after:avoid; }
+p { margin:0 0 4.6pt; text-align:justify; hyphens:auto; }
+ul,ol { margin:0 0 5pt 14pt; padding:0; }
+li { margin:0 0 2pt; text-align:justify; }
+figure { margin:6pt 0; break-inside:avoid; text-align:center; }
+figure img { max-width:100%; height:auto; border:0; }
+figcaption { font-size:8.4pt; line-height:1.1; text-align:justify; margin-top:2pt; }
+table { width:100%; border-collapse:collapse; margin:5pt 0; font-size:7.9pt; break-inside:avoid; }
+th,td { border:0.5pt solid #333; padding:2pt 2.5pt; vertical-align:top; }
+th { font-weight:700; text-align:center; background:#f2f2f2; }
+td.num { text-align:right; white-space:nowrap; }
+.table-caption { font-size:8.3pt; text-align:center; margin:5pt 0 2pt; }
+code { font-family:"Courier New", monospace; font-size:8.5pt; }
+.refs { font-size:8.2pt; line-height:1.1; }
+.refs p { margin-left:13pt; text-indent:-13pt; text-align:left; }
+.wide { column-span:all; break-inside:avoid; margin:7pt 0 9pt; }
+.wide img { max-height:61mm; }
+.small { font-size:8.2pt; }
+@media print { body{background:#fff}.print-toolbar{display:none}.page{width:auto;min-height:auto;margin:0;box-shadow:none}a{color:#000;text-decoration:none} }
+</style>
+</head>
+<body>
+<div class="print-toolbar"><span>Revised IEEE-style HTML v2. Use Print → Save as PDF. For final submission, port to IEEEtran LaTeX.</span><button onclick="window.print()">Print / Save PDF</button></div>
+<main class="page"><article>
+<header class="header">
+<h1 class="title">A Software-Defined Low-Cost CAN Testbed for Automotive Cybersecurity Education and Forensic-Readiness Analysis</h1>
+<div class="authors">Osvaldo Janeri Filho<br>Independent Researcher / Digital Forensics Practitioner<br>Fortaleza, Ceará, Brazil<br><span class="small">Email omitted for blind or camera-ready submission</span></div>
+<div class="note">Revised draft for SSV 2026 / SBESC 2026. HTML preview follows IEEE conference-style typography; final submission should be ported to the official IEEE template.</div>
+</header>
+<div class="abstract-keywords">
+<p><b>Abstract—</b>Modern vehicles rely on distributed electronic control units connected through in-vehicle networks such as the Controller Area Network (CAN), whose legacy design lacks native authentication and message-origin verification. However, realistic automotive cybersecurity experimentation remains difficult for classrooms, small laboratories, and forensic practitioners because vehicles, documented ECUs, and commercial hardware-in-the-loop platforms can be costly or unsafe to operate. This paper presents a software-defined, low-cost CAN testbed for automotive cybersecurity education and forensic-readiness analysis. The artifact combines virtual CAN traffic generation, controlled spoofing and flooding scenarios, normalized datasets, evidence manifests, SHA-256 hash preservation, and a client-side observer demo. Two software-only experiments generated a combined dataset of 42,288 labeled CAN frames, including a 10-minute run with 40,200 frames. A rule-based triage heuristic is used only as a label-consistency and forensic-screening sanity check, not as a real-vehicle intrusion detection benchmark. The revised contribution is therefore an evidence-preserving educational workflow rather than a claim of physical CAN fidelity or operational IDS performance.</p>
+<p><b>Index Terms—</b>automotive cybersecurity, CAN bus, forensic readiness, testbed, virtual CAN, reproducibility, cybersecurity education.</p>
+</div>
+<div class="columns">
+<section><h2>I. Introduction</h2>
+<p>CAN remains widely deployed in production and legacy vehicles. Its design prioritizes robustness, timing, and low cost, but does not provide native authentication, confidentiality, or strong sender verification. Once an adversary or analyst reaches a CAN segment, receivers typically process frames according to identifiers and payload semantics rather than authenticated origin.</p>
+<p>Automotive cybersecurity research has produced physical benches, HIL platforms, public datasets, and intrusion detection systems. Yet these assets are not equally accessible to resource-constrained education and forensic environments. Real vehicles can be expensive and unsafe to manipulate; used ECUs may require proprietary pinouts, immobilizer pairing, and careful bench powering; commercial HIL systems may exceed classroom budgets.</p>
+<p>This paper addresses the early-stage training and forensic-readiness gap by presenting a software-defined CAN testbed. The goal is not to reproduce all physical properties of CAN or to benchmark operational IDS performance. Instead, the goal is to provide a reproducible, safe, evidence-preserving workflow for teaching CAN attacks, generating labeled traces, preserving artifacts, and performing preliminary triage.</p>
+<p>The contributions are: (i) a low-cost software-defined CAN testbed architecture; (ii) controlled baseline, spoofing, flooding, and recovery scenarios; (iii) an evidence workflow with input plans, raw logs, normalized CSV files, manifests, and SHA-256 hashes; (iv) an English dataset package with 42,288 labeled frames; and (v) an observer-safe client-side demo plus a rule-based triage sanity check.</p></section>
+<section><h2>II. Background and Related Work</h2>
+<p>Classic automotive security studies demonstrated that in-vehicle networks can be manipulated once attackers obtain access to relevant interfaces [1]–[3]. Subsequent work surveyed CAN security challenges, including replay, message fabrication, bus availability, and proprietary signal interpretation [4], [5]. Automotive standards such as ISO/SAE 21434 and UNECE R155 provide cybersecurity engineering and management context [15], [16].</p>
+<p>Testbeds range from software simulators to benches with commercial off-the-shelf ECUs. ICSim provides a visual CAN training environment; Caring Caribou supports CAN and diagnostic exploration; VitroBench and CANBench represent more physical bench-oriented approaches [6]–[9]. Public datasets such as ROAD and can-train-and-test support IDS research and provide realistic traces, but they are not designed as full forensic-readiness workflows [10]–[12].</p>
+<p>The gap targeted here is the intersection of software-only reproducibility, low cost, explicit evidence preservation, safe demonstration, and educational use. Table I positions the proposed artifact against representative tools and datasets.</p>
+<div class="table-caption"><b>Table I</b><br>Positioning Against Related Artifacts</div>
+<table><thead><tr><th>Artifact</th><th>Software-only</th><th>Dataset</th><th>Evidence manifest</th><th>Safe demo</th><th>HIL</th></tr></thead><tbody>
+<tr><td>ICSim</td><td>Yes</td><td>No</td><td>No</td><td>Partial</td><td>No</td></tr>
+<tr><td>Caring Caribou</td><td>Partial</td><td>No</td><td>No</td><td>No</td><td>Yes</td></tr>
+<tr><td>ROAD / can-train</td><td>N/A</td><td>Yes</td><td>No</td><td>No</td><td>Logs/vehicle</td></tr>
+<tr><td>VitroBench / CANBench</td><td>No</td><td>Limited</td><td>Limited</td><td>No</td><td>Yes</td></tr>
+<tr><td>Proposed</td><td>Yes</td><td>Yes</td><td>Yes</td><td>Yes</td><td>Future</td></tr>
+</tbody></table>
+</section>
+<figure class="wide"><img src="../analysis/figures/testbed_architecture.svg" alt="Software-defined CAN testbed architecture"><figcaption><b>Fig. 1.</b> Software-defined CAN testbed architecture. The current artifact emphasizes reproducible virtual experiments, evidence preservation, and observer-safe replay rather than physical CAN fidelity.</figcaption></figure>
+<section><h2>III. Testbed and Evidence Workflow</h2>
+<h3>A. Architecture</h3><p>The bus layer uses the <code>python-can</code> virtual backend and can be migrated to SocketCAN/<code>vcan</code>. Simulated ECUs generate periodic engine/cluster, body, display, and background frames. Attack modules inject fabricated state or randomized high-cardinality traffic. The logger stores raw annotated CAN-style logs and normalized CSV files.</p>
+<h3>B. Forensic-Readiness Mapping</h3><p>The artifact treats each experiment as an evidence package. Table II maps forensic-readiness requirements to implemented artifacts while explicitly stating boundaries.</p>
+<div class="table-caption"><b>Table II</b><br>Forensic-Readiness Mapping</div>
+<table><thead><tr><th>Requirement</th><th>Artifact</th><th>Boundary</th></tr></thead><tbody>
+<tr><td>Traceability</td><td>Input plan</td><td>Synthetic scenario</td></tr>
+<tr><td>Integrity</td><td>SHA-256 manifest</td><td>File-level integrity</td></tr>
+<tr><td>Repeatability</td><td>Script + seed</td><td>Virtual behavior</td></tr>
+<tr><td>Normalization</td><td>CSV + dictionary</td><td>Didactic semantics</td></tr>
+<tr><td>Reviewability</td><td>Index + demo</td><td>Replay only</td></tr>
+</tbody></table>
+<h3>C. Safety Boundary</h3><p>All reported experiments are authorized and software-only. No vehicle, ECU, CAN adapter, external network, or operational system was targeted. The observer demo replays stored artifacts and does not execute live attacks.</p></section>
+<section><h2>IV. Experimental Methodology</h2>
+<p>Experiments contain four phases: baseline, spoofing, flooding, and recovery. Baseline and recovery generate normal periodic traffic. Spoofing fabricates didactic vehicle state on ID <code>0x100</code>. Flooding injects randomized identifiers and payloads to create high-cardinality noise.</p>
+<div class="table-caption"><b>Table III</b><br>Reproducibility Details for Experiment 006</div>
+<table><tbody>
+<tr><th>Backend</th><td><code>python-can</code> virtual</td><th>Python</th><td>3.12.3</td></tr>
+<tr><th>python-can</th><td>4.6.1</td><th>Seed</th><td>2026060310</td></tr>
+<tr><th>Channel</th><td colspan="3"><code>ssv2026-attack-10min-virtual-can</code></td></tr>
+<tr><th>Duration</th><td>600.06 s</td><th>Phases</th><td>180/120/120/180 s</td></tr>
+<tr><th>Rates</th><td colspan="3">normal 0.05 s, spoof 0.04 s, flood 0.01 s</td></tr>
+<tr><th>Validation</th><td colspan="3"><code>dataset/scripts/validate_hashes.py</code></td></tr>
+</tbody></table>
+<p>Experiment 005 is a short proof-of-concept. Experiment 006 is a 10-minute statistical run. The combined dataset contains 42,288 normalized frames. Experiment 006 generated 40,200 frames over 600.06 seconds.</p>
+<div class="table-caption"><b>Table IV</b><br>Frame Count by Phase in Experiment 006</div>
+<table><thead><tr><th>Phase</th><th>Frames</th><th>Purpose</th></tr></thead><tbody>
+<tr><td>Baseline</td><td class="num">11,157</td><td>Normal simulated traffic</td></tr><tr><td>Spoofing</td><td class="num">6,240</td><td>Fabricated speed/state</td></tr><tr><td>Flooding</td><td class="num">11,646</td><td>High-cardinality noise</td></tr><tr><td>Recovery</td><td class="num">11,157</td><td>Return to normal traffic</td></tr>
+</tbody></table></section>
+<section><h2>V. Results</h2>
+<p>The most frequent IDs in the combined dataset are <code>0x100</code>, <code>0x188</code>, <code>0x120</code>, and <code>0x300</code>, representing stable simulated traffic. Flooding adds many low-count randomized IDs, increasing diversity. Payload entropy is approximately 2.94 bits during baseline/recovery and 7.998 bits during flooding. Inter-arrival metrics were recomputed separately and are not used as primary evidence because cross-experiment aggregation can introduce discontinuities.</p>
+<p>In Experiment 006, speed on ID <code>0x100</code> ranged from 27 to 92 km/h during baseline, with mean 61.04 km/h. Spoofing produced 180–200 km/h values, mean 195.00 km/h. Recovery returned to a normal range with mean 61.56 km/h.</p>
+<figure><img src="../analysis/figures/decoded_speed_id_0x100.svg" alt="Decoded speed"><figcaption><b>Fig. 2.</b> Decoded speed on ID <code>0x100</code>. The spoofing interval is visible as a didactic high-speed fabrication.</figcaption></figure>
+<figure><img src="../analysis/figures/id_cardinality_10s.svg" alt="ID cardinality"><figcaption><b>Fig. 3.</b> Unique arbitration IDs per 10-second window. Flooding increases ID diversity relative to stable phases.</figcaption></figure>
+</section>
+<section><h2>VI. Triage Sanity Check</h2>
+<p>A rule-based heuristic was evaluated only as a forensic triage sanity check. It is not presented as an IDS benchmark. The rules classify flooding using high ID cardinality or unknown-ID ratio, spoofing using decoded speed above 130 km/h on ID <code>0x100</code>, and other windows as normal. Because these rules align with the didactic generation process, high performance indicates label consistency rather than real-world robustness.</p>
+<p>Across 615 windows, the heuristic achieved 0.9984 accuracy and 0.9982 macro-F1. The confusion matrix was: normal 368/369 correctly classified, spoofing 123/123, and flooding 123/123. One normal window was flagged as flooding.</p>
+<div class="table-caption"><b>Table V</b><br>Rule-Based Triage Sanity-Check Matrix</div>
+<table><thead><tr><th>Expected</th><th>Normal</th><th>Spoofing</th><th>Flooding</th></tr></thead><tbody>
+<tr><td>Normal</td><td class="num">368</td><td class="num">0</td><td class="num">1</td></tr><tr><td>Spoofing</td><td class="num">0</td><td class="num">123</td><td class="num">0</td></tr><tr><td>Flooding</td><td class="num">0</td><td class="num">0</td><td class="num">123</td></tr>
+</tbody></table></section>
+<section><h2>VII. Discussion</h2>
+<p>The artifact is strongest as a reproducible educational and forensic-readiness package. A reader can inspect the attack plan, regenerate or replay traces, validate hashes, read a data dictionary, and inspect a safe client-side demo. This combination differentiates the work from a simple simulator or detector script.</p>
+<p>The main trade-off is fidelity. Physical benches and real datasets provide stronger realism, while the proposed testbed provides lower cost, safety, and transparent semantics. The intended path is incremental: software-only learning first, then SocketCAN/<code>vcan</code>, ICSim/Caring Caribou integration, and finally hardware-in-the-loop with used clusters or legacy ECUs.</p></section>
+<section><h2>VIII. Limitations</h2>
+<p>The dataset is synthetic and generated by the same framework that defines labels. It does not model physical CAN arbitration, electrical noise, transceiver errors, termination, bus-off behavior, gateway filtering, ECU timing constraints, or OEM signal accuracy. The rule-based heuristic is deliberately simple and should not be treated as operational IDS evidence. The current HTML follows IEEE-style layout for preview; final submission should be ported to the official IEEEtran LaTeX or IEEE conference template.</p></section>
+<section><h2>IX. Conclusion</h2>
+<p>This paper presented a software-defined low-cost CAN testbed for automotive cybersecurity education and forensic-readiness analysis. The artifact generates labeled CAN traffic, preserves evidence using manifests and hashes, provides normalized datasets and analysis scripts, and supports observer-safe replay. The revised framing avoids overclaiming detection or physical realism and emphasizes reproducible, low-cost, evidence-aware learning. Future work will add external traffic sources such as ICSim or public dataset replay and then progress toward SocketCAN hardware and legacy ECU benches.</p></section>
+<section><h2>Artifact Availability</h2><p>The current project index includes the paper draft, dataset, figures, scripts, experiments, and observer demo. For public submission, this internal URL should be replaced by a GitHub or Zenodo archive with a stable DOI.</p></section>
+<section><h2>References</h2><div class="refs">
+<p>[1] K. Koscher et al., “Experimental security analysis of a modern automobile,” in Proc. IEEE Symposium on Security and Privacy, 2010.</p>
+<p>[2] S. Checkoway et al., “Comprehensive experimental analyses of automotive attack surfaces,” in Proc. USENIX Security Symposium, 2011.</p>
+<p>[3] C. Miller and C. Valasek, “Remote exploitation of an unaltered passenger vehicle,” Black Hat USA, 2015.</p>
+<p>[4] M. Bozdal, M. Samie, S. Aslam, and I. Jennions, “Evaluation of CAN bus security challenges,” Sensors, vol. 20, no. 8, 2020.</p>
+<p>[5] M. Marchetti and D. Stabili, “READ: Reverse engineering of automotive data frames,” IEEE, 2018.</p>
+<p>[6] C. Craig Smith, The Car Hacker’s Handbook. No Starch Press, 2016.</p>
+<p>[7] “VitroBench: Manipulating in-vehicle networks and COTS ECUs on your table,” Vehicular Communications, vol. 43, 2023.</p>
+<p>[8] “A CAN bus security testbed framework for automotive cyber-physical systems,” 2022, doi: 10.1155/2022/7176194.</p>
+<p>[9] “CANBench: Development and evaluation of CANBench,” Brigham Young University ScholarsArchive.</p>
+<p>[10] S. Verma et al., “A comprehensive guide to CAN IDS data and introduction of the ROAD dataset,” PLOS ONE, 2024.</p>
+<p>[11] “can-train-and-test: A curated CAN dataset for automotive intrusion detection,” Computers &amp; Security, 2024.</p>
+<p>[12] “can-sleuth: Investigating and evaluating automotive intrusion detection datasets,” ACM, 2024.</p>
+<p>[13] ISO/SAE 21434, “Road vehicles — Cybersecurity engineering,” ISO, 2021.</p>
+<p>[14] UNECE, “UN Regulation No. 155 — Cyber Security and Cyber Security Management System.”</p>
+</div></section>
+</div></article></main></body></html>

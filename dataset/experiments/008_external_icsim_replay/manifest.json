@@ -1,0 +1,35 @@
+{
+  "schema": "software-defined-can-testbed.external-source.v1",
+  "experiment_id": "008_external_icsim_replay",
+  "created_utc": "2026-06-04T09:55:55.299143+00:00",
+  "files": {
+    "ICSim_LICENSE": {
+      "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+      "bytes": 35149
+    },
+    "external_source_metadata.json": {
+      "sha256": "fd017c5ec9a4e329de890d6f7a20b27ecd66c5ef449348384611b180a0ff3001",
+      "bytes": 327
+    },
+    "findings.md": {
+      "sha256": "d95ba47e644e1130359910caacc2ea25fb2514e5a3ffaba4731a18bf2e8a33d4",
+      "bytes": 1730
+    },
+    "frames_normalized.csv": {
+      "sha256": "f200538209de7de0572fc7015068f864ef22f0de4ac5c463281b75487df83cba",
+      "bytes": 1368154
+    },
+    "index.html": {
+      "sha256": "75e7613c7995b6851741990bd7e27d463d27802b00bdfc6e5f5add7e0c8ec953",
+      "bytes": 1966
+    },
+    "raw_icsim_sample-can.log": {
+      "sha256": "6fbaf2f78e4d9eef30cafc8c39c837390ae9534771cd3cb74768d4594641270c",
+      "bytes": 266264
+    },
+    "summary.json": {
+      "sha256": "785aa499920984818b5ed672a573f7c772cfc4f1364d8a8cb8abd10170aff75b",
+      "bytes": 2130
+    }
+  }
+}

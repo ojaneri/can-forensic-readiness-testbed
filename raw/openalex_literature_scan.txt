@@ -1,0 +1,654 @@
+OpenAlex literature scan
+Generated: 2026-06-03T20:58:25.129966
+
+
+### QUERY: automotive cybersecurity testbed CAN bus ECU
+status: 200 url: https://api.openalex.org/works?search=automotive%20cybersecurity%20testbed%20CAN%20bus%20ECU&per-page=10&sort=relevance_score:desc
+
+1. CAN Bus Message Authentication via Co-Channel RF Watermark
+   year: 2022
+   type: article
+   venue: IEEE Transactions on Vehicular Technology
+   doi: https://doi.org/10.1109/tvt.2022.3143708
+   url: https://doi.org/10.1109/tvt.2022.3143708
+   authors: Alan J. Michaels, Venkata Sai Srikar Palukuru, Michael Fletcher, Christopher Henshaw, Steven Williams, Thomas Krauss, James Lawlis, John M. Moore
+   concepts: Transceiver, Testbed, Computer science, CAN bus, Embedded system, Message authentication code
+
+2. In-Vehicle Communication Cyber Security: Challenges and Solutions
+   year: 2022
+   type: review
+   venue: Sensors
+   doi: https://doi.org/10.3390/s22176679
+   url: https://doi.org/10.3390/s22176679
+   authors: Rajkumar Singh Rathore, Chaminda Hewage, Omprakash Kaiwartya, Jaime Lloret
+   concepts: Computer security, Communications protocol, Vehicular communication systems, Context (archaeology), Computer science, Secure communication
+
+3. A Survey of the Connected Vehicle Landscape—Architectures, Enabling Technologies, Applications, and Development Areas
+   year: 2017
+   type: article
+   venue: IEEE Transactions on Intelligent Transportation Systems
+   doi: https://doi.org/10.1109/tits.2017.2749459
+   url: https://doi.org/10.1109/tits.2017.2749459
+   authors: Joshua Siegel, Dylan C. Erb, Sanjay E. Sarma
+   concepts: Software deployment, Key (lock), Scalability, Computer science, Emerging technologies, Systems engineering
+
+4. Attacks to Automatous Vehicles: A Deep Learning Algorithm for Cybersecurity
+   year: 2022
+   type: article
+   venue: Sensors
+   doi: https://doi.org/10.3390/s22010360
+   url: https://doi.org/10.3390/s22010360
+   authors: Theyazn H. H. Aldhyani, Hasan Alkahtani
+   concepts: Computer science, Deep learning, Intrusion detection system, Network packet, Artificial neural network, CAN bus
+
+5. Cyber–Physical Security of Powertrain Systems in Modern Electric Vehicles: Vulnerabilities, Challenges, and Future Visions
+   year: 2020
+   type: article
+   venue: IEEE Journal of Emerging and Selected Topics in Power Electronics
+   doi: https://doi.org/10.1109/jestpe.2020.3045667
+   url: https://doi.org/10.1109/jestpe.2020.3045667
+   authors: Jin Ye, Lulu Guo, Bowen Yang, Fangyu Li, Liang Du, Le Guan, Wen‐Zhan Song
+   concepts: Powertrain, Vision, Cyber-physical system, Computer security, Computer science, Systems engineering
+
+6. CANnolo: An Anomaly Detection System Based on LSTM Autoencoders for Controller Area Network
+   year: 2020
+   type: article
+   venue: IEEE Transactions on Network and Service Management
+   doi: https://doi.org/10.1109/tnsm.2020.3038991
+   url: https://doi.org/10.1109/tnsm.2020.3038991
+   authors: Stefano Longari, Daniel Humberto Nova Valcarcel, Mattia Zago, Michele Carminati, Stefano Zanero
+   concepts: Computer science, Intrusion detection system, Anomaly detection, Artificial intelligence, Automotive industry, Controller (irrigation)
+
+7. A Survey of Autonomous Vehicles: Enabling Communication Technologies and Challenges
+   year: 2021
+   type: review
+   venue: Sensors
+   doi: https://doi.org/10.3390/s21030706
+   url: https://doi.org/10.3390/s21030706
+   authors: Mohammad Nadeem Ahangar, Qasim Zeeshan Ahmed, Fahd Ahmed Khan, Maryam Hafeez
+   concepts: Dedicated short-range communications, Bluetooth, Telecommunications, Computer science, Range (aeronautics), Vehicular communication systems
+
+8. Deep Learning in the Fast Lane: A Survey on Advanced Intrusion Detection Systems for Intelligent Vehicle Networks
+   year: 2024
+   type: article
+   venue: IEEE Open Journal of Vehicular Technology
+   doi: https://doi.org/10.1109/ojvt.2024.3422253
+   url: https://doi.org/10.1109/ojvt.2024.3422253
+   authors: Mohammed Almehdhar, Abdullatif Albaseer, Muhammad Asif Khan, Mohamed Abdallah, Hamid Menouar, Saif Al‐Kuwari, Ala Al‐Fuqaha
+   concepts: Computer science, Intrusion detection system, Anomaly detection, Denial-of-service attack, Adaptability, Deep learning
+
+9. FL-IDS: Federated Learning-Based Intrusion Detection System Using Edge Devices for Transportation IoT
+   year: 2024
+   type: article
+   venue: IEEE Access
+   doi: https://doi.org/10.1109/access.2024.3386631
+   url: https://doi.org/10.1109/access.2024.3386631
+   authors: Mansi Bhavsar, Yohannes B. Bekele, Kaushik Roy, John Kelly, Daniel B. Limbrick
+   concepts: Computer science, Internet of Things, Intrusion detection system, Edge computing, Enhanced Data Rates for GSM Evolution, Computer security
+
+10. Cybersecurity in Automotive: An Intrusion Detection System in Connected Vehicles
+   year: 2021
+   type: article
+   venue: Electronics
+   doi: https://doi.org/10.3390/electronics10151765
+   url: https://doi.org/10.3390/electronics10151765
+   authors: Francesco Pascale, Ennio Andrea Adinolfi, Simone Coppola, Emanuele Santonicola
+   concepts: Automotive industry, Intrusion detection system, Computer science, Computer security, Event (particle physics), CAN bus
+
+### QUERY: CAN bus security testbed automotive cyber physical systems
+status: 200 url: https://api.openalex.org/works?search=CAN%20bus%20security%20testbed%20automotive%20cyber%20physical%20systems&per-page=10&sort=relevance_score:desc
+
+1. A CAN Bus Security Testbed Framework for Automotive Cyber‐Physical Systems
+   year: 2022
+   type: article
+   venue: Wireless Communications and Mobile Computing
+   doi: https://doi.org/10.1155/2022/7176194
+   url: https://doi.org/10.1155/2022/7176194
+   authors: Dongxian Shi, Liang Kou, Chaobin Huo, Ting Wu
+   concepts: Testbed, Computer science, Timestamp, CAN bus, Automotive industry, Computer security
+
+2. Internet of Things (IoT): A vision, architectural elements, and future directions
+   year: 2013
+   type: article
+   venue: Future Generation Computer Systems
+   doi: https://doi.org/10.1016/j.future.2013.01.010
+   url: https://doi.org/10.1016/j.future.2013.01.010
+   authors: Jayavardhana Gubbi, Rajkumar Buyya, Slaven Marusic, Marimuthu Palaniswami
+   concepts: Computer science, Internet of Things, The Internet, Multimedia, World Wide Web, Human–computer interaction
+
+3. Digital Twin: Enabling Technologies, Challenges and Open Research
+   year: 2020
+   type: article
+   venue: IEEE Access
+   doi: https://doi.org/10.1109/access.2020.2998358
+   url: https://doi.org/10.1109/access.2020.2998358
+   authors: Aidan Fuller, Zhong Fan, Charles Day, Chris Barlow
+   concepts: Computer science, Open research, World Wide Web
+
+4. Integrated Sensing and Communications: Toward Dual-Functional Wireless Networks for 6G and Beyond
+   year: 2022
+   type: article
+   venue: IEEE Journal on Selected Areas in Communications
+   doi: https://doi.org/10.1109/jsac.2022.3156632
+   url: https://doi.org/10.1109/jsac.2022.3156632
+   authors: Fan Liu, Yuanhao Cui, Christos Masouros, Jie Xu, Tony Xiao Han, Yonina C. Eldar, Stefano Buzzi
+   concepts: Computer science, Standardization, Physical layer, Telecommunications, Key (lock), Wireless
+
+5. Covert Channel-Based Transmitter Authentication in Controller Area Networks
+   year: 2021
+   type: article
+   venue: IEEE Transactions on Dependable and Secure Computing
+   doi: https://doi.org/10.1109/tdsc.2021.3068213
+   url: https://doi.org/10.1109/tdsc.2021.3068213
+   authors: Xuhang Ying, Giuseppe Bernieri, Mauro Conti, Linda Bushnell, Radha Poovendran
+   concepts: Computer science, Authentication (law), Computer network, Covert channel, Encryption, Testbed
+
+6. On Multi-Access Edge Computing: A Survey of the Emerging 5G Network Edge Cloud Architecture and Orchestration
+   year: 2017
+   type: article
+   venue: IEEE Communications Surveys & Tutorials
+   doi: https://doi.org/10.1109/comst.2017.2705720
+   url: https://doi.org/10.1109/comst.2017.2705720
+   authors: Tarik Taleb, Konstantinos Samdanis, Badr Eddine Mada, Hannu Flinck, Sunny Dutta, Dario Sabella
+   concepts: Orchestration, Cloud computing, Computer science, Backhaul (telecommunications), Edge computing, Core network
+
+7. Digital Twin Technology Challenges and Applications: A Comprehensive Review
+   year: 2022
+   type: review
+   venue: Remote Sensing
+   doi: https://doi.org/10.3390/rs14061335
+   url: https://doi.org/10.3390/rs14061335
+   authors: Diego M. Botín-Sanabria, Adriana‐Simona Mihăiţă, Rodrigo E. Peimbert-García, Mauricio A. Ramírez-Moreno, Ricardo A. Ramírez-Mendoza, Jorge de J. Lozoya-Santos
+   concepts: Enabling, Computer science, Systems engineering, Key (lock), Process (computing), Automotive industry
+
+8. Toward Scalable Systems for Big Data Analytics: A Technology Tutorial
+   year: 2014
+   type: article
+   venue: IEEE Access
+   doi: https://doi.org/10.1109/access.2014.2332453
+   url: https://doi.org/10.1109/access.2014.2332453
+   authors: Han Hu, Yonggang Wen, Tat‐Seng Chua, Xuelong Li
+   concepts: Big data, Data science, Computer science, Scalability, Analytics, Unstructured data
+
+9. Sensor and Sensor Fusion Technology in Autonomous Vehicles: A Review
+   year: 2021
+   type: review
+   venue: Sensors
+   doi: https://doi.org/10.3390/s21062140
+   url: https://doi.org/10.3390/s21062140
+   authors: De Jong Yeong, Gustavo Velasco-Hernandez, John M. Barry, J. L. Walsh
+   concepts: Sensor fusion, Obstacle, Computer science, Real-time computing, Lidar, Intelligent sensor
+
+10. Wireless Communication Technologies for Safe Cooperative Cyber Physical Systems
+   year: 2018
+   type: article
+   venue: Sensors
+   doi: https://doi.org/10.3390/s18114075
+   url: https://doi.org/10.3390/s18114075
+   authors: Ali Balador, Anis Kouba, Dajana Cassioli, Fotis Foukalas, Ricardo Severino, Daria Stepanova, Giovanni Agosta, Jing Xie
+   concepts: Standardization, Wireless, Computer science, Reliability (semiconductor), Cyber-physical system, Risk analysis (engineering)
+
+### QUERY: automotive digital forensics CAN bus
+status: 200 url: https://api.openalex.org/works?search=automotive%20digital%20forensics%20CAN%20bus&per-page=10&sort=relevance_score:desc
+
+1. On the Feasibility of Carrying Out Live Real-Time Forensics for Modern Intelligent Vehicles
+   year: 2011
+   type: book-chapter
+   venue: Lecture notes of the Institute for Computer Sciences, Social Informatics and Telecommunications Engineering
+   doi: https://doi.org/10.1007/978-3-642-23602-0_20
+   url: https://doi.org/10.1007/978-3-642-23602-0_20
+   authors: Saif Al‐Kuwari, Stephen D. Wolthusen
+   concepts: Computer science, Computer security
+
+2. Joint Optimization of Radio and Computational Resources for Multicell Mobile-Edge Computing
+   year: 2015
+   type: article
+   venue: IEEE Transactions on Signal and Information Processing over Networks
+   doi: https://doi.org/10.1109/tsipn.2015.2448520
+   url: https://doi.org/10.1109/tsipn.2015.2448520
+   authors: Stefania Sardellitti, Gesualdo Scutari, Sergio Barbarossa
+   concepts: Computer science, Cloud computing, Mobile edge computing, Optimization problem, Server, Distributed computing
+
+3. Cyber Threats Facing Autonomous and Connected Vehicles: Future Challenges
+   year: 2017
+   type: article
+   venue: IEEE Transactions on Intelligent Transportation Systems
+   doi: https://doi.org/10.1109/tits.2017.2665968
+   url: https://doi.org/10.1109/tits.2017.2665968
+   authors: Simon Parkinson, Paul Ward, Kyle Wilson, J. Miller
+   concepts: Hacker, Computer security, Adversary, Cyber-attack, Automation, Attack surface
+
+4. Cybersecurity challenges in vehicular communications
+   year: 2019
+   type: article
+   venue: Vehicular Communications
+   doi: https://doi.org/10.1016/j.vehcom.2019.100214
+   url: https://doi.org/10.1016/j.vehcom.2019.100214
+   authors: Zeinab El-Rewini, Karthikeyan Sadatsharan, Daisy Flora Selvaraj, Siby Jose Plathottam, Prakash Ranganathan
+   concepts: Spoofing attack, Eavesdropping, Computer science, Computer security, Jamming, Vehicular communication systems
+
+5. Machine Learning for Anomaly Detection: A Systematic Review
+   year: 2021
+   type: review
+   venue: IEEE Access
+   doi: https://doi.org/10.1109/access.2021.3083060
+   url: https://doi.org/10.1109/access.2021.3083060
+   authors: Ali Bou Nassif, Manar Abu Talib, Qassim Nasir, Fatima Dakalbab
+   concepts: Anomaly detection, Computer science, Artificial intelligence, Machine learning
+
+6. The Role of 5G Technologies: Challenges in Smart Cities and Intelligent Transportation Systems
+   year: 2020
+   type: article
+   venue: Sustainability
+   doi: https://doi.org/10.3390/su12166469
+   url: https://doi.org/10.3390/su12166469
+   authors: Leonardo Guevara, Fernando Auat Cheein
+   concepts: Enabling, Intelligent transportation system, Internet of Things, Key (lock), Smart city, Telecommunications
+
+7. Survey on 6G Frontiers: Trends, Applications, Requirements, Technologies and Future Research
+   year: 2021
+   type: article
+   venue: IEEE Open Journal of the Communications Society
+   doi: https://doi.org/10.1109/ojcoms.2021.3071496
+   url: https://doi.org/10.1109/ojcoms.2021.3071496
+   authors: Chamitha de Alwis, Anshuman Kalla, Quoc‐Viet Pham, Pardeep Kumar, Kapal Dev, Won‐Joo Hwang, Madhusanka Liyanage
+   concepts: Standardization, Computer science, Telecommunications, Emerging technologies, Key (lock), The Internet
+
+8. Connected and Automated Vehicles: Infrastructure, Applications, Security, Critical Challenges, and Future Aspects
+   year: 2023
+   type: article
+   venue: Technologies
+   doi: https://doi.org/10.3390/technologies11050117
+   url: https://doi.org/10.3390/technologies11050117
+   authors: Memoona Sadaf, Zafar Iqbal, Abdul Rehman Javed, Irum Saba, Moez Krichen, Sajid Majeed, Arooj Raza
+   concepts: SAFER, Computer security, Context (archaeology), Computer science, Cloud computing, Authentication (law)
+
+9. Cybersecurity of Smart Electric Vehicle Charging: A Power Grid Perspective
+   year: 2020
+   type: article
+   venue: IEEE Access
+   doi: https://doi.org/10.1109/access.2020.3041074
+   url: https://doi.org/10.1109/access.2020.3041074
+   authors: Samrat Acharya, Yury Dvorkin, Hrvoje Pandžić, Ramesh Karri
+   concepts: Smart grid, Electric vehicle, Perspective (graphical), Power grid, Computer science, Electrical engineering
+
+10. AI-Based Intrusion Detection Systems for In-Vehicle Networks: A Survey
+   year: 2022
+   type: review
+   venue: ACM Computing Surveys
+   doi: https://doi.org/10.1145/3570954
+   url: https://doi.org/10.1145/3570954
+   authors: Sampath Rajapaksha, Harsha Kalutarage, M. Omar Al-Kadri, Andrei Petrovski, Garikayi Madzudzo, Madeline Cheah
+   concepts: Computer science, Intrusion detection system, Computer security, CAN bus, Encryption, Benchmark (surveying)
+
+### QUERY: legacy ECU automotive cybersecurity risk assessment
+status: 200 url: https://api.openalex.org/works?search=legacy%20ECU%20automotive%20cybersecurity%20risk%20assessment&per-page=10&sort=relevance_score:desc
+
+1. Cybersecurity of Smart Electric Vehicle Charging: A Power Grid Perspective
+   year: 2020
+   type: article
+   venue: IEEE Access
+   doi: https://doi.org/10.1109/access.2020.3041074
+   url: https://doi.org/10.1109/access.2020.3041074
+   authors: Samrat Acharya, Yury Dvorkin, Hrvoje Pandžić, Ramesh Karri
+   concepts: Smart grid, Electric vehicle, Perspective (graphical), Power grid, Computer science, Electrical engineering
+
+2. Attacks on Self-Driving Cars and Their Countermeasures: A Survey
+   year: 2020
+   type: article
+   venue: IEEE Access
+   doi: https://doi.org/10.1109/access.2020.3037705
+   url: https://doi.org/10.1109/access.2020.3037705
+   authors: Abdullahi Chowdhury, Gour Karmakar, Joarder Kamruzzaman, Alireza Jolfaei, Rajkumar Das
+   concepts: Self driving, Computer security, Computer science, Sophistication, Bridge (graph theory), Transport engineering
+
+3. Survey and Classification of Automotive Security Attacks
+   year: 2019
+   type: article
+   venue: Information
+   doi: https://doi.org/10.3390/info10040148
+   url: https://doi.org/10.3390/info10040148
+   authors: Florian Sommer, Jürgen Dürrwang, Reiner Kriesten
+   concepts: Automotive industry, Attack surface, Computer security, Leverage (statistics), Computer science, Process (computing)
+
+4. An Overview of Automotive Service-Oriented Architectures and Implications for Security Countermeasures
+   year: 2020
+   type: article
+   venue: IEEE Access
+   doi: https://doi.org/10.1109/access.2020.3043070
+   url: https://doi.org/10.1109/access.2020.3043070
+   authors: Marcel Rumez, Daniel Grimm, Reiner Kriesten, Eric Sax
+   concepts: Computer science, Service-oriented architecture, Automotive industry, Computer security, Security service, Upgrade
+
+5. Connected and Automated Vehicles: Infrastructure, Applications, Security, Critical Challenges, and Future Aspects
+   year: 2023
+   type: article
+   venue: Technologies
+   doi: https://doi.org/10.3390/technologies11050117
+   url: https://doi.org/10.3390/technologies11050117
+   authors: Memoona Sadaf, Zafar Iqbal, Abdul Rehman Javed, Irum Saba, Moez Krichen, Sajid Majeed, Arooj Raza
+   concepts: SAFER, Computer security, Context (archaeology), Computer science, Cloud computing, Authentication (law)
+
+6. Deep Learning in the Fast Lane: A Survey on Advanced Intrusion Detection Systems for Intelligent Vehicle Networks
+   year: 2024
+   type: article
+   venue: IEEE Open Journal of Vehicular Technology
+   doi: https://doi.org/10.1109/ojvt.2024.3422253
+   url: https://doi.org/10.1109/ojvt.2024.3422253
+   authors: Mohammed Almehdhar, Abdullatif Albaseer, Muhammad Asif Khan, Mohamed Abdallah, Hamid Menouar, Saif Al‐Kuwari, Ala Al‐Fuqaha
+   concepts: Computer science, Intrusion detection system, Anomaly detection, Denial-of-service attack, Adaptability, Deep learning
+
+7. Vehicle Cybersecurity Threats and Mitigation Approaches
+   year: 2019
+   type: report
+   venue: None
+   doi: https://doi.org/10.2172/1559930
+   url: https://doi.org/10.2172/1559930
+   authors: Cabell Hodge, Konrad Hauck, Shivam Gupta, Jesse Bennett
+   concepts: SAFER, Procurement, Computer security, Intrusion, Business, Transport engineering
+
+8. Automotive Intelligence Embedded in Electric Connected Autonomous and Shared Vehicles Technology for Sustainable Green Mobility
+   year: 2021
+   type: article
+   venue: Frontiers in Future Transportation
+   doi: https://doi.org/10.3389/ffutr.2021.688482
+   url: https://doi.org/10.3389/ffutr.2021.688482
+   authors: Ovidiu Vermesan, Reiner John, Patrick Pype, G. H. O. Daalderop, Kai Kriegel, G. Mitić, Vincent Lorentz, Roy Bahr
+   concepts: Automotive industry, Computer science, Automation, Electrification, Embedded system, Engineering
+
+9. A Comprehensive Survey of V2X Cybersecurity Mechanisms and Future Research Paths
+   year: 2023
+   type: article
+   venue: IEEE Open Journal of the Communications Society
+   doi: https://doi.org/10.1109/ojcoms.2023.3239115
+   url: https://doi.org/10.1109/ojcoms.2023.3239115
+   authors: Roshan Sedar, Charalampos Kalalas, Francisco Vázquez-Gallego, Luis Alonso, Jesús Alonso-Zárate
+   concepts: Computer security, Computer science, Autonomy, Open research, Key (lock), Field (mathematics)
+
+10. Connected and Autonomous Vehicles and Infrastructures: A Literature Review
+   year: 2021
+   type: review
+   venue: International Journal of Pavement Research and Technology
+   doi: https://doi.org/10.1007/s42947-021-00130-1
+   url: https://doi.org/10.1007/s42947-021-00130-1
+   authors: Md. Masud Rana, Kamal Hossain
+   concepts: Software deployment, Automation, Advanced driver assistance systems, Cooperative Adaptive Cruise Control, Systems engineering, Computer science
+
+### QUERY: ISO SAE 21434 TARA automotive cybersecurity risk assessment
+status: 200 url: https://api.openalex.org/works?search=ISO%20SAE%2021434%20TARA%20automotive%20cybersecurity%20risk%20assessment&per-page=10&sort=relevance_score:desc
+
+1. Gap Analysis of ISO/SAE 21434 – Improving the Automotive Cybersecurity Engineering Life Cycle
+   year: 2023
+   type: article
+   venue: None
+   doi: https://doi.org/10.1109/itsc57777.2023.10422100
+   url: https://doi.org/10.1109/itsc57777.2023.10422100
+   authors: Daniel Grimm, Aljoscha Lautenbach, Magnus Almgren, Tomas Olovsson, Eric Sax
+   concepts: Automotive industry, Computer science, Computer security, Engineering, Aeronautics, Aerospace engineering
+
+2. A Study on Threat Analysis and Risk Assessment Based on the “Asset Container” Method and CWSS
+   year: 2023
+   type: article
+   venue: IEEE Access
+   doi: https://doi.org/10.1109/access.2023.3246497
+   url: https://doi.org/10.1109/access.2023.3246497
+   authors: Yasuyuki Kawanishi, H. Nishihara, Hirotaka Yoshida, Hideki Yamamoto, Hiroyuki Inoue
+   concepts: Computer security, Risk analysis (engineering), Computer science, Cyber-physical system, Container (type theory), Process (computing)
+
+3. An adaptable security-by-design approach for ensuring a secure Over the Air (OTA) update in modern vehicles
+   year: 2024
+   type: article
+   venue: Computers & Security
+   doi: https://doi.org/10.1016/j.cose.2024.104268
+   url: https://doi.org/10.1016/j.cose.2024.104268
+   authors: Victormills Iyieke, Hesamaldin Jadidbonab, Abdur Rakib, Jeremy Bryans, Don Dhaliwal, Odysseas Kosmas
+   concepts: Computer science, Computer security
+
+4. Identification and Verification of Attack-Tree Threat Models in Connected Vehicles
+   year: 2022
+   type: article
+   venue: SAE technical papers on CD-ROM/SAE technical paper series
+   doi: https://doi.org/10.4271/2022-01-7087
+   url: https://doi.org/10.4271/2022-01-7087
+   authors: Masoud Ebrahimi, Christoph Striessnig, Joaquim Castella Triginer, Christoph Schmittner
+   concepts: Computer security, Computer science, Identification (biology), Threat model, Automotive industry, Context (archaeology)
+
+5. Integrating Fuzz Testing into the Cybersecurity Validation Strategy
+   year: 2021
+   type: article
+   venue: SAE technical papers on CD-ROM/SAE technical paper series
+   doi: https://doi.org/10.4271/2021-01-0139
+   url: https://doi.org/10.4271/2021-01-0139
+   authors: Nico Vinzenz, Dennis Kengo Oka
+   concepts: Fuzz testing, Computer science, Computer security, Reliability engineering, Engineering, Programming language
+
+6. Automated TARA Framework for Cybersecurity Compliance of Heavy Duty Vehicles
+   year: 2024
+   type: article
+   venue: SAE technical papers on CD-ROM/SAE technical paper series
+   doi: https://doi.org/10.4271/2024-01-2809
+   url: https://doi.org/10.4271/2024-01-2809
+   authors: Qazi Mairaj ud din, Qadeer Ahmed
+   concepts: Computer security, Compliance (psychology), Computer science, Heavy duty, Duty, Internet privacy
+
+7. Enhanced TARA model for heavy-duty vehicles using ISO/SAE 21434 and Fuzzy Analytic Hierarchy Process (FAHP)
+   year: 2025
+   type: article
+   venue: Expert Systems with Applications
+   doi: https://doi.org/10.1016/j.eswa.2025.128441
+   url: https://doi.org/10.1016/j.eswa.2025.128441
+   authors: Narges Rahimi, Beth‐Anne Schuelke‐Leech, Mitra Mirhassani
+   concepts: Heavy duty, Computer science, Fuzzy logic, Process (computing), Analytic hierarchy process, Operations research
+
+8. Threat Analysis and Risk Assessment (TARA) Analysis of an Autonomous Emergency Braking (AEB) System
+   year: 2025
+   type: article
+   venue: Applied Sciences
+   doi: https://doi.org/10.3390/app15031400
+   url: https://doi.org/10.3390/app15031400
+   authors: Umberto Della Monica, Kimberly-Annalena Munjal, Mark Paul Tamas, Biagio Boi, Christian Esposito, Rahamatullah Khondoker
+   concepts: Computer security, Business, Computer science
+
+9. Delivering Threat Analysis and Risk Assessment Based on ISO 21434: Practical and Tooling Considerations
+   year: 2021
+   type: article
+   venue: SAE International journal of transportation cybersecurity and privacy
+   doi: https://doi.org/10.4271/11-03-02-0008
+   url: https://doi.org/10.4271/11-03-02-0008
+   authors: Kamil Svancara, Martin J. Thompson
+   concepts: Risk analysis (engineering), Computer science, Engineering, Medicine
+
+10. An Adaptable Security by Design Approach for Ensuring a Secured Remote Monitoring Teleoperation (RMTO) of an Autonomous Vehicle
+   year: 2023
+   type: article
+   venue: SAE technical papers on CD-ROM/SAE technical paper series
+   doi: https://doi.org/10.4271/2023-01-0579
+   url: https://doi.org/10.4271/2023-01-0579
+   authors: Victormills Iyieke, Jeremy Bryans, Tom Robinson, Odysseas Kosmas, Alastair Shipman, Hesamaldin Jadidbonab
+   concepts: Computer security, Teleoperation, Computer science, Automotive industry, Class (philosophy), Security testing
+
+### QUERY: automotive cybersecurity education CAN bus testbed
+status: 200 url: https://api.openalex.org/works?search=automotive%20cybersecurity%20education%20CAN%20bus%20testbed&per-page=10&sort=relevance_score:desc
+
+1. Digital Twin Technology Challenges and Applications: A Comprehensive Review
+   year: 2022
+   type: review
+   venue: Remote Sensing
+   doi: https://doi.org/10.3390/rs14061335
+   url: https://doi.org/10.3390/rs14061335
+   authors: Diego M. Botín-Sanabria, Adriana‐Simona Mihăiţă, Rodrigo E. Peimbert-García, Mauricio A. Ramírez-Moreno, Ricardo A. Ramírez-Mendoza, Jorge de J. Lozoya-Santos
+   concepts: Enabling, Computer science, Systems engineering, Key (lock), Process (computing), Automotive industry
+
+2. Artificial Intelligence for Predictive Maintenance Applications: Key Components, Trustworthiness, and Future Trends
+   year: 2024
+   type: article
+   venue: Applied Sciences
+   doi: https://doi.org/10.3390/app14020898
+   url: https://doi.org/10.3390/app14020898
+   authors: Ayşegül Uçar, Mehmet Karaköse, Necim Kırımça
+   concepts: Computer science, Data science, Autonomy, Adaptability, Analytics, Predictive analytics
+
+3. A critical review of intrusion detection systems in the internet of things: techniques, deployment strategy, validation strategy, attacks, public datasets and challenges
+   year: 2021
+   type: review
+   venue: Cybersecurity
+   doi: https://doi.org/10.1186/s42400-021-00077-7
+   url: https://doi.org/10.1186/s42400-021-00077-7
+   authors: Ansam Khraisat, Ammar Alazab
+   concepts: Software deployment, Internet of Things, Computer science, Exploit, Intrusion detection system, Computer security
+
+4. A Comprehensive Review of Cybersecurity in Inverter-Based Smart Power System Amid the Boom of Renewable Energy
+   year: 2022
+   type: review
+   venue: IEEE Access
+   doi: https://doi.org/10.1109/access.2022.3163551
+   url: https://doi.org/10.1109/access.2022.3163551
+   authors: Nguyen Duc Tuyen, Nguyen Sy Quan, Vo Ba Linh, Tuyen Vu, Goro Fujita
+   concepts: Computer science, Computer security, Testbed, Smart grid, Renewable energy, Electric power system
+
+5. Autonomous Vehicles Enabled by the Integration of IoT, Edge Intelligence, 5G, and Blockchain
+   year: 2023
+   type: review
+   venue: Sensors
+   doi: https://doi.org/10.3390/s23041963
+   url: https://doi.org/10.3390/s23041963
+   authors: Anushka Biswas, Hwang-Cheng Wang
+   concepts: Automotive industry, Exploit, Computer science, Computer security, Blockchain, Emerging technologies
+
+6. A New Concept of Digital Twin Supporting Optimization and Resilience of Factories of the Future
+   year: 2020
+   type: article
+   venue: Applied Sciences
+   doi: https://doi.org/10.3390/app10134482
+   url: https://doi.org/10.3390/app10134482
+   authors: Adrien Bécue, Eva Maia, Linda Feeken, Philipp Borchers, Isabel Praça
+   concepts: Interdependence, Computer science, Process (computing), Set (abstract data type), Resilience (materials science), Context (archaeology)
+
+7. A Review of Research Work on Network-Based SCADA Intrusion Detection Systems
+   year: 2020
+   type: review
+   venue: IEEE Access
+   doi: https://doi.org/10.1109/access.2020.2994961
+   url: https://doi.org/10.1109/access.2020.2994961
+   authors: Slavica V. Boštjančič Rakas, Mirjana D. Stojanović, Jasna Marković-Petrović
+   concepts: SCADA, Computer science, Intrusion detection system, The Internet, Computer security, Data science
+
+8. Designing Data Spaces
+   year: 2022
+   type: book
+   venue: None
+   doi: https://doi.org/10.1007/978-3-030-93975-5
+   url: https://doi.org/10.1007/978-3-030-93975-5
+   authors: Boris Otto, Michael ten Hompel, Stefan Wrobel
+   concepts: Computer science
+
+9. ENIGMA: An explainable digital twin security solution for cyber–physical systems
+   year: 2023
+   type: article
+   venue: Computers in Industry
+   doi: https://doi.org/10.1016/j.compind.2023.103961
+   url: https://doi.org/10.1016/j.compind.2023.103961
+   authors: Sabah Suhail, Mubashar Iqbal, Rasheed Hussain, Raja Jurdak
+   concepts: Computer security, Computer science, Attack surface, Physical security, Leverage (statistics), Computer security model
+
+10. Systematic threat assessment and security testing of automotive over-the-air (OTA) updates
+   year: 2022
+   type: article
+   venue: Vehicular Communications
+   doi: https://doi.org/10.1016/j.vehcom.2022.100468
+   url: https://doi.org/10.1016/j.vehcom.2022.100468
+   authors: Shahid Mahmood, Hoang Nga Nguyen, Siraj Ahmed Shaikh
+   concepts: Computer science, Security testing, Computer security, Automotive industry, Software security assurance, Host (biology)
+
+### QUERY: in vehicle network intrusion detection dataset CAN ROAD
+status: 200 url: https://api.openalex.org/works?search=in%20vehicle%20network%20intrusion%20detection%20dataset%20CAN%20ROAD&per-page=10&sort=relevance_score:desc
+
+1. In-vehicle network intrusion detection using deep convolutional neural network
+   year: 2019
+   type: article
+   venue: Vehicular Communications
+   doi: https://doi.org/10.1016/j.vehcom.2019.100198
+   url: https://doi.org/10.1016/j.vehcom.2019.100198
+   authors: Hyun Min Song, Jiyoung Woo, Huy Kang Kim
+   concepts: Computer science, Convolutional neural network, Intrusion detection system, CAN bus, Authentication (law), Deep learning
+
+2. A comprehensive guide to CAN IDS data and introduction of the ROAD dataset
+   year: 2024
+   type: article
+   venue: PLoS ONE
+   doi: https://doi.org/10.1371/journal.pone.0296879
+   url: https://doi.org/10.1371/journal.pone.0296879
+   authors: Miki E. Verma, Robert A. Bridges, Michael D. Iannacone, Samuel C. Hollifield, Pablo Moriano, Steven C. Hespeler, Bill Kay, Frank L. Combs
+   concepts: Data science, Computer science
+
+3. A Privacy-Preserving-Based Secure Framework Using Blockchain-Enabled Deep-Learning in Cooperative Intelligent Transport System
+   year: 2021
+   type: article
+   venue: IEEE Transactions on Intelligent Transportation Systems
+   doi: https://doi.org/10.1109/tits.2021.3098636
+   url: https://doi.org/10.1109/tits.2021.3098636
+   authors: Randhir Kumar, Prabhat Kumar, Rakesh Tripathi, Govind P. Gupta, Neeraj Kumar, Mohammad Mehedi Hassan
+   concepts: Computer science, Autoencoder, Deep learning, Recurrent neural network, Computer security, Intelligent transportation system
+
+4. Transforming Transportation: Safe and Secure Vehicular Communication and Anomaly Detection With Intelligent Cyber–Physical System and Deep Learning
+   year: 2023
+   type: article
+   venue: IEEE Transactions on Consumer Electronics
+   doi: https://doi.org/10.1109/tce.2023.3325827
+   url: https://doi.org/10.1109/tce.2023.3325827
+   authors: Hussah Nasser AlEisa, Fadwa Alrowais, Randa Allafi, Nabil Sharaf Almalki, Raji Faqih, Radwa Marzouk, Mrim M. Alnfiai, Abdelwahed Motwakel
+   concepts: Intelligent transportation system, Deep learning, Computer science, Computer security, Intrusion detection system, Cyber-physical system
+
+5. can-train-and-test: A curated CAN dataset for automotive intrusion detection
+   year: 2024
+   type: article
+   venue: Computers & Security
+   doi: https://doi.org/10.1016/j.cose.2024.103777
+   url: https://doi.org/10.1016/j.cose.2024.103777
+   authors: Brooke Lampe, Weizhi Meng
+   concepts: Automotive industry, Computer science, CAN bus, Intrusion detection system, Confidentiality, Encryption
+
+6. A deep learning-based intrusion detection system for in-vehicle networks
+   year: 2022
+   type: article
+   venue: Computers & Electrical Engineering
+   doi: https://doi.org/10.1016/j.compeleceng.2022.108447
+   url: https://doi.org/10.1016/j.compeleceng.2022.108447
+   authors: Hamed Alqahtani, Gulshan Kumar
+   concepts: Autoencoder, Computer science, Intrusion detection system, Deep learning, Artificial intelligence, Convolutional neural network
+
+7. Federated Learning for Intrusion Detection Systems in Internet of Vehicles: A General Taxonomy, Applications, and Future Directions
+   year: 2023
+   type: article
+   venue: Future Internet
+   doi: https://doi.org/10.3390/fi15120403
+   url: https://doi.org/10.3390/fi15120403
+   authors: Jadil Alsamiri, Khalid Alsubhi
+   concepts: Computer science, Intrusion detection system, Computer security, Anomaly detection, The Internet, Automotive industry
+
+8. Machine Learning based intrusion detection systems for connected autonomous vehicles: A survey
+   year: 2023
+   type: article
+   venue: Peer-to-Peer Networking and Applications
+   doi: https://doi.org/10.1007/s12083-023-01508-7
+   url: https://doi.org/10.1007/s12083-023-01508-7
+   authors: Jay Nagarajan, Pegah Mansourian, Muhammad Anwar Shahid, Arunita Jaekel, Ikjot Saini, Ning Zhang, Marc Kneppers
+   concepts: Intrusion detection system, Computer science, Computer security, Intrusion, Confidentiality, Intrusion prevention system
+
+9. Intrusion detection using metaheuristic optimization within IoT/IIoT systems and software of autonomous vehicles
+   year: 2024
+   type: article
+   venue: Scientific Reports
+   doi: https://doi.org/10.1038/s41598-024-73932-5
+   url: https://doi.org/10.1038/s41598-024-73932-5
+   authors: Pavle Dakić, Miodrag Živković, Luka Jovanović, Nebojša Bačanin, Miloš Antonijević, Jelena Kaljević, Vladimir Šimić
+   concepts: Computer science, Metaheuristic, Intrusion detection system, Software, Internet of Things, Artificial intelligence
+
+10. FSCB-IDS: Feature Selection and Minority Class Balancing for Attacks Detection in VANETs
+   year: 2023
+   type: article
+   venue: Applied Sciences
+   doi: https://doi.org/10.3390/app13137488
+   url: https://doi.org/10.3390/app13137488
+   authors: Sara Amaouche, Azidine Guezzaz, Said Benkirane, Mourade Azrour, Sohaib Bin Altaf Khattak, Haleem Farman, Moustafa M. Nasralla
+   concepts: Computer science, Denial-of-service attack, Computer network, Mobile ad hoc network, Vehicular ad hoc network, Exploit

@@ -1,0 +1,137 @@
+{
+  "experiment_id": "009_icsim_spoof_injection",
+  "created_utc": "2026-06-04T10:06:36.610718+00:00",
+  "base_experiment": "008_external_icsim_replay",
+  "base_source": "ICSim/data/sample-can.log",
+  "base_source_sha256": "6fbaf2f78e4d9eef30cafc8c39c837390ae9534771cd3cb74768d4594641270c",
+  "injection_intensity": "medium",
+  "purpose": "Visual and forensic-readiness demonstration of labeled spoof packet injection into an external ICSim trace; not a real vehicle attack.",
+  "total_frames": 6203,
+  "base_frames": 6158,
+  "spoofed_frames": 45,
+  "duration_s": 3.257991,
+  "unique_arbitration_ids": 37,
+  "label_counts": {
+    "external_replay_baseline": 6158,
+    "spoofed_injection": 45
+  },
+  "top_arbitration_ids": [
+    [
+      "166",
+      326
+    ],
+    [
+      "158",
+      326
+    ],
+    [
+      "161",
+      326
+    ],
+    [
+      "191",
+      326
+    ],
+    [
+      "18E",
+      326
+    ],
+    [
+      "133",
+      326
+    ],
+    [
+      "136",
+      326
+    ],
+    [
+      "13A",
+      326
+    ],
+    [
+      "13F",
+      326
+    ],
+    [
+      "164",
+      326
+    ],
+    [
+      "17C",
+      326
+    ],
+    [
+      "183",
+      326
+    ],
+    [
+      "143",
+      326
+    ],
+    [
+      "95",
+      326
+    ],
+    [
+      "39",
+      215
+    ],
+    [
+      "1CF",
+      163
+    ],
+    [
+      "1DC",
+      163
+    ],
+    [
+      "1A4",
+      163
+    ],
+    [
+      "1AA",
+      162
+    ],
+    [
+      "1B0",
+      162
+    ],
+    [
+      "1D0",
+      162
+    ],
+    [
+      "294",
+      81
+    ],
+    [
+      "21E",
+      81
+    ],
+    [
+      "320",
+      33
+    ],
+    [
+      "324",
+      33
+    ]
+  ],
+  "injected_id_counts": {
+    "244": 33,
+    "19B": 7,
+    "188": 5
+  },
+  "injected_speed_stats": {
+    "count": 33,
+    "min": 190.0,
+    "max": 202.0,
+    "mean": 195.727
+  },
+  "icsim_semantics_used": {
+    "speed": "ID 0x244, bytes 3-4",
+    "doors": "ID 0x19B, byte 2",
+    "turn_signals": "ID 0x188, byte 0"
+  },
+  "boundary": "Spoofed packets are controlled didactic injections into an external ICSim trace. They are labeled for visualization and workflow validation only."
+}

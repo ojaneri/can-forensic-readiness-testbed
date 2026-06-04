@@ -1,0 +1,207 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>SSV 2026 CAN Testbed — Project Index</title>
+<style>:root{--bg:#f8fafc;--card:#fff;--line:#e2e8f0;--text:#172033;--muted:#64748b;--link:#075985}*{box-sizing:border-box}body{font-family:system-ui,-apple-system,Segoe UI,Arial,sans-serif;max-width:1180px;margin:34px auto;padding:0 18px;line-height:1.5;color:var(--text);background:var(--bg)}h1{margin:0 0 6px;font-size:32px}h2{margin:0 0 12px;font-size:21px}.muted{color:var(--muted)}.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px;margin:16px 0;box-shadow:0 8px 30px #0000000d}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px}.feature{border:1px solid var(--line);border-radius:12px;padding:14px;background:#fcfdff}.feature a{font-size:16px;font-weight:750}.desc{display:block;color:var(--muted);font-size:13px;margin-top:4px}.toc{columns:2;column-gap:30px}.toc a{display:block;margin:4px 0}.file-list{display:grid;grid-template-columns:1fr;gap:6px}.file{display:grid;grid-template-columns:minmax(0,1fr) 88px;gap:10px;align-items:center;padding:8px 10px;border:1px solid #edf2f7;border-radius:10px;background:#fff}.file:hover{background:#f0f9ff}.file a{overflow-wrap:anywhere}.size{text-align:right;color:var(--muted);font-variant-numeric:tabular-nums;font-size:12px}a{color:var(--link);text-decoration:none}a:hover{text-decoration:underline}.badge{display:inline-block;background:#e0f2fe;color:#075985;border-radius:999px;padding:2px 8px;font-size:12px;margin-left:6px}.summary{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px}.pill{background:#e2e8f0;border-radius:999px;padding:5px 10px;font-size:13px}code{background:#eef2ff;padding:2px 5px;border-radius:5px}@media(max-width:720px){.toc{columns:1}.file{grid-template-columns:1fr}.size{text-align:left}}</style></head><body>
+<h1>SSV 2026 — Software-Defined CAN Testbed</h1>
+<p class="muted">Complete project index for the paper <strong>A Software-Defined Low-Cost CAN Testbed for Automotive Cybersecurity Education and Forensic-Readiness Analysis</strong>.</p>
+<div class="summary">
+<span class="pill">Indexed files: 161</span>
+<span class="pill">Dataset: 477,738 internal labeled frames + 6,158 external ICSim frames</span>
+<span class="pill">Second round: 10 runs / 6,000 s synthetic schedule</span>
+<span class="pill">External source: ICSim sample-can.log + spoof injection package</span>
+<span class="pill">Latest article: v3 adversarial-closure</span>
+<span class="pill">Language: English scientific artifacts</span>
+<span class="pill">Scope: software-only / authorized CAN simulation</span>
+</div>
+<section class="card"><h2>Featured links</h2><div class="grid">
+<div class="feature"><a href="paper/article_ieee_v3.html">NEW article v3</a><span class="desc">Adversarial-closure version: Matrix 007, external ICSim, spoof injection, threats to validity</span></div>
+<div class="feature"><a href="paper/article_ieee_v2.html">Revised article v2</a><span class="desc">Previous adversarial-fix version</span></div>
+<div class="feature"><a href="paper/article_ieee_latest.html">Latest article alias</a><span class="desc">Alias pointing to the newest article version</span></div>
+<div class="feature"><a href="paper/article_ieee.html">IEEE-style printable article v1</a><span class="desc">Original print-ready HTML</span></div>
+<div class="feature"><a href="paper/adversarial_review.md">Adversarial review</a><span class="desc">Critical review: defects, rejection risks, and fix plan</span></div>
+<div class="feature"><a href="paper/pre_v3_adversarial_closure.html">Pre-v3 adversarial closure</a><span class="desc">Final closure matrix before article_ieee_v3</span></div>
+<div class="feature"><a href="paper/article_ieee_v2_notes.md">Corrections applied notes</a><span class="desc">What was changed in v2</span></div>
+<div class="feature"><a href="paper/article_ieee_v2.tex">IEEEtran starter skeleton</a><span class="desc">Starter LaTeX skeleton for official IEEE template</span></div>
+<div class="feature"><a href="dataset/">Dataset package</a><span class="desc">Normalized dataset, manifests, scripts, data dictionary</span></div>
+<div class="feature"><a href="dataset/experiments/007_second_round_matrix/">Second experimental round</a><span class="desc">10-run intensity matrix: low/medium/high spoofing and flooding, 435,450 new frames</span></div>
+<div class="feature"><a href="dataset/experiments/008_external_icsim_replay/">Experiment 008 external ICSim replay</a><span class="desc">External-source ingestion/normalization/hash evidence from ICSim sample-can.log</span></div>
+<div class="feature"><a href="analysis/tables/second_round_matrix_summary.csv">Second-round matrix table</a><span class="desc">Aggregate table for article results and parameter sensitivity discussion</span></div>
+<div class="feature"><a href="analysis/tables/external_source_008_summary.csv">External-source summary table</a><span class="desc">Compatibility evidence answering the synthetic/toy-simulator criticism</span></div>
+<div class="feature"><a href="analysis/">Analysis outputs</a><span class="desc">Figures, tables, metrics, triage results</span></div>
+<div class="feature"><a href="demo-attack/">Observer demo</a><span class="desc">Client-side attack replay and dashboard demo</span></div>
+<div class="feature"><a href="demo-external-icsim/">External ICSim replay demo</a><span class="desc">Browser demo for Experiment 008 external-source trace replay</span></div>
+<div class="feature"><a href="demo-icsim-spoof/">ICSim spoof injection demo</a><span class="desc">Visual dashboard for Experiment 009: speed, doors, turn signals and injected packets</span></div>
+<div class="feature"><a href="software-testbed/">Software testbed</a><span class="desc">Source code, scripts, experiments</span></div>
+</div></section><section class="card"><h2>Sections</h2><div class="toc">
+<a href="#sec-paper-drafts-and-printable-article">Paper drafts and printable article <span class="badge">8</span></a>
+<a href="#sec-dataset-package">Dataset package <span class="badge">28</span></a>
+<a href="#sec-figures">Figures <span class="badge">5</span></a>
+<a href="#sec-analysis-tables-and-metrics">Analysis tables and metrics <span class="badge">12</span></a>
+<a href="#sec-analysis-scripts">Analysis scripts <span class="badge">1</span></a>
+<a href="#sec-software-testbed-experiments">Software testbed experiments <span class="badge">22</span></a>
+<a href="#sec-observer-demo">Observer demo <span class="badge">6</span></a>
+<a href="#sec-software-testbed">Software testbed <span class="badge">4</span></a>
+<a href="#sec-testbed-python-source">Testbed Python source <span class="badge">5</span></a>
+<a href="#sec-testbed-shell-scripts">Testbed shell scripts <span class="badge">7</span></a>
+<a href="#sec-project-documentation">Project documentation <span class="badge">17</span></a>
+<a href="#sec-bibliography">Bibliography <span class="badge">1</span></a>
+<a href="#sec-raw-research-notes">Raw research notes <span class="badge">2</span></a>
+<a href="#sec-main-index">Main index <span class="badge">1</span></a>
+</div></section>
+<section class="card" id="sec-paper-drafts-and-printable-article"><h2>Paper drafts and printable article <span class="badge">8</span></h2><div class="file-list">
+<div class="file"><a href="paper/adversarial_review.md">paper/adversarial_review.md</a><span class="size">12.1 KB</span></div>
+<div class="file"><a href="paper/article_ieee.html">paper/article_ieee.html</a><span class="size">23.0 KB</span></div>
+<div class="file"><a href="paper/article_ieee_latest.html">paper/article_ieee_latest.html</a><span class="size">18.5 KB</span></div>
+<div class="file"><a href="paper/article_ieee_v2.html">paper/article_ieee_v2.html</a><span class="size">18.5 KB</span></div>
+<div class="file"><a href="paper/article_ieee_v2.tex">paper/article_ieee_v2.tex</a><span class="size">1.9 KB</span></div>
+<div class="file"><a href="paper/article_ieee_v2_notes.md">paper/article_ieee_v2_notes.md</a><span class="size">1.1 KB</span></div>
+<div class="file"><a href="paper/index.html">paper/index.html</a><span class="size">1.2 KB</span></div>
+<div class="file"><a href="paper/results_draft.md">paper/results_draft.md</a><span class="size">3.9 KB</span></div>
+</div></section>
+<section class="card" id="sec-dataset-package"><h2>Dataset package <span class="badge">28</span></h2><div class="file-list">
+<div class="file"><a href="dataset/CITATION.cff">dataset/CITATION.cff</a><span class="size">308 B</span></div>
+<div class="file"><a href="dataset/LICENSE">dataset/LICENSE</a><span class="size">131 B</span></div>
+<div class="file"><a href="dataset/README.md">dataset/README.md</a><span class="size">1.3 KB</span></div>
+<div class="file"><a href="dataset/all_frames_normalized.csv">dataset/all_frames_normalized.csv</a><span class="size">77.6 MB</span></div>
+<div class="file"><a href="dataset/all_frames_normalized_before_007.csv">dataset/all_frames_normalized_before_007.csv</a><span class="size">6.0 MB</span></div>
+<div class="file"><a href="dataset/experiments/007_second_round_matrix/index.html">dataset/experiments/007_second_round_matrix/index.html</a><span class="size">2.8 KB</span></div>
+<div class="file"><a href="dataset/experiments/007_second_round_matrix/experiment_matrix.csv">dataset/experiments/007_second_round_matrix/experiment_matrix.csv</a><span class="size">1.5 KB</span></div>
+<div class="file"><a href="dataset/experiments/007_second_round_matrix/second_round_frames_normalized.csv">dataset/experiments/007_second_round_matrix/second_round_frames_normalized.csv</a><span class="size">72.4 MB</span></div>
+<div class="file"><a href="dataset/experiments/007_second_round_matrix/second_round_summary.md">dataset/experiments/007_second_round_matrix/second_round_summary.md</a><span class="size">2.1 KB</span></div>
+<div class="file"><a href="dataset/experiments/007_second_round_matrix/second_round_summary.json">dataset/experiments/007_second_round_matrix/second_round_summary.json</a><span class="size">21.1 KB</span></div>
+<div class="file"><a href="dataset/experiments/008_external_icsim_replay/index.html">dataset/experiments/008_external_icsim_replay/index.html</a><span class="size">1.6 KB</span></div>
+<div class="file"><a href="dataset/experiments/008_external_icsim_replay/frames_normalized.csv">dataset/experiments/008_external_icsim_replay/frames_normalized.csv</a><span class="size">1.4 MB</span></div>
+<div class="file"><a href="dataset/experiments/008_external_icsim_replay/findings.md">dataset/experiments/008_external_icsim_replay/findings.md</a><span class="size">1.6 KB</span></div>
+<div class="file"><a href="dataset/experiments/008_external_icsim_replay/summary.json">dataset/experiments/008_external_icsim_replay/summary.json</a><span class="size">2.3 KB</span></div>
+<div class="file"><a href="dataset/experiments/008_external_icsim_replay/external_source_metadata.json">dataset/experiments/008_external_icsim_replay/external_source_metadata.json</a><span class="size">390 B</span></div>
+<div class="file"><a href="dataset/data_dictionary.md">dataset/data_dictionary.md</a><span class="size">806 B</span></div>
+<div class="file"><a href="dataset/dataset_summary.json">dataset/dataset_summary.json</a><span class="size">2.7 KB</span></div>
+<div class="file"><a href="dataset/experiments/005_short_attack/execution_stdout.json">dataset/experiments/005_short_attack/execution_stdout.json</a><span class="size">2.5 KB</span></div>
+<div class="file"><a href="dataset/experiments/005_short_attack/findings.json">dataset/experiments/005_short_attack/findings.json</a><span class="size">2.5 KB</span></div>
+<div class="file"><a href="dataset/experiments/005_short_attack/findings.md">dataset/experiments/005_short_attack/findings.md</a><span class="size">1.8 KB</span></div>
+<div class="file"><a href="dataset/experiments/005_short_attack/frames_normalized.csv">dataset/experiments/005_short_attack/frames_normalized.csv</a><span class="size">288.7 KB</span></div>
+<div class="file"><a href="dataset/experiments/005_short_attack/index.html">dataset/experiments/005_short_attack/index.html</a><span class="size">564 B</span></div>
+<div class="file"><a href="dataset/experiments/005_short_attack/input_attack_plan.json">dataset/experiments/005_short_attack/input_attack_plan.json</a><span class="size">1.2 KB</span></div>
+<div class="file"><a href="dataset/experiments/005_short_attack/manifest.json">dataset/experiments/005_short_attack/manifest.json</a><span class="size">968 B</span></div>
+<div class="file"><a href="dataset/experiments/005_short_attack/output_candump_annotated.log">dataset/experiments/005_short_attack/output_candump_annotated.log</a><span class="size">194.4 KB</span></div>
+<div class="file"><a href="dataset/experiments/005_short_attack/summary.json">dataset/experiments/005_short_attack/summary.json</a><span class="size">2.6 KB</span></div>
+<div class="file"><a href="dataset/experiments/006_10min_attack/execution_stdout.json">dataset/experiments/006_10min_attack/execution_stdout.json</a><span class="size">2.3 KB</span></div>
+<div class="file"><a href="dataset/experiments/006_10min_attack/findings.json">dataset/experiments/006_10min_attack/findings.json</a><span class="size">2.3 KB</span></div>
+<div class="file"><a href="dataset/experiments/006_10min_attack/findings.md">dataset/experiments/006_10min_attack/findings.md</a><span class="size">1.4 KB</span></div>
+<div class="file"><a href="dataset/experiments/006_10min_attack/frames_normalized.csv">dataset/experiments/006_10min_attack/frames_normalized.csv</a><span class="size">5.1 MB</span></div>
+<div class="file"><a href="dataset/experiments/006_10min_attack/index.html">dataset/experiments/006_10min_attack/index.html</a><span class="size">564 B</span></div>
+<div class="file"><a href="dataset/experiments/006_10min_attack/input_attack_plan.json">dataset/experiments/006_10min_attack/input_attack_plan.json</a><span class="size">599 B</span></div>
+<div class="file"><a href="dataset/experiments/006_10min_attack/manifest.json">dataset/experiments/006_10min_attack/manifest.json</a><span class="size">970 B</span></div>
+<div class="file"><a href="dataset/experiments/006_10min_attack/output_candump_annotated.log">dataset/experiments/006_10min_attack/output_candump_annotated.log</a><span class="size">3.5 MB</span></div>
+<div class="file"><a href="dataset/experiments/006_10min_attack/summary.json">dataset/experiments/006_10min_attack/summary.json</a><span class="size">2.7 KB</span></div>
+<div class="file"><a href="dataset/index.html">dataset/index.html</a><span class="size">1.2 KB</span></div>
+<div class="file"><a href="dataset/manifest.json">dataset/manifest.json</a><span class="size">2.9 KB</span></div>
+<div class="file"><a href="dataset/scripts/summarize_dataset.py">dataset/scripts/summarize_dataset.py</a><span class="size">834 B</span></div>
+<div class="file"><a href="dataset/scripts/validate_hashes.py">dataset/scripts/validate_hashes.py</a><span class="size">664 B</span></div>
+</div></section>
+<section class="card" id="sec-figures"><h2>Figures <span class="badge">5</span></h2><div class="file-list">
+<div class="file"><a href="analysis/figures/decoded_speed_id_0x100.svg">analysis/figures/decoded_speed_id_0x100.svg</a><span class="size">128.6 KB</span></div>
+<div class="file"><a href="analysis/figures/frame_count_by_phase.svg">analysis/figures/frame_count_by_phase.svg</a><span class="size">1.4 KB</span></div>
+<div class="file"><a href="analysis/figures/id_cardinality_10s.svg">analysis/figures/id_cardinality_10s.svg</a><span class="size">1.3 KB</span></div>
+<div class="file"><a href="analysis/figures/rule_based_triage_confusion_matrix.svg">analysis/figures/rule_based_triage_confusion_matrix.svg</a><span class="size">2.8 KB</span></div>
+<div class="file"><a href="analysis/figures/testbed_architecture.svg">analysis/figures/testbed_architecture.svg</a><span class="size">2.8 KB</span></div>
+</div></section>
+<section class="card" id="sec-analysis-tables-and-metrics"><h2>Analysis tables and metrics <span class="badge">12</span></h2><div class="file-list">
+<div class="file"><a href="analysis/tables/external_source_008_summary.csv">analysis/tables/external_source_008_summary.csv</a><span class="size">457 B</span></div>
+<div class="file"><a href="analysis/tables/second_round_matrix_summary.csv">analysis/tables/second_round_matrix_summary.csv</a><span class="size">735 B</span></div>
+<div class="file"><a href="analysis/tables/dataset_summary_corrected.json">analysis/tables/dataset_summary_corrected.json</a><span class="size">2.3 KB</span></div>
+<div class="file"><a href="analysis/tables/forensic_readiness_mapping.md">analysis/tables/forensic_readiness_mapping.md</a><span class="size">709 B</span></div>
+<div class="file"><a href="analysis/tables/frame_counts_by_phase.csv">analysis/tables/frame_counts_by_phase.csv</a><span class="size">288 B</span></div>
+<div class="file"><a href="analysis/tables/related_work_comparison.md">analysis/tables/related_work_comparison.md</a><span class="size">766 B</span></div>
+<div class="file"><a href="analysis/tables/reproducibility_table.md">analysis/tables/reproducibility_table.md</a><span class="size">684 B</span></div>
+<div class="file"><a href="analysis/tables/rule_based_triage_confusion_matrix.csv">analysis/tables/rule_based_triage_confusion_matrix.csv</a><span class="size">93 B</span></div>
+<div class="file"><a href="analysis/tables/rule_based_triage_metrics.json">analysis/tables/rule_based_triage_metrics.json</a><span class="size">711 B</span></div>
+<div class="file"><a href="analysis/tables/rule_based_triage_stdout.json">analysis/tables/rule_based_triage_stdout.json</a><span class="size">711 B</span></div>
+<div class="file"><a href="analysis/tables/rule_based_triage_windows.csv">analysis/tables/rule_based_triage_windows.csv</a><span class="size">65.8 KB</span></div>
+<div class="file"><a href="analysis/tables/speed_stats_id_0x100.csv">analysis/tables/speed_stats_id_0x100.csv</a><span class="size">500 B</span></div>
+</div></section>
+<section class="card" id="sec-analysis-scripts"><h2>Analysis scripts <span class="badge">1</span></h2><div class="file-list">
+<div class="file"><a href="analysis/scripts/rule_based_triage.py">analysis/scripts/rule_based_triage.py</a><span class="size">8.1 KB</span></div>
+</div></section>
+<section class="card" id="sec-software-testbed-experiments"><h2>Software testbed experiments <span class="badge">22</span></h2><div class="file-list">
+<div class="file"><a href="software-testbed/experiments/001_baseline/README.md">software-testbed/experiments/001_baseline/README.md</a><span class="size">508 B</span></div>
+<div class="file"><a href="software-testbed/experiments/002_replay/README.md">software-testbed/experiments/002_replay/README.md</a><span class="size">342 B</span></div>
+<div class="file"><a href="software-testbed/experiments/003_spoofing/README.md">software-testbed/experiments/003_spoofing/README.md</a><span class="size">450 B</span></div>
+<div class="file"><a href="software-testbed/experiments/004_flooding/README.md">software-testbed/experiments/004_flooding/README.md</a><span class="size">503 B</span></div>
+<div class="file"><a href="software-testbed/experiments/005_real_attack_software/execution_stdout.json">software-testbed/experiments/005_real_attack_software/execution_stdout.json</a><span class="size">2.5 KB</span></div>
+<div class="file"><a href="software-testbed/experiments/005_real_attack_software/findings.json">software-testbed/experiments/005_real_attack_software/findings.json</a><span class="size">2.5 KB</span></div>
+<div class="file"><a href="software-testbed/experiments/005_real_attack_software/findings.md">software-testbed/experiments/005_real_attack_software/findings.md</a><span class="size">1.8 KB</span></div>
+<div class="file"><a href="software-testbed/experiments/005_real_attack_software/index.html">software-testbed/experiments/005_real_attack_software/index.html</a><span class="size">2.5 KB</span></div>
+<div class="file"><a href="software-testbed/experiments/005_real_attack_software/input_attack_plan.json">software-testbed/experiments/005_real_attack_software/input_attack_plan.json</a><span class="size">1.2 KB</span></div>
+<div class="file"><a href="software-testbed/experiments/005_real_attack_software/manifest.json">software-testbed/experiments/005_real_attack_software/manifest.json</a><span class="size">968 B</span></div>
+<div class="file"><a href="software-testbed/experiments/005_real_attack_software/output_candump_annotated.log">software-testbed/experiments/005_real_attack_software/output_candump_annotated.log</a><span class="size">194.4 KB</span></div>
+<div class="file"><a href="software-testbed/experiments/005_real_attack_software/output_frames.csv">software-testbed/experiments/005_real_attack_software/output_frames.csv</a><span class="size">174.5 KB</span></div>
+<div class="file"><a href="software-testbed/experiments/005_real_attack_software/run_experiment.py">software-testbed/experiments/005_real_attack_software/run_experiment.py</a><span class="size">11.1 KB</span></div>
+<div class="file"><a href="software-testbed/experiments/006_10min_attack_software/execution_stdout.json">software-testbed/experiments/006_10min_attack_software/execution_stdout.json</a><span class="size">2.3 KB</span></div>
+<div class="file"><a href="software-testbed/experiments/006_10min_attack_software/findings.json">software-testbed/experiments/006_10min_attack_software/findings.json</a><span class="size">2.3 KB</span></div>
+<div class="file"><a href="software-testbed/experiments/006_10min_attack_software/findings.md">software-testbed/experiments/006_10min_attack_software/findings.md</a><span class="size">1.4 KB</span></div>
+<div class="file"><a href="software-testbed/experiments/006_10min_attack_software/index.html">software-testbed/experiments/006_10min_attack_software/index.html</a><span class="size">2.3 KB</span></div>
+<div class="file"><a href="software-testbed/experiments/006_10min_attack_software/input_attack_plan.json">software-testbed/experiments/006_10min_attack_software/input_attack_plan.json</a><span class="size">599 B</span></div>
+<div class="file"><a href="software-testbed/experiments/006_10min_attack_software/manifest.json">software-testbed/experiments/006_10min_attack_software/manifest.json</a><span class="size">970 B</span></div>
+<div class="file"><a href="software-testbed/experiments/006_10min_attack_software/output_candump_annotated.log">software-testbed/experiments/006_10min_attack_software/output_candump_annotated.log</a><span class="size">3.5 MB</span></div>
+<div class="file"><a href="software-testbed/experiments/006_10min_attack_software/output_frames.csv">software-testbed/experiments/006_10min_attack_software/output_frames.csv</a><span class="size">3.2 MB</span></div>
+<div class="file"><a href="software-testbed/experiments/006_10min_attack_software/run_experiment_10min.py">software-testbed/experiments/006_10min_attack_software/run_experiment_10min.py</a><span class="size">8.0 KB</span></div>
+</div></section>
+<section class="card" id="sec-observer-demo"><h2>Observer demo <span class="badge">6</span></h2><div class="file-list">
+<div class="file"><a href="demo-ataque/README.md">demo-ataque/README.md</a><span class="size">651 B</span></div>
+<div class="file"><a href="demo-ataque/assets/findings.json">demo-ataque/assets/findings.json</a><span class="size">2.5 KB</span></div>
+<div class="file"><a href="demo-ataque/assets/input_attack_plan.json">demo-ataque/assets/input_attack_plan.json</a><span class="size">1.2 KB</span></div>
+<div class="file"><a href="demo-ataque/assets/manifest.json">demo-ataque/assets/manifest.json</a><span class="size">968 B</span></div>
+<div class="file"><a href="demo-ataque/assets/sample_frames.json">demo-ataque/assets/sample_frames.json</a><span class="size">150.3 KB</span></div>
+<div class="file"><a href="demo-ataque/index.html">demo-ataque/index.html</a><span class="size">10.9 KB</span></div>
+</div></section>
+<section class="card" id="sec-software-testbed"><h2>Software testbed <span class="badge">4</span></h2><div class="file-list">
+<div class="file"><a href="software-testbed/.gitignore">software-testbed/.gitignore</a><span class="size">104 B</span></div>
+<div class="file"><a href="software-testbed/README.md">software-testbed/README.md</a><span class="size">1.7 KB</span></div>
+<div class="file"><a href="software-testbed/docs/article_notes.md">software-testbed/docs/article_notes.md</a><span class="size">1.3 KB</span></div>
+<div class="file"><a href="software-testbed/requirements.txt">software-testbed/requirements.txt</a><span class="size">16 B</span></div>
+</div></section>
+<section class="card" id="sec-testbed-python-source"><h2>Testbed Python source <span class="badge">5</span></h2><div class="file-list">
+<div class="file"><a href="software-testbed/src/attacker_flood.py">software-testbed/src/attacker_flood.py</a><span class="size">1.3 KB</span></div>
+<div class="file"><a href="software-testbed/src/attacker_spoof.py">software-testbed/src/attacker_spoof.py</a><span class="size">1.2 KB</span></div>
+<div class="file"><a href="software-testbed/src/can_common.py">software-testbed/src/can_common.py</a><span class="size">1.7 KB</span></div>
+<div class="file"><a href="software-testbed/src/ecu_sim.py">software-testbed/src/ecu_sim.py</a><span class="size">2.2 KB</span></div>
+<div class="file"><a href="software-testbed/src/forensic_logger.py">software-testbed/src/forensic_logger.py</a><span class="size">3.3 KB</span></div>
+</div></section>
+<section class="card" id="sec-testbed-shell-scripts"><h2>Testbed shell scripts <span class="badge">7</span></h2><div class="file-list">
+<div class="file"><a href="software-testbed/scripts/install_deps_ubuntu.sh">software-testbed/scripts/install_deps_ubuntu.sh</a><span class="size">524 B</span></div>
+<div class="file"><a href="software-testbed/scripts/run_ecu_sim.sh">software-testbed/scripts/run_ecu_sim.sh</a><span class="size">237 B</span></div>
+<div class="file"><a href="software-testbed/scripts/run_flood.sh">software-testbed/scripts/run_flood.sh</a><span class="size">263 B</span></div>
+<div class="file"><a href="software-testbed/scripts/run_logger.sh">software-testbed/scripts/run_logger.sh</a><span class="size">334 B</span></div>
+<div class="file"><a href="software-testbed/scripts/run_replay.sh">software-testbed/scripts/run_replay.sh</a><span class="size">227 B</span></div>
+<div class="file"><a href="software-testbed/scripts/run_spoof.sh">software-testbed/scripts/run_spoof.sh</a><span class="size">263 B</span></div>
+<div class="file"><a href="software-testbed/scripts/setup_vcan.sh">software-testbed/scripts/setup_vcan.sh</a><span class="size">445 B</span></div>
+</div></section>
+<section class="card" id="sec-project-documentation"><h2>Project documentation <span class="badge">17</span></h2><div class="file-list">
+<div class="file"><a href="NEXT_STEPS.md">NEXT_STEPS.md</a><span class="size">6.6 KB</span></div>
+<div class="file"><a href="README.md">README.md</a><span class="size">1.9 KB</span></div>
+<div class="file"><a href="compras_hardware.md">compras_hardware.md</a><span class="size">2.2 KB</span></div>
+<div class="file"><a href="ecu_real_usado.md">ecu_real_usado.md</a><span class="size">1.9 KB</span></div>
+<div class="file"><a href="event_ssv2026.md">event_ssv2026.md</a><span class="size">2.0 KB</span></div>
+<div class="file"><a href="evento_ssv2026.md">evento_ssv2026.md</a><span class="size">2.0 KB</span></div>
+<div class="file"><a href="literatura_qualificada.md">literatura_qualificada.md</a><span class="size">6.2 KB</span></div>
+<div class="file"><a href="methodology_testbed.md">methodology_testbed.md</a><span class="size">2.5 KB</span></div>
+<div class="file"><a href="metodologia_testbed.md">metodologia_testbed.md</a><span class="size">2.5 KB</span></div>
+<div class="file"><a href="o_que_procurar.md">o_que_procurar.md</a><span class="size">1.7 KB</span></div>
+<div class="file"><a href="paper_plan.md">paper_plan.md</a><span class="size">3.8 KB</span></div>
+<div class="file"><a href="plano_artigo.md">plano_artigo.md</a><span class="size">3.8 KB</span></div>
+<div class="file"><a href="projetos_100_software.md">projetos_100_software.md</a><span class="size">2.2 KB</span></div>
+<div class="file"><a href="qualified_literature.md">qualified_literature.md</a><span class="size">6.2 KB</span></div>
+<div class="file"><a href="software_projects.md">software_projects.md</a><span class="size">2.2 KB</span></div>
+<div class="file"><a href="todo.md">todo.md</a><span class="size">2.2 KB</span></div>
+<div class="file"><a href="what_to_search_next.md">what_to_search_next.md</a><span class="size">1.7 KB</span></div>
+</div></section>
+<section class="card" id="sec-bibliography"><h2>Bibliography <span class="badge">1</span></h2><div class="file-list">
+<div class="file"><a href="bib/referencias_candidatas.bib">bib/referencias_candidatas.bib</a><span class="size">3.3 KB</span></div>
+</div></section>
+<section class="card" id="sec-raw-research-notes"><h2>Raw research notes <span class="badge">2</span></h2><div class="file-list">
+<div class="file"><a href="raw/openalex_literature_scan.txt">raw/openalex_literature_scan.txt</a><span class="size">33.6 KB</span></div>
+<div class="file"><a href="raw/web_search_results.md">raw/web_search_results.md</a><span class="size">1.9 KB</span></div>
+</div></section>
+<section class="card" id="sec-main-index"><h2>Main index <span class="badge">1</span></h2><div class="file-list">
+<div class="file"><a href="index.html">index.html</a><span class="size">24.0 KB</span></div>
+</div></section>
+<section class="card"><h2>Print note</h2><p>Open <a href="paper/article_ieee_v2.html"><code>paper/article_ieee_v2.html</code></a> and use <strong>Print → Save as PDF</strong>. For final submission, port the content to official IEEEtran/IEEE conference template.</p></section></body></html>

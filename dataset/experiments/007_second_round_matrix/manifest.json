@@ -1,0 +1,27 @@
+{
+  "schema": "software-defined-can-testbed.second-round.v1",
+  "batch_id": "007_second_round_matrix",
+  "created_utc": "2026-06-04T09:49:05.467912+00:00",
+  "files": {
+    "experiment_matrix.csv": {
+      "sha256": "a09d27e96116ad31417058ba810b18cb47fe4a06f2b315c5b1dce9ffe135a0c9",
+      "bytes": 1180
+    },
+    "second_round_frames_normalized.csv": {
+      "sha256": "5a84e380ae716072be78b4450ac90c009c9941149df38f2f4a78fae05b81d0a8",
+      "bytes": 75540861
+    },
+    "second_round_summary.json": {
+      "sha256": "de359e9301b823c09e3d169ff8b2e674cd3743dccc87232d0785f6d34560175a",
+      "bytes": 21341
+    },
+    "second_round_summary.md": {
+      "sha256": "aed2e99d7e8cf2931b3ee3d7b170cc9229ef177f65c6479bbd5d5e5347e33749",
+      "bytes": 2103
+    },
+    "index.html": {
+      "sha256": "50e7a5a8c9c14b0ab0303ee812cc14b94cdcf7a44a365d0e9b04bd89f0f168b2",
+      "bytes": 2613
+    }
+  }
+}
