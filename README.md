@@ -36,6 +36,7 @@ All experiments are software-defined and observer-safe.
 
 - Concept DOI: https://doi.org/10.5281/zenodo.20541106
 - First version DOI: https://doi.org/10.5281/zenodo.20541107
+- Paper v4 release DOI: https://doi.org/10.5281/zenodo.20541255
 
 ## Quick links
 

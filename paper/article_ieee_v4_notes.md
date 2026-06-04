@@ -45,3 +45,8 @@ Files:
 
 - Some references still use conservative metadata (`and others`) where web metadata could not be fully verified without risking invented precision.
 - For camera-ready submission, verify conference page limit, author block, blind-review rules, and whether IEEE wants DOI URL or plain DOI in artifact section.
+
+## Zenodo release notes
+
+- v0.2.0 Paper v4 DOI detected: `10.5281/zenodo.20541255`.
+- Manuscript cites the Zenodo concept DOI `10.5281/zenodo.20541106` to avoid stale version-specific DOI after later releases.
