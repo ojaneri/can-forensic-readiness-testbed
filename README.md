@@ -6,7 +6,7 @@ A software-defined, low-cost CAN testbed for automotive cybersecurity education 
 
 This repository accompanies the paper draft:
 
-**A Software-Defined Low-Cost CAN Testbed for Automotive Cybersecurity Education and Forensic-Readiness Analysis**
+**A Software-Defined Low-Cost CAN Testbed for Automotive Cybersecurity and Forensic-Readiness Analysis**
 
 ## Scope and safety boundary
 

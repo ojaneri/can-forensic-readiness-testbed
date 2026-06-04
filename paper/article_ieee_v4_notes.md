@@ -52,3 +52,5 @@ Files:
 - Manuscript cites the Zenodo concept DOI `10.5281/zenodo.20541106` to avoid stale version-specific DOI after later releases.
 
 - BibTeX artifact citation now uses concept DOI `10.5281/zenodo.20541106` for consistency.
+
+- Title updated to remove "Education": `A Software-Defined Low-Cost CAN Testbed for Automotive Cybersecurity and Forensic-Readiness Analysis`.
