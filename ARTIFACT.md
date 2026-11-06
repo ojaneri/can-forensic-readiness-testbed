@@ -32,7 +32,8 @@ are validated here.
 
 ## Demos
 
-Open locally in a browser:
+The demos fetch JSON files, which browsers block from `file://`. Serve the repository root over HTTP, for example
+`python3 -m http.server 8000`, and open (replace the path below by the demo you want):
 
 - `demo-attack/index.html`
 - `demo-external-icsim/index.html`

@@ -1,6 +1,6 @@
 # bench/campaign — re-running the experiments
 
-Everything here re-runs experiments from `estudo/` **without touching them**. That matters:
+Everything here re-runs the archived experiments **without touching them** (in this repository they are under `dataset/experiments/`). That matters:
 the archived runners write beside themselves, so running one in place overwrites the very
 evidence it is meant to reproduce.
 
@@ -48,10 +48,8 @@ which is what a timing campaign is measuring. Varying the seed too would confoun
 Not ceremony. Re-running found a real error: the unique-ID counts in Table II were wrong for
 four experiments, and one of those wrong numbers was carrying a false claim about the HCRL
 fuzzy subset having "an order of magnitude" more ID diversity than any synthetic experiment.
-See `../results/RESULTS.md` §A9 and §B1.
-
-Every number that reaches the manuscript must land in `../results/RESULTS.md` with the script
-that produced it.
+The authors' working results log (`RESULTS.md`) is not part of this repository; every number in the manuscript can be
+regenerated from the scripts and data deposited here.
 
 ## Note for this repository
 

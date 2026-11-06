@@ -6,7 +6,7 @@
 
 A reproducible software-defined CAN testbed for automotive cybersecurity and forensic-readiness analysis.
 
-Current paper candidate:
+Earlier paper candidate (v6). The SBESC 2026 SSV manuscript that cites this artifact is under review and is not part of this repository:
 
 **A Reproducible Software-Defined CAN Testbed for Automotive Cybersecurity and Forensic-Readiness Analysis**
 
