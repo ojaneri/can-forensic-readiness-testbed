@@ -15,7 +15,8 @@ on that bench bus. Do not connect this setup to a vehicle.
   Header J3 (between the H and L markings) must stay without a jumper: a jumper there shorts H to L.
 - The TJA1050 needs a 5 V supply. Powered from 3.3 V, the module received the injected frames but could not transmit
   (`runs/2026-11-05_3v3_short`).
-- Firmware: `firmware/can_ecu.ino` (STM32duino core 3.0.0, `mcp_can` 1.5.1, FQBN
+- Firmware: `firmware/can_ecu.ino` (smooth speed profile, used in Exp. 021, 022 and the 3.3 V test) and
+  `firmware/can_ecu_exp020_random_speed.ino` (random speed byte, used in Exp. 020). Both: STM32duino core 3.0.0, `mcp_can` 1.5.1, FQBN
   `STMicroelectronics:stm32:Nucleo_64:pnum=NUCLEO_L476RG`). It sends IDs 0x100, 0x120, 0x188 and 0x300 every
   20, 50, 100 and 200 ms and prints its receive counters on the ST-Link serial port once per second. Exp. 020 used a
   random speed byte (`27 + random(0, 66)`); Exp. 021, 022 and the 3.3 V test use the smooth profile in this file.

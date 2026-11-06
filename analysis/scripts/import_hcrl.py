@@ -35,6 +35,14 @@ HCRL_LABEL_MAP = {
     'rpm': 'spoofing',   # Spoofing RPM gauge
 }
 
+# Row counts published on the HCRL page (used only to report the import is complete).
+OFFICIAL_ROWS = {
+    'dos': 3665771,
+    'fuzzy': 3838860,
+    'gear': 4443142,
+    'rpm': 4621702,
+}
+
 EXP_IDS = {
     'normal': '013_hcrl_normal',
     'dos': '014_hcrl_dos',
@@ -54,18 +62,22 @@ SOURCE_FILES = {
 
 def parse_hcrl_value(raw: str):
     """HCRL CSV rows are comma-separated values without header.
-    Fields: Timestamp, CAN ID, DLC, DATA[0..7], Flag
+    Fields: Timestamp, CAN ID, DLC, DATA[0..DLC-1], Flag.
+    Frames with DLC < 8 carry only DLC data fields (for example DLC 2 or 5),
+    so the payload is taken as exactly DLC bytes and the flag follows them.
     """
     parts = raw.strip().split(',')
-    if len(parts) < 10:
+    if len(parts) < 4:
         return None
     try:
         ts = float(parts[0])
         can_id = parts[1].strip().upper()
         dlc = int(parts[2])
-        data_bytes = parts[3:11]
-        payload = ''.join(b.zfill(2) for b in data_bytes)
-        flag = parts[11].strip().upper() if len(parts) > 11 else 'R'
+        if not 0 <= dlc <= 8 or len(parts) < 3 + dlc:
+            return None
+        data_bytes = parts[3:3 + dlc]
+        payload = ''.join(b.strip().zfill(2) for b in data_bytes)
+        flag = parts[3 + dlc].strip().upper() if len(parts) > 3 + dlc else 'R'
         return {
             'timestamp': ts,
             'arbitration_id': can_id,
@@ -85,12 +97,14 @@ def import_hcrl(in_path: Path, exp_id: str, label: str, max_frames: int = None):
 
     rows = []
     skipped = 0
+    rows_read = 0
     t0 = None
 
     with in_path.open(newline='', encoding='utf-8', errors='replace') as f:
         for i, line in enumerate(f):
             if max_frames and i >= max_frames:
                 break
+            rows_read = i + 1
             parsed = parse_hcrl_value(line)
             if parsed is None:
                 skipped += 1
@@ -205,6 +219,10 @@ def import_hcrl(in_path: Path, exp_id: str, label: str, max_frames: int = None):
         'normal_frames': sum(1 for r in rows if r['attack_label'] == 'normal'),
         'label_type': HCRL_LABEL_MAP.get(label, label),
     }
+    summary['rows_read'] = rows_read
+    summary['rows_skipped_malformed'] = skipped
+    summary['short_dlc_rows'] = sum(1 for r in rows if r['dlc'] < 8)
+    summary['official_rows_expected'] = OFFICIAL_ROWS.get(label)
     summary_path = out_dir / 'summary.json'
     summary_path.write_text(json.dumps(summary, indent=2, ensure_ascii=False) + '\n')
 

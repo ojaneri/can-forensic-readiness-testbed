@@ -1,8 +1,8 @@
 {
   "experiment_id": "014_hcrl_dos",
   "label": "dos",
-  "total_frames": 3634583,
-  "unique_arbitration_ids": 26,
+  "total_frames": 3665771,
+  "unique_arbitration_ids": 27,
   "top_arbitration_ids": [
     {
       "id": "0",
@@ -46,13 +46,17 @@
     }
   ],
   "duration_s": 2832.669517,
-  "mean_inter_arrival_s": 0.000779,
+  "mean_inter_arrival_s": 0.000773,
   "min_inter_arrival_s": 2.4e-05,
   "max_inter_arrival_s": 22.358267,
   "negative_inter_arrivals": 0,
-  "mean_dlc": 8.0,
-  "mean_frame_rate_fps": 1283.095,
+  "mean_dlc": 7.949,
+  "mean_frame_rate_fps": 1294.105,
   "attack_frames": 587521,
-  "normal_frames": 3047062,
-  "label_type": "flooding"
+  "normal_frames": 3078250,
+  "label_type": "flooding",
+  "rows_read": 3665771,
+  "rows_skipped_malformed": 0,
+  "short_dlc_rows": 31188,
+  "official_rows_expected": 3665771
 }

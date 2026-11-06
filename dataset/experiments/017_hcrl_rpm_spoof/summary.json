@@ -1,8 +1,8 @@
 {
   "experiment_id": "017_hcrl_rpm_spoof",
   "label": "rpm",
-  "total_frames": 4580226,
-  "unique_arbitration_ids": 25,
+  "total_frames": 4621702,
+  "unique_arbitration_ids": 26,
   "top_arbitration_ids": [
     {
       "id": "316",
@@ -46,13 +46,17 @@
     }
   ],
   "duration_s": 10179.01383,
-  "mean_inter_arrival_s": 0.002222,
+  "mean_inter_arrival_s": 0.002202,
   "min_inter_arrival_s": 1.5e-05,
   "max_inter_arrival_s": 7744.934786,
   "negative_inter_arrivals": 0,
-  "mean_dlc": 8.0,
-  "mean_frame_rate_fps": 449.968,
+  "mean_dlc": 7.9462,
+  "mean_frame_rate_fps": 454.042,
   "attack_frames": 654897,
-  "normal_frames": 3925329,
-  "label_type": "spoofing"
+  "normal_frames": 3966805,
+  "label_type": "spoofing",
+  "rows_read": 4621702,
+  "rows_skipped_malformed": 0,
+  "short_dlc_rows": 41476,
+  "official_rows_expected": 4621702
 }

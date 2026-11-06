@@ -23,7 +23,12 @@ Its frames are not redistributed here. Each experiment folder holds only:
 4. Compare the written files with `manifest.json`, for example
    `sha256sum dataset/experiments/014_hcrl_dos/frames_normalized.csv` against the value listed there.
 
-Regenerating from the official files with this script reproduced all 16 hashes (four files in each of the four
-experiments), including the 492 MB `frames_normalized.csv` of Experiment 014. This was checked on 2026-11-05.
+The deposited manifests were produced on 2026-11-06 by running this importer (version v0.5.1) on the official files.
+Its row counts match the totals published on the HCRL page: DoS 3,665,771; Fuzzy 3,838,860; Gear 4,443,142; RPM 4,621,702
+(the `summary.json` of each experiment records `rows_read`, `rows_skipped_malformed` and `official_rows_expected`).
+
+Version v0.5.0 of the importer dropped the 200,662 frames with DLC 2 or 5 (fewer than ten comma-separated fields). Those
+frames are real traffic, so v0.5.1 keeps them and sets the payload to the DLC bytes. The frames of Experiment 014 are
+about 496 MB in `frames_normalized.csv`. Independent regeneration on another machine is the check that remains to be done.
 
 The unlabeled normal-driving capture of the HCRL release is not used by the paper.

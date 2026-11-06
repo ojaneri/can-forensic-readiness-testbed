@@ -1,7 +1,7 @@
 {
   "experiment_id": "015_hcrl_fuzzy",
   "label": "fuzzy",
-  "total_frames": 3751027,
+  "total_frames": 3838860,
   "unique_arbitration_ids": 2048,
   "top_arbitration_ids": [
     {
@@ -46,13 +46,17 @@
     }
   ],
   "duration_s": 5487.155067,
-  "mean_inter_arrival_s": 0.001463,
+  "mean_inter_arrival_s": 0.001429,
   "min_inter_arrival_s": 2.2e-05,
   "max_inter_arrival_s": 2539.482308,
   "negative_inter_arrivals": 0,
-  "mean_dlc": 8.0,
-  "mean_frame_rate_fps": 683.601,
+  "mean_dlc": 7.9045,
+  "mean_frame_rate_fps": 699.608,
   "attack_frames": 491847,
-  "normal_frames": 3259180,
-  "label_type": "fuzzy"
+  "normal_frames": 3347013,
+  "label_type": "fuzzy",
+  "rows_read": 3838860,
+  "rows_skipped_malformed": 0,
+  "short_dlc_rows": 87836,
+  "official_rows_expected": 3838860
 }

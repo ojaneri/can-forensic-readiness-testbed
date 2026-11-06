@@ -1,8 +1,8 @@
 {
   "experiment_id": "016_hcrl_gear_spoof",
   "label": "gear",
-  "total_frames": 4402977,
-  "unique_arbitration_ids": 25,
+  "total_frames": 4443142,
+  "unique_arbitration_ids": 26,
   "top_arbitration_ids": [
     {
       "id": "43F",
@@ -46,13 +46,17 @@
     }
   ],
   "duration_s": 8019.002378,
-  "mean_inter_arrival_s": 0.001821,
+  "mean_inter_arrival_s": 0.001805,
   "min_inter_arrival_s": 1.5e-05,
   "max_inter_arrival_s": 5588.125845,
   "negative_inter_arrivals": 0,
-  "mean_dlc": 8.0,
-  "mean_frame_rate_fps": 549.068,
+  "mean_dlc": 7.9458,
+  "mean_frame_rate_fps": 554.077,
   "attack_frames": 597252,
-  "normal_frames": 3805725,
-  "label_type": "spoofing"
+  "normal_frames": 3845890,
+  "label_type": "spoofing",
+  "rows_read": 4443142,
+  "rows_skipped_malformed": 0,
+  "short_dlc_rows": 40165,
+  "official_rows_expected": 4443142
 }
