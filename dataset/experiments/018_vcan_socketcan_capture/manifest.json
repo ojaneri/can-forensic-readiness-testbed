@@ -1,0 +1,8 @@
+{
+  "external_source_metadata.json": "f1db9d16a24467440a00ecae0188a82c7180ec736086fc9bc8faae3fdccce936",
+  "frames_normalized.csv": "bc0e1a2a0295017cbeb95602de0020f85ff3d8171bc26944b5eedcad3a329569",
+  "output_candump_annotated.log": "b5ebfeae118074abecf82537f21718dfac9a54828049be0a4d2d182c5be4f395",
+  "raw_candump.log": "b3f2c403801a3ddbbe2e74ec4bf1c670fd888d8d825aaf3dbc0382d6f1b4c164",
+  "summary.json": "514fb65d4c1e83c4edbe936feccb17a194596519166ca7f97af3f9725d570875",
+  "_comment": "SHA-256 hashes of experiment output files"
+}

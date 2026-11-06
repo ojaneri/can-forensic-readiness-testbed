@@ -1,0 +1,45 @@
+{
+  "experiment_id": "019_vcan_varied_traffic",
+  "total_frames": 1500,
+  "unique_arbitration_ids": 7,
+  "top_arbitration_ids": [
+    {
+      "id": "350",
+      "count": 316
+    },
+    {
+      "id": "188",
+      "count": 287
+    },
+    {
+      "id": "100",
+      "count": 200
+    },
+    {
+      "id": "300",
+      "count": 200
+    },
+    {
+      "id": "3AA",
+      "count": 182
+    },
+    {
+      "id": "244",
+      "count": 160
+    },
+    {
+      "id": "7FF",
+      "count": 155
+    }
+  ],
+  "duration_s": 0.012002,
+  "mean_inter_arrival_s": 8e-06,
+  "negative_inter_arrivals": 0,
+  "mean_frame_rate_fps": 124979.17,
+  "channels": [
+    "vcan0"
+  ],
+  "capture_tool": "candump (can-utils)",
+  "generator": "cangen vcan0 -g 5 -I 100-3FF -D i -L 8",
+  "notes": "Multi-ID SocketCAN traffic. Confirms the pipeline handles kernel-level CAN with varied arbitration IDs."
+}

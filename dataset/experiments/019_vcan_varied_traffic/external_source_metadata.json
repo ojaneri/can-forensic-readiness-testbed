@@ -1,0 +1,7 @@
+{
+  "source_file": "raw_candump.log",
+  "source_sha256": "a3480298a4d7331723c263a402c5a3ef7c3983071b9118debe8aee8b808b1239",
+  "experiment_id": "019_vcan_varied_traffic",
+  "interface": "vcan0",
+  "driver": "SocketCAN kernel module"
+}

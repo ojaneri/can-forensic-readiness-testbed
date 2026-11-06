@@ -1,0 +1,489 @@
+{
+  "created_utc": "2026-09-11T19:25:43.879390+00:00",
+  "runs_requested": 10,
+  "python": "3.12.3",
+  "note": "seed held constant; OS scheduling is the only variable",
+  "experiments": {
+    "010": {
+      "label": "wall-clock capture",
+      "runs_ok": 10,
+      "runs_failed": 0,
+      "frames": {
+        "n": 10,
+        "mean": 1167,
+        "sd": 0.0,
+        "min": 1167,
+        "max": 1167
+      },
+      "duration_s": {
+        "n": 10,
+        "mean": 20.0005498,
+        "sd": 0.0012256503761044564,
+        "min": 19.999919,
+        "max": 20.003837
+      },
+      "iat_mean_s": {
+        "n": 10,
+        "mean": 0.017153400000000003,
+        "sd": 9.660917830789853e-07,
+        "min": 0.017153,
+        "max": 0.017156
+      },
+      "latency_mean_s": null,
+      "negative_iat_total": 0,
+      "unique_ids": [
+        4
+      ],
+      "per_run": [
+        {
+          "run": 1,
+          "ok": true,
+          "wall_s": 20.093,
+          "frames": 1167,
+          "duration_s": 19.99998,
+          "unique_ids": 4,
+          "iat_mean": 0.017153,
+          "iat_stdev": 0.01911,
+          "iat_negative": 0
+        },
+        {
+          "run": 2,
+          "ok": true,
+          "wall_s": 20.082,
+          "frames": 1167,
+          "duration_s": 19.999919,
+          "unique_ids": 4,
+          "iat_mean": 0.017153,
+          "iat_stdev": 0.019129,
+          "iat_negative": 0
+        },
+        {
+          "run": 3,
+          "ok": true,
+          "wall_s": 20.081,
+          "frames": 1167,
+          "duration_s": 20.000087,
+          "unique_ids": 4,
+          "iat_mean": 0.017153,
+          "iat_stdev": 0.019109,
+          "iat_negative": 0
+        },
+        {
+          "run": 4,
+          "ok": true,
+          "wall_s": 20.086,
+          "frames": 1167,
+          "duration_s": 20.00071,
+          "unique_ids": 4,
+          "iat_mean": 0.017153,
+          "iat_stdev": 0.019108,
+          "iat_negative": 0
+        },
+        {
+          "run": 5,
+          "ok": true,
+          "wall_s": 20.078,
+          "frames": 1167,
+          "duration_s": 19.999961,
+          "unique_ids": 4,
+          "iat_mean": 0.017153,
+          "iat_stdev": 0.019092,
+          "iat_negative": 0
+        },
+        {
+          "run": 6,
+          "ok": true,
+          "wall_s": 20.076,
+          "frames": 1167,
+          "duration_s": 19.999951,
+          "unique_ids": 4,
+          "iat_mean": 0.017153,
+          "iat_stdev": 0.0191,
+          "iat_negative": 0
+        },
+        {
+          "run": 7,
+          "ok": true,
+          "wall_s": 20.079,
+          "frames": 1167,
+          "duration_s": 20.003837,
+          "unique_ids": 4,
+          "iat_mean": 0.017156,
+          "iat_stdev": 0.019259,
+          "iat_negative": 0
+        },
+        {
+          "run": 8,
+          "ok": true,
+          "wall_s": 20.124,
+          "frames": 1167,
+          "duration_s": 20.001137,
+          "unique_ids": 4,
+          "iat_mean": 0.017154,
+          "iat_stdev": 0.019149,
+          "iat_negative": 0
+        },
+        {
+          "run": 9,
+          "ok": true,
+          "wall_s": 20.122,
+          "frames": 1167,
+          "duration_s": 19.999984,
+          "unique_ids": 4,
+          "iat_mean": 0.017153,
+          "iat_stdev": 0.01915,
+          "iat_negative": 0
+        },
+        {
+          "run": 10,
+          "ok": true,
+          "wall_s": 20.09,
+          "frames": 1167,
+          "duration_s": 19.999932,
+          "unique_ids": 4,
+          "iat_mean": 0.017153,
+          "iat_stdev": 0.019118,
+          "iat_negative": 0
+        }
+      ]
+    },
+    "011": {
+      "label": "python-can virtual bus",
+      "runs_ok": 10,
+      "runs_failed": 0,
+      "frames": {
+        "n": 10,
+        "mean": 1750,
+        "sd": 0.0,
+        "min": 1750,
+        "max": 1750
+      },
+      "duration_s": {
+        "n": 10,
+        "mean": 29.999736,
+        "sd": 0.003119856264494964,
+        "min": 29.998369,
+        "max": 30.008587
+      },
+      "iat_mean_s": {
+        "n": 10,
+        "mean": 0.0171526,
+        "sd": 1.8973665961007308e-06,
+        "min": 0.017152,
+        "max": 0.017158
+      },
+      "latency_mean_s": {
+        "n": 10,
+        "mean": 0.000156,
+        "sd": 1.2927146286443545e-05,
+        "min": 0.000141,
+        "max": 0.000173
+      },
+      "negative_iat_total": 0,
+      "unique_ids": [
+        4
+      ],
+      "per_run": [
+        {
+          "run": 1,
+          "ok": true,
+          "wall_s": 30.323,
+          "frames": 1750,
+          "duration_s": 29.998841,
+          "unique_ids": 4,
+          "iat_mean": 0.017152,
+          "iat_stdev": 0.019063,
+          "iat_negative": 0,
+          "lat_mean": 0.000158,
+          "lat_max": 0.00193
+        },
+        {
+          "run": 2,
+          "ok": true,
+          "wall_s": 30.307,
+          "frames": 1750,
+          "duration_s": 30.008587,
+          "unique_ids": 4,
+          "iat_mean": 0.017158,
+          "iat_stdev": 0.019086,
+          "iat_negative": 0,
+          "lat_mean": 0.000145,
+          "lat_max": 0.003919
+        },
+        {
+          "run": 3,
+          "ok": true,
+          "wall_s": 30.291,
+          "frames": 1750,
+          "duration_s": 29.999173,
+          "unique_ids": 4,
+          "iat_mean": 0.017152,
+          "iat_stdev": 0.019048,
+          "iat_negative": 0,
+          "lat_mean": 0.000164,
+          "lat_max": 0.005953
+        },
+        {
+          "run": 4,
+          "ok": true,
+          "wall_s": 30.291,
+          "frames": 1750,
+          "duration_s": 29.998817,
+          "unique_ids": 4,
+          "iat_mean": 0.017152,
+          "iat_stdev": 0.019052,
+          "iat_negative": 0,
+          "lat_mean": 0.000144,
+          "lat_max": 0.003531
+        },
+        {
+          "run": 5,
+          "ok": true,
+          "wall_s": 30.256,
+          "frames": 1750,
+          "duration_s": 29.999095,
+          "unique_ids": 4,
+          "iat_mean": 0.017152,
+          "iat_stdev": 0.019077,
+          "iat_negative": 0,
+          "lat_mean": 0.000141,
+          "lat_max": 0.003373
+        },
+        {
+          "run": 6,
+          "ok": true,
+          "wall_s": 30.303,
+          "frames": 1750,
+          "duration_s": 29.998755,
+          "unique_ids": 4,
+          "iat_mean": 0.017152,
+          "iat_stdev": 0.01908,
+          "iat_negative": 0,
+          "lat_mean": 0.000173,
+          "lat_max": 0.004479
+        },
+        {
+          "run": 7,
+          "ok": true,
+          "wall_s": 30.325,
+          "frames": 1750,
+          "duration_s": 29.998369,
+          "unique_ids": 4,
+          "iat_mean": 0.017152,
+          "iat_stdev": 0.019072,
+          "iat_negative": 0,
+          "lat_mean": 0.000143,
+          "lat_max": 0.002414
+        },
+        {
+          "run": 8,
+          "ok": true,
+          "wall_s": 30.26,
+          "frames": 1750,
+          "duration_s": 29.998587,
+          "unique_ids": 4,
+          "iat_mean": 0.017152,
+          "iat_stdev": 0.019001,
+          "iat_negative": 0,
+          "lat_mean": 0.000172,
+          "lat_max": 0.003434
+        },
+        {
+          "run": 9,
+          "ok": true,
+          "wall_s": 30.306,
+          "frames": 1750,
+          "duration_s": 29.998632,
+          "unique_ids": 4,
+          "iat_mean": 0.017152,
+          "iat_stdev": 0.019051,
+          "iat_negative": 0,
+          "lat_mean": 0.00015,
+          "lat_max": 0.002114
+        },
+        {
+          "run": 10,
+          "ok": true,
+          "wall_s": 30.313,
+          "frames": 1750,
+          "duration_s": 29.998504,
+          "unique_ids": 4,
+          "iat_mean": 0.017152,
+          "iat_stdev": 0.019089,
+          "iat_negative": 0,
+          "lat_mean": 0.00017,
+          "lat_max": 0.010912
+        }
+      ]
+    },
+    "012": {
+      "label": "python-can ICSim replay",
+      "runs_ok": 10,
+      "runs_failed": 0,
+      "frames": {
+        "n": 10,
+        "mean": 6158,
+        "sd": 0.0,
+        "min": 6158,
+        "max": 6158
+      },
+      "duration_s": {
+        "n": 10,
+        "mean": 3.2560795000000002,
+        "sd": 0.0005532624954656762,
+        "min": 3.255299,
+        "max": 3.257425
+      },
+      "iat_mean_s": {
+        "n": 10,
+        "mean": 0.000529,
+        "sd": 0.0,
+        "min": 0.000529,
+        "max": 0.000529
+      },
+      "latency_mean_s": {
+        "n": 10,
+        "mean": 5.56e-05,
+        "sd": 2.547329756605706e-06,
+        "min": 5.1e-05,
+        "max": 5.9e-05
+      },
+      "negative_iat_total": 0,
+      "unique_ids": [
+        34
+      ],
+      "per_run": [
+        {
+          "run": 1,
+          "ok": true,
+          "wall_s": 3.678,
+          "frames": 6158,
+          "duration_s": 3.255983,
+          "unique_ids": 34,
+          "iat_mean": 0.000529,
+          "iat_stdev": 0.000686,
+          "iat_negative": 0,
+          "lat_mean": 5.9e-05,
+          "lat_max": 0.004108
+        },
+        {
+          "run": 2,
+          "ok": true,
+          "wall_s": 3.612,
+          "frames": 6158,
+          "duration_s": 3.25613,
+          "unique_ids": 34,
+          "iat_mean": 0.000529,
+          "iat_stdev": 0.000687,
+          "iat_negative": 0,
+          "lat_mean": 5.9e-05,
+          "lat_max": 0.002595
+        },
+        {
+          "run": 3,
+          "ok": true,
+          "wall_s": 3.576,
+          "frames": 6158,
+          "duration_s": 3.25597,
+          "unique_ids": 34,
+          "iat_mean": 0.000529,
+          "iat_stdev": 0.000638,
+          "iat_negative": 0,
+          "lat_mean": 5.3e-05,
+          "lat_max": 0.002647
+        },
+        {
+          "run": 4,
+          "ok": true,
+          "wall_s": 3.628,
+          "frames": 6158,
+          "duration_s": 3.257425,
+          "unique_ids": 34,
+          "iat_mean": 0.000529,
+          "iat_stdev": 0.000658,
+          "iat_negative": 0,
+          "lat_mean": 5.5e-05,
+          "lat_max": 0.003126
+        },
+        {
+          "run": 5,
+          "ok": true,
+          "wall_s": 3.631,
+          "frames": 6158,
+          "duration_s": 3.255799,
+          "unique_ids": 34,
+          "iat_mean": 0.000529,
+          "iat_stdev": 0.000666,
+          "iat_negative": 0,
+          "lat_mean": 5.5e-05,
+          "lat_max": 0.004015
+        },
+        {
+          "run": 6,
+          "ok": true,
+          "wall_s": 3.579,
+          "frames": 6158,
+          "duration_s": 3.256342,
+          "unique_ids": 34,
+          "iat_mean": 0.000529,
+          "iat_stdev": 0.000618,
+          "iat_negative": 0,
+          "lat_mean": 5.1e-05,
+          "lat_max": 0.000981
+        },
+        {
+          "run": 7,
+          "ok": true,
+          "wall_s": 3.62,
+          "frames": 6158,
+          "duration_s": 3.256187,
+          "unique_ids": 34,
+          "iat_mean": 0.000529,
+          "iat_stdev": 0.000669,
+          "iat_negative": 0,
+          "lat_mean": 5.4e-05,
+          "lat_max": 0.002069
+        },
+        {
+          "run": 8,
+          "ok": true,
+          "wall_s": 3.718,
+          "frames": 6158,
+          "duration_s": 3.255948,
+          "unique_ids": 34,
+          "iat_mean": 0.000529,
+          "iat_stdev": 0.000747,
+          "iat_negative": 0,
+          "lat_mean": 5.7e-05,
+          "lat_max": 0.002312
+        },
+        {
+          "run": 9,
+          "ok": true,
+          "wall_s": 3.644,
+          "frames": 6158,
+          "duration_s": 3.255712,
+          "unique_ids": 34,
+          "iat_mean": 0.000529,
+          "iat_stdev": 0.000817,
+          "iat_negative": 0,
+          "lat_mean": 5.7e-05,
+          "lat_max": 0.002461
+        },
+        {
+          "run": 10,
+          "ok": true,
+          "wall_s": 3.641,
+          "frames": 6158,
+          "duration_s": 3.255299,
+          "unique_ids": 34,
+          "iat_mean": 0.000529,
+          "iat_stdev": 0.000669,
+          "iat_negative": 0,
+          "lat_mean": 5.6e-05,
+          "lat_max": 0.001429
+        }
+      ]
+    }
+  }
+}

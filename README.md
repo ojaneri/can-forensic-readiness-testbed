@@ -39,6 +39,9 @@ All demos replay stored artifacts and do not transmit live CAN frames.
 - Experiment 008: external ICSim `sample-can.log` ingestion and normalization.
 - Experiment 009: didactic spoof injection into external ICSim trace.
 - Experiment 010: software-only wall-clock timing capture.
+- Experiments 011--012: python-can virtual bus and ICSim replay; ten-run timing campaign of Experiments 010--012 in `bench/campaign/`.
+- Experiments 014--017: HCRL Car-Hacking Dataset imports (metadata, summaries and SHA-256 manifests only; see `dataset/experiments/HCRL_NOTICE.md`).
+- Experiments 018--019: Linux SocketCAN `vcan` captures.
 - Experiments 020--022: physical two-node CAN bench captures, firmware and evaluation scripts (`physical-bench/`).
 - Random Forest baseline and its ablation: `analysis/scripts/rf_baseline.py`, `analysis/scripts/ablation_loeo.py`, `analysis/tables/rf_*`.
 - SHA-256 manifests and validation scripts.
@@ -55,7 +58,7 @@ python3 dataset/scripts/validate_hashes.py
 
 ```bash
 cd paper
-latexmk -pdf -interaction=nonstopmode -halt-on-error article_ieee_v5.tex
+latexmk -pdf -interaction=nonstopmode -halt-on-error article_ieee_v6.tex
 ```
 
 ## Regenerate visual assets

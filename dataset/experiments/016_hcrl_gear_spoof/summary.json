@@ -1,0 +1,58 @@
+{
+  "experiment_id": "016_hcrl_gear_spoof",
+  "label": "gear",
+  "total_frames": 4402977,
+  "unique_arbitration_ids": 25,
+  "top_arbitration_ids": [
+    {
+      "id": "43F",
+      "count": 804541
+    },
+    {
+      "id": "316",
+      "count": 211325
+    },
+    {
+      "id": "18F",
+      "count": 211237
+    },
+    {
+      "id": "2",
+      "count": 209709
+    },
+    {
+      "id": "260",
+      "count": 209586
+    },
+    {
+      "id": "153",
+      "count": 209177
+    },
+    {
+      "id": "2A0",
+      "count": 208224
+    },
+    {
+      "id": "370",
+      "count": 207859
+    },
+    {
+      "id": "2C0",
+      "count": 207695
+    },
+    {
+      "id": "350",
+      "count": 207305
+    }
+  ],
+  "duration_s": 8019.002378,
+  "mean_inter_arrival_s": 0.001821,
+  "min_inter_arrival_s": 1.5e-05,
+  "max_inter_arrival_s": 5588.125845,
+  "negative_inter_arrivals": 0,
+  "mean_dlc": 8.0,
+  "mean_frame_rate_fps": 549.068,
+  "attack_frames": 597252,
+  "normal_frames": 3805725,
+  "label_type": "spoofing"
+}

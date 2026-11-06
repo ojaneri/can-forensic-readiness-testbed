@@ -1,0 +1,58 @@
+{
+  "experiment_id": "015_hcrl_fuzzy",
+  "label": "fuzzy",
+  "total_frames": 3751027,
+  "unique_arbitration_ids": 2048,
+  "top_arbitration_ids": [
+    {
+      "id": "316",
+      "count": 182121
+    },
+    {
+      "id": "2",
+      "count": 180011
+    },
+    {
+      "id": "18F",
+      "count": 179802
+    },
+    {
+      "id": "2C0",
+      "count": 179637
+    },
+    {
+      "id": "43F",
+      "count": 179538
+    },
+    {
+      "id": "350",
+      "count": 178687
+    },
+    {
+      "id": "153",
+      "count": 178188
+    },
+    {
+      "id": "130",
+      "count": 178149
+    },
+    {
+      "id": "260",
+      "count": 178049
+    },
+    {
+      "id": "370",
+      "count": 177691
+    }
+  ],
+  "duration_s": 5487.155067,
+  "mean_inter_arrival_s": 0.001463,
+  "min_inter_arrival_s": 2.2e-05,
+  "max_inter_arrival_s": 2539.482308,
+  "negative_inter_arrivals": 0,
+  "mean_dlc": 8.0,
+  "mean_frame_rate_fps": 683.601,
+  "attack_frames": 491847,
+  "normal_frames": 3259180,
+  "label_type": "fuzzy"
+}

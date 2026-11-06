@@ -1,0 +1,10 @@
+{
+  "name": "HCRL Car-Hacking Dataset",
+  "source_file": "RPM_dataset.csv",
+  "source_sha256": "6718c6cb0a5fe6bdf0e966a680f1d6d7d79c063d603254d6118c16aaeb74974d",
+  "label": "rpm",
+  "license": "Academic use per HCRL terms",
+  "reference": "https://ocslab.hksecurity.net/Datasets/car-hacking-dataset",
+  "original_vehicle": "Hyundai (OBD-II port)",
+  "experiment_id": "017_hcrl_rpm_spoof"
+}

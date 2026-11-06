@@ -75,6 +75,9 @@ Run C evaluates only strategies defined before it. The cross-run forest of `cros
 
 ## Limits
 
-One bench, one injector implementation per attacker, phase-level labels, and an ECU programmed to mimic the synthetic
-schema. The results show how the bench exposes shortcut learning in the triage models; they do not measure detection
-performance on vehicles.
+One bench, one injector implementation per attacker, phase-level labels, and an ECU that reuses the synthetic IDs and the
+speed byte of ID 0x100 but not the synthetic timing: it sends at fixed periods of 20, 50, 100 and 200 ms, whereas the
+synthetic ECUs of Exp. 006 send three IDs every 50.4 ms and one every 403 ms. The augmentation used in `strategies_eval*.py`
+and the injector share the payload tail of the spoofed 0x100 frames, so the spoofing results of that strategy do not
+show that it generalizes to other payloads. The results show how the bench exposes shortcut learning in the triage
+models; they do not measure detection performance on vehicles.

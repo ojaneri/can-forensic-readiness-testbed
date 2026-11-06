@@ -1,0 +1,58 @@
+{
+  "experiment_id": "017_hcrl_rpm_spoof",
+  "label": "rpm",
+  "total_frames": 4580226,
+  "unique_arbitration_ids": 25,
+  "top_arbitration_ids": [
+    {
+      "id": "316",
+      "count": 871231
+    },
+    {
+      "id": "18F",
+      "count": 218180
+    },
+    {
+      "id": "2",
+      "count": 216546
+    },
+    {
+      "id": "260",
+      "count": 216523
+    },
+    {
+      "id": "153",
+      "count": 216260
+    },
+    {
+      "id": "2C0",
+      "count": 214882
+    },
+    {
+      "id": "2A0",
+      "count": 214876
+    },
+    {
+      "id": "370",
+      "count": 214354
+    },
+    {
+      "id": "43F",
+      "count": 214276
+    },
+    {
+      "id": "130",
+      "count": 214157
+    }
+  ],
+  "duration_s": 10179.01383,
+  "mean_inter_arrival_s": 0.002222,
+  "min_inter_arrival_s": 1.5e-05,
+  "max_inter_arrival_s": 7744.934786,
+  "negative_inter_arrivals": 0,
+  "mean_dlc": 8.0,
+  "mean_frame_rate_fps": 449.968,
+  "attack_frames": 654897,
+  "normal_frames": 3925329,
+  "label_type": "spoofing"
+}

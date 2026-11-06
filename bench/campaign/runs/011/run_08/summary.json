@@ -1,0 +1,36 @@
+{
+  "experiment_id": "011_python_can_virtual_bus",
+  "created_utc": "2026-09-11T19:33:07.114090+00:00",
+  "purpose": "python-can virtual bus wall-clock capture after installing python-can; validates tool-backed virtual CAN workflow, not physical CAN.",
+  "python_can_version": "4.6.1",
+  "channel": "bench_vcan_011_08",
+  "seed": 2026060412,
+  "requested_duration_s": 30.0,
+  "measured_duration_s": 29.998587,
+  "total_frames": 1750,
+  "unique_arbitration_ids": 4,
+  "id_counts": {
+    "100": 601,
+    "120": 429,
+    "188": 600,
+    "300": 120
+  },
+  "inter_arrival_s": {
+    "count": 1749,
+    "min": 3.8e-05,
+    "max": 0.05443,
+    "mean": 0.017152,
+    "median": 0.009818,
+    "stdev": 0.019001,
+    "negative_values": 0
+  },
+  "send_to_recv_latency_s": {
+    "count": 1750,
+    "min": 2.2e-05,
+    "max": 0.003434,
+    "mean": 0.000172,
+    "median": 0.000159,
+    "stdev": 0.000231
+  },
+  "boundary": "Uses python-can virtual bus only. No physical CAN adapter, ECU, or vehicle is involved."
+}

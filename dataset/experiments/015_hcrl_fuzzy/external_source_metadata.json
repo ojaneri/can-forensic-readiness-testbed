@@ -1,0 +1,10 @@
+{
+  "name": "HCRL Car-Hacking Dataset",
+  "source_file": "Fuzzy_dataset.csv",
+  "source_sha256": "a0e78dff6365a1ad3d314973f1ac5879b57f9b80c40eb07b1e3bbe4aeddaecfe",
+  "label": "fuzzy",
+  "license": "Academic use per HCRL terms",
+  "reference": "https://ocslab.hksecurity.net/Datasets/car-hacking-dataset",
+  "original_vehicle": "Hyundai (OBD-II port)",
+  "experiment_id": "015_hcrl_fuzzy"
+}

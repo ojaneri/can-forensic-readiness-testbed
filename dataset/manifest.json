@@ -263,6 +263,128 @@
           "bytes": 1307
         }
       }
+    },
+    "014_hcrl_dos": {
+      "source": "HCRL Car-Hacking Dataset, DoS subset (frames not redistributed; see dataset/experiments/HCRL_NOTICE.md)",
+      "files": {
+        "external_source_metadata.json": {
+          "sha256": "58ab1a6ff7f0a0da6d6b6400d6d8c52d7b5d786480398fc8d29b81f5353ca720",
+          "bytes": 385
+        },
+        "manifest.json": {
+          "sha256": "1e8ce2f5b45dfe682c5476f40a78e9eb58d09ba75665bc055c86337a888117f2",
+          "bytes": 434
+        },
+        "summary.json": {
+          "sha256": "b2eb48f368ae9d20f234c99ba9f838ee525389073c83a5a1ffc2dd9e2eb4586b",
+          "bytes": 986
+        }
+      }
+    },
+    "015_hcrl_fuzzy": {
+      "source": "HCRL Car-Hacking Dataset, fuzzy subset (frames not redistributed; see dataset/experiments/HCRL_NOTICE.md)",
+      "files": {
+        "external_source_metadata.json": {
+          "sha256": "fd69689b50c573207e38f41d915392e8f2ae285c58603e8a2c1fec7be51fbab5",
+          "bytes": 391
+        },
+        "manifest.json": {
+          "sha256": "163f92836393a6b86a1041d78605a4dc8db77182a9e259a704793659fbe127a8",
+          "bytes": 434
+        },
+        "summary.json": {
+          "sha256": "13e4ed367f065c6bf576bf5fabe125aeed1808969d277cf04029875647f81e24",
+          "bytes": 992
+        }
+      }
+    },
+    "016_hcrl_gear_spoof": {
+      "source": "HCRL Car-Hacking Dataset, gear spoof subset (frames not redistributed; see dataset/experiments/HCRL_NOTICE.md)",
+      "files": {
+        "external_source_metadata.json": {
+          "sha256": "106bba83626f3adf5da4413b0c23d58107cb868e4998eb790f254feac358d1c5",
+          "bytes": 394
+        },
+        "manifest.json": {
+          "sha256": "acad16c9bf5647214621930099d5baefcdece6c548c53d46d311e4566b5adaae",
+          "bytes": 434
+        },
+        "summary.json": {
+          "sha256": "fe8dc658f98065865f94bfb81ff45b9018d4509f5f7cc7c7ec68454a0202bb7d",
+          "bytes": 997
+        }
+      }
+    },
+    "017_hcrl_rpm_spoof": {
+      "source": "HCRL Car-Hacking Dataset, RPM spoof subset (frames not redistributed; see dataset/experiments/HCRL_NOTICE.md)",
+      "files": {
+        "external_source_metadata.json": {
+          "sha256": "7af72c54137b651151cb6097e596ce46cc9c1c11c91ca2563c47b3c8731cdbe7",
+          "bytes": 391
+        },
+        "manifest.json": {
+          "sha256": "2e85029a17977c16d1ba937ba9a8b00cdd6e2955a4afc8076122f8d5be25f726",
+          "bytes": 434
+        },
+        "summary.json": {
+          "sha256": "eba4bccdf6111ac15cd3e0e26b842ee6252401dac8ccc4aa6bf0d626f8d7902a",
+          "bytes": 995
+        }
+      }
+    },
+    "018_vcan_socketcan_capture": {
+      "source": "Linux SocketCAN vcan capture recorded with candump",
+      "files": {
+        "external_source_metadata.json": {
+          "sha256": "f1db9d16a24467440a00ecae0188a82c7180ec736086fc9bc8faae3fdccce936",
+          "bytes": 346
+        },
+        "frames_normalized.csv": {
+          "sha256": "bc0e1a2a0295017cbeb95602de0020f85ff3d8171bc26944b5eedcad3a329569",
+          "bytes": 366729
+        },
+        "manifest.json": {
+          "sha256": "0eca2d7920c8b9f4de11b636a38557e7a826ca0f69be8397152f13775d649d21",
+          "bytes": 537
+        },
+        "output_candump_annotated.log": {
+          "sha256": "b5ebfeae118074abecf82537f21718dfac9a54828049be0a4d2d182c5be4f395",
+          "bytes": 78806
+        },
+        "raw_candump.log": {
+          "sha256": "b3f2c403801a3ddbbe2e74ec4bf1c670fd888d8d825aaf3dbc0382d6f1b4c164",
+          "bytes": 94000
+        },
+        "summary.json": {
+          "sha256": "514fb65d4c1e83c4edbe936feccb17a194596519166ca7f97af3f9725d570875",
+          "bytes": 670
+        }
+      }
+    },
+    "019_vcan_varied_traffic": {
+      "source": "Linux SocketCAN vcan capture, seven concurrent IDs, recorded with candump",
+      "files": {
+        "external_source_metadata.json": {
+          "sha256": "60149e2a027e283ef3e3bc9ea5fa7fef0090642411ac1c216c2b4271dd15c8f8",
+          "bytes": 235
+        },
+        "frames_normalized.csv": {
+          "sha256": "4033795e9f0084b390a00f9529971665089cfe2bd0f3c008b6c245b5098fa0bd",
+          "bytes": 271308
+        },
+        "manifest.json": {
+          "sha256": "90daa506c119208a42447efc80fa333002ec24d99df1a345ae71878bb1cea109",
+          "bytes": 376
+        },
+        "raw_candump.log": {
+          "sha256": "a3480298a4d7331723c263a402c5a3ef7c3983071b9118debe8aee8b808b1239",
+          "bytes": 70500
+        },
+        "summary.json": {
+          "sha256": "4728d0ffa85d02374cc13ef1a3fadb2508097458356f9fc2f743510ace9e9e4f",
+          "bytes": 868
+        }
+      }
     }
   },
   "combined_dataset": {

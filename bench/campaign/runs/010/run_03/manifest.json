@@ -1,0 +1,25 @@
+{
+  "experiment_id": "010_realtime_wallclock_capture",
+  "files": {
+    "run_realtime_capture.py": {
+      "sha256": "dc25e95252c15b3a544d39b4f2e3de2fda8d4d8a7a3e456b0f7a9339f47bc8c3",
+      "bytes": 5226
+    },
+    "frames_normalized.csv": {
+      "sha256": "1f87e9c0182bd0b0ae0edc30bdb3f0ad8e7296fbe0141d45f9589ceb721c6a13",
+      "bytes": 210711
+    },
+    "realtime_trace.log": {
+      "sha256": "1eb1146d2ae768e6b4d228d06aff632138aeffb8a7ab6dd47c9218ba4ee8cf93",
+      "bytes": 44930
+    },
+    "summary.json": {
+      "sha256": "129db1918c8fc0d12a1c49c595391c9e8e47af0559d0718d2b07d132738e25a7",
+      "bytes": 798
+    },
+    "findings.md": {
+      "sha256": "571a9c417435d111225a280b2b4d918e94e44541f8e81a5f21440c8713ff90b0",
+      "bytes": 503
+    }
+  }
+}

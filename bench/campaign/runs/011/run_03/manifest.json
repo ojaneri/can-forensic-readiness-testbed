@@ -1,0 +1,25 @@
+{
+  "experiment_id": "011_python_can_virtual_bus",
+  "files": {
+    "run_python_can_virtual_bus.py": {
+      "sha256": "3223a96a710a3cb6c8d69554387e07c19ca235741f8eb3c98138115f99dea231",
+      "bytes": 5072
+    },
+    "frames_normalized.csv": {
+      "sha256": "cc49d8727caf97e6fdaad7ab51d41b8f8d0040c2c9f44dea11e7e602283d66c1",
+      "bytes": 319757
+    },
+    "python_can_virtual.log": {
+      "sha256": "30a44efbaa3d017e234b30bd5176c013b87ca28c36607bc76cbbf2312731a12a",
+      "bytes": 88667
+    },
+    "summary.json": {
+      "sha256": "46f55816e511ede057937444d471bb30889cef868aee38951bc52d274abf8108",
+      "bytes": 1000
+    },
+    "findings.md": {
+      "sha256": "3ed199080a0fefc2f7dfb3f19c75a5e674c3dfac5ab714c1018d6498652be3fb",
+      "bytes": 294
+    }
+  }
+}

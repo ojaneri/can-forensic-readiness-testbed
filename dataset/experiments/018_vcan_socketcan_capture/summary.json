@@ -1,0 +1,22 @@
+{
+  "experiment_id": "018_vcan_socketcan_capture",
+  "total_frames": 2000,
+  "unique_arbitration_ids": 1,
+  "top_arbitration_ids": [
+    {
+      "id": "100",
+      "count": 2000
+    }
+  ],
+  "duration_s": 20.356863,
+  "mean_inter_arrival_s": 0.010184,
+  "min_inter_arrival_s": 0.010072,
+  "max_inter_arrival_s": 0.013037,
+  "negative_inter_arrivals": 0,
+  "mean_dlc": 8.0,
+  "mean_frame_rate_fps": 98.247,
+  "interface": "vcan0",
+  "driver": "SocketCAN kernel module (can/vcan)",
+  "capture_tool": "candump (can-utils)",
+  "notes": "Kernel-level CAN traffic via SocketCAN vcan interface. Confirms pipeline works with real socket CAN, not just python-can virtual bus."
+}

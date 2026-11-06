@@ -1,0 +1,10 @@
+{
+  "name": "HCRL Car-Hacking Dataset",
+  "source_file": "gear_dataset.csv",
+  "source_sha256": "b4eba43605fff337117ff30e13c33f63b56eec3b00927c8bccb31192df3bee23",
+  "label": "gear",
+  "license": "Academic use per HCRL terms",
+  "reference": "https://ocslab.hksecurity.net/Datasets/car-hacking-dataset",
+  "original_vehicle": "Hyundai (OBD-II port)",
+  "experiment_id": "016_hcrl_gear_spoof"
+}

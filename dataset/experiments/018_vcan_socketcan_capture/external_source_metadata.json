@@ -1,0 +1,9 @@
+{
+  "source_file": "raw_candump.log",
+  "capture_command": "candump vcan0 -n 2000",
+  "generator_command": "cangen vcan0 -g 10 -I 100 -D 1122334455667788 -L 8",
+  "interface": "vcan0",
+  "source_sha256": "b3f2c403801a3ddbbe2e74ec4bf1c670fd888d8d825aaf3dbc0382d6f1b4c164",
+  "experiment_id": "018_vcan_socketcan_capture",
+  "date": "2026-07-06"
+}

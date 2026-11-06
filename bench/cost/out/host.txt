@@ -1,0 +1,15 @@
+date_utc: 2026-09-12T23:14:55Z
+cpu: AMD EPYC Processor
+vcpus: 8
+ram_total_gb: 23
+kernel: 6.8.0-101-generic
+python: Python 3.12.3
+sklearn: 1.9.0
+python_can: 4.6.1
+input_csv_mb: 78
+dataset_dir_mb: 796
+raw_dir_mb: 826
+	User time (seconds): 35.05
+	System time (seconds): 8.12
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:35.00
+	Maximum resident set size (kbytes): 774616

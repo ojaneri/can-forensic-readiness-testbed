@@ -1,0 +1,58 @@
+{
+  "experiment_id": "014_hcrl_dos",
+  "label": "dos",
+  "total_frames": 3634583,
+  "unique_arbitration_ids": 26,
+  "top_arbitration_ids": [
+    {
+      "id": "0",
+      "count": 587521
+    },
+    {
+      "id": "130",
+      "count": 168118
+    },
+    {
+      "id": "2",
+      "count": 167556
+    },
+    {
+      "id": "131",
+      "count": 167016
+    },
+    {
+      "id": "140",
+      "count": 167002
+    },
+    {
+      "id": "18F",
+      "count": 166931
+    },
+    {
+      "id": "2C0",
+      "count": 166713
+    },
+    {
+      "id": "370",
+      "count": 166681
+    },
+    {
+      "id": "316",
+      "count": 166631
+    },
+    {
+      "id": "153",
+      "count": 166573
+    }
+  ],
+  "duration_s": 2832.669517,
+  "mean_inter_arrival_s": 0.000779,
+  "min_inter_arrival_s": 2.4e-05,
+  "max_inter_arrival_s": 22.358267,
+  "negative_inter_arrivals": 0,
+  "mean_dlc": 8.0,
+  "mean_frame_rate_fps": 1283.095,
+  "attack_frames": 587521,
+  "normal_frames": 3047062,
+  "label_type": "flooding"
+}

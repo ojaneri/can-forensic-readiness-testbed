@@ -1,0 +1,10 @@
+{
+  "name": "HCRL Car-Hacking Dataset",
+  "source_file": "DoS_dataset.csv",
+  "source_sha256": "09bf3136647b1d846d13c374f26208f06ffeba18369093fc57c8076fc56b795e",
+  "label": "dos",
+  "license": "Academic use per HCRL terms",
+  "reference": "https://ocslab.hksecurity.net/Datasets/car-hacking-dataset",
+  "original_vehicle": "Hyundai (OBD-II port)",
+  "experiment_id": "014_hcrl_dos"
+}
