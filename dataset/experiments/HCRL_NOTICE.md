@@ -27,8 +27,10 @@ The deposited manifests were produced on 2026-11-06 by running this importer (ve
 Its row counts match the totals published on the HCRL page: DoS 3,665,771; Fuzzy 3,838,860; Gear 4,443,142; RPM 4,621,702
 (the `summary.json` of each experiment records `rows_read`, `rows_skipped_malformed` and `official_rows_expected`).
 
-Version v0.5.0 of the importer dropped the 200,662 frames with DLC 2 or 5 (fewer than ten comma-separated fields). Those
-frames are real traffic, so v0.5.1 keeps them and sets the payload to the DLC bytes. The frames of Experiment 014 are
-about 496 MB in `frames_normalized.csv`. Independent regeneration on another machine is the check that remains to be done.
+Version v0.5.0 of the importer had two defects, both fixed in v0.5.1. It dropped the 200,662 frames with DLC 2 or 5
+(rows with fewer than ten comma-separated fields), which are real traffic. It also read three DLC-6 frames of the Fuzzy
+file with the flag byte inside the payload. v0.5.1 keeps every frame and takes the payload as exactly DLC bytes. The
+frames of Experiment 014 are about 496 MB in `frames_normalized.csv`. Independent regeneration on another machine is
+the check that remains to be done.
 
 The unlabeled normal-driving capture of the HCRL release is not used by the paper.

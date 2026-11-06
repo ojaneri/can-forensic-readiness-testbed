@@ -562,8 +562,8 @@
       "bytes": 835
     },
     "README.md": {
-      "sha256": "0e164dac2b74b48897a2aeda3f276c783e54270869d79381d993c7f6e56d08aa",
-      "bytes": 2577
+      "sha256": "761d4d40d113c23ea231eef6df59decf55964390da3158c1b67dfd47f9e9e993",
+      "bytes": 3172
     },
     "paper/article_ieee_v5.tex": {
       "sha256": "c0105645140a5e2e2f755c9246210c1636eae99b35f37126b4ccc4c039401ee0",
@@ -636,10 +636,6 @@
     "demo-icsim-spoof/demo-icsim-spoof-preview.png": {
       "sha256": "875f251c782073e473d6b3cb0243278fa0fe241838f75b5732a83db7fcd8f039",
       "bytes": 144552
-    },
-    "dataset/manifest.json": {
-      "sha256": "3eacc5b0b10048d2e9415ce5feca0d2b6400f9999726c557b2ad42f46a6a1a81",
-      "bytes": 18087
     },
     "paper/article_ieee_v6.tex": {
       "sha256": "4bf1acf46c3b9570f82f60ddef95e5494f707387785506399deecfcfadbd61f0",

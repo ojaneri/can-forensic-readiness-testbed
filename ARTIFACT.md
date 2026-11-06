@@ -12,7 +12,7 @@ Run:
 python3 dataset/scripts/validate_hashes.py
 ```
 
-This validates experiment package files against `dataset/manifest.json`. For Experiments 014--017 only the
+This validates the experiment package files, the combined normalized dataset and the derived files listed in `dataset/manifest.json` (171 files). A one-byte change to any of them makes the command exit with status 1. For Experiments 014--017 only the
 metadata, summary and manifest files are in the repository (see `dataset/experiments/HCRL_NOTICE.md`), so only those
 are validated here.
 
