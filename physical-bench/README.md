@@ -69,9 +69,11 @@ Check file integrity with `sha256sum -c MANIFEST.sha256` from this directory.
 `strategies_eval_B.py` and `strategies_eval_C.py` were frozen by file timestamp (2026-11-05 20:14:55 and 20:36:07,
 UTC-3, as recorded in the as-run files) and by as-run SHA-256 (`scripts/AS_RUN_SHA256.txt`). The hash list was published
 in this repository on 2026-11-05 at 21:19, after the captures, so the timing is not independently timestamped. The
-docstrings of the deposited copies state the intent of the freeze; they are not evidence of its timing. The copies here
-differ from the as-run versions only in path constants, made relative to the repository, and re-running them reproduces
-the derived JSON files.
+docstrings of the deposited copies state the intent of the freeze; they are not evidence of its timing. The as-run files
+themselves are in `scripts/as_run/`; check them with
+`cd scripts/as_run && grep -v '^#' ../AS_RUN_SHA256.txt | sha256sum -c` (they contain the server path of the project as a
+constant). The copies in `scripts/` differ from the as-run versions only in path constants, made relative to the
+repository, and re-running them reproduces the derived JSON files.
 
 Post-hoc ablation (not a frozen strategy): `scripts/suffix_rate_ablation.py` writes
 `runs/2026-11-05_runC/derived_suffix_ablation.json`. It separates the 6-byte payload suffix of the injected frames from
