@@ -1,0 +1,2 @@
+# Store files byte-for-byte: hashes in dataset/manifest.json must match on every checkout (no CRLF conversion).
+* -text
