@@ -1,0 +1,291 @@
+{
+  "script_sha256": "33dbf9743e996e94850056f5a74805fd592b90473e0e8d74d6ee0921208f2509",
+  "seeds": [
+    2026,
+    2027,
+    2028
+  ],
+  "attack_phases_rate_hz": {
+    "spoof_low_rate": 5,
+    "flood_slow": 10,
+    "spoof_stealth": 50,
+    "flood_targeted": 100,
+    "spoof_mid": 20,
+    "dos_id0": 500
+  },
+  "windows_run_C": 421,
+  "variants": {
+    "V1_suffix_50Hz (S2 recipe)": {
+      "per_seed": [
+        {
+          "fp_recovery": 0.0,
+          "spoof_low_rate": 1.0,
+          "spoof_stealth": 0.955,
+          "spoof_mid": 1.0,
+          "flood_slow": 0.0,
+          "flood_targeted": 0.0,
+          "dos_id0": 0.0
+        },
+        {
+          "fp_recovery": 0.0,
+          "spoof_low_rate": 1.0,
+          "spoof_stealth": 1.0,
+          "spoof_mid": 1.0,
+          "flood_slow": 0.0,
+          "flood_targeted": 1.0,
+          "dos_id0": 0.0
+        },
+        {
+          "fp_recovery": 0.0,
+          "spoof_low_rate": 1.0,
+          "spoof_stealth": 0.136,
+          "spoof_mid": 1.0,
+          "flood_slow": 0.0,
+          "flood_targeted": 1.0,
+          "dos_id0": 0.0
+        }
+      ],
+      "aggregate": {
+        "fp_recovery": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "spoof_low_rate": {
+          "mean": 1.0,
+          "min": 1.0,
+          "max": 1.0
+        },
+        "spoof_stealth": {
+          "mean": 0.697,
+          "min": 0.136,
+          "max": 1.0
+        },
+        "spoof_mid": {
+          "mean": 1.0,
+          "min": 1.0,
+          "max": 1.0
+        },
+        "flood_slow": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "flood_targeted": {
+          "mean": 0.667,
+          "min": 0.0,
+          "max": 1.0
+        },
+        "dos_id0": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        }
+      }
+    },
+    "V2_nosuffix_50Hz": {
+      "per_seed": [
+        {
+          "fp_recovery": 0.0,
+          "spoof_low_rate": 1.0,
+          "spoof_stealth": 1.0,
+          "spoof_mid": 1.0,
+          "flood_slow": 0.0,
+          "flood_targeted": 0.0,
+          "dos_id0": 0.0
+        },
+        {
+          "fp_recovery": 0.0,
+          "spoof_low_rate": 1.0,
+          "spoof_stealth": 1.0,
+          "spoof_mid": 1.0,
+          "flood_slow": 0.0,
+          "flood_targeted": 1.0,
+          "dos_id0": 0.0
+        },
+        {
+          "fp_recovery": 0.0,
+          "spoof_low_rate": 1.0,
+          "spoof_stealth": 0.386,
+          "spoof_mid": 1.0,
+          "flood_slow": 0.0,
+          "flood_targeted": 1.0,
+          "dos_id0": 0.0
+        }
+      ],
+      "aggregate": {
+        "fp_recovery": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "spoof_low_rate": {
+          "mean": 1.0,
+          "min": 1.0,
+          "max": 1.0
+        },
+        "spoof_stealth": {
+          "mean": 0.795,
+          "min": 0.386,
+          "max": 1.0
+        },
+        "spoof_mid": {
+          "mean": 1.0,
+          "min": 1.0,
+          "max": 1.0
+        },
+        "flood_slow": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "flood_targeted": {
+          "mean": 0.667,
+          "min": 0.0,
+          "max": 1.0
+        },
+        "dos_id0": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        }
+      }
+    },
+    "V3_suffix_mixedrate": {
+      "per_seed": [
+        {
+          "fp_recovery": 0.0,
+          "spoof_low_rate": 1.0,
+          "spoof_stealth": 1.0,
+          "spoof_mid": 1.0,
+          "flood_slow": 0.0,
+          "flood_targeted": 0.864,
+          "dos_id0": 0.0
+        },
+        {
+          "fp_recovery": 1.0,
+          "spoof_low_rate": 1.0,
+          "spoof_stealth": 1.0,
+          "spoof_mid": 1.0,
+          "flood_slow": 0.0,
+          "flood_targeted": 1.0,
+          "dos_id0": 0.0
+        },
+        {
+          "fp_recovery": 0.155,
+          "spoof_low_rate": 1.0,
+          "spoof_stealth": 1.0,
+          "spoof_mid": 1.0,
+          "flood_slow": 0.0,
+          "flood_targeted": 1.0,
+          "dos_id0": 0.0
+        }
+      ],
+      "aggregate": {
+        "fp_recovery": {
+          "mean": 0.385,
+          "min": 0.0,
+          "max": 1.0
+        },
+        "spoof_low_rate": {
+          "mean": 1.0,
+          "min": 1.0,
+          "max": 1.0
+        },
+        "spoof_stealth": {
+          "mean": 1.0,
+          "min": 1.0,
+          "max": 1.0
+        },
+        "spoof_mid": {
+          "mean": 1.0,
+          "min": 1.0,
+          "max": 1.0
+        },
+        "flood_slow": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "flood_targeted": {
+          "mean": 0.955,
+          "min": 0.864,
+          "max": 1.0
+        },
+        "dos_id0": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        }
+      }
+    },
+    "V4_nosuffix_mixedrate": {
+      "per_seed": [
+        {
+          "fp_recovery": 0.0,
+          "spoof_low_rate": 1.0,
+          "spoof_stealth": 1.0,
+          "spoof_mid": 1.0,
+          "flood_slow": 0.0,
+          "flood_targeted": 0.023,
+          "dos_id0": 0.0
+        },
+        {
+          "fp_recovery": 1.0,
+          "spoof_low_rate": 1.0,
+          "spoof_stealth": 1.0,
+          "spoof_mid": 1.0,
+          "flood_slow": 0.0,
+          "flood_targeted": 1.0,
+          "dos_id0": 0.0
+        },
+        {
+          "fp_recovery": 0.107,
+          "spoof_low_rate": 1.0,
+          "spoof_stealth": 1.0,
+          "spoof_mid": 1.0,
+          "flood_slow": 0.0,
+          "flood_targeted": 1.0,
+          "dos_id0": 0.0
+        }
+      ],
+      "aggregate": {
+        "fp_recovery": {
+          "mean": 0.369,
+          "min": 0.0,
+          "max": 1.0
+        },
+        "spoof_low_rate": {
+          "mean": 1.0,
+          "min": 1.0,
+          "max": 1.0
+        },
+        "spoof_stealth": {
+          "mean": 1.0,
+          "min": 1.0,
+          "max": 1.0
+        },
+        "spoof_mid": {
+          "mean": 1.0,
+          "min": 1.0,
+          "max": 1.0
+        },
+        "flood_slow": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "flood_targeted": {
+          "mean": 0.674,
+          "min": 0.023,
+          "max": 1.0
+        },
+        "dos_id0": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        }
+      }
+    }
+  }
+}

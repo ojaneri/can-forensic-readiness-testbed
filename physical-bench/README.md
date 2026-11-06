@@ -73,6 +73,13 @@ docstrings of the deposited copies state the intent of the freeze; they are not 
 differ from the as-run versions only in path constants, made relative to the repository, and re-running them reproduces
 the derived JSON files.
 
+Post-hoc ablation (not a frozen strategy): `scripts/suffix_rate_ablation.py` writes
+`runs/2026-11-05_runC/derived_suffix_ablation.json`. It separates the 6-byte payload suffix of the injected frames from
+the injection rate in the augmentation recipe, with three seeds per variant. Removing the suffix keeps the 5 Hz and 20 Hz
+spoofing detections in all seeds; the 50 Hz spoofing detection ranges from 0.14 to 1.0 across seeds, so the single
+100 % reported for the augmented forest is one of several outcomes. Mixed injection rates detect the 50 Hz attacker in
+all seeds but flag, on average, 37 to 39 % of recovery windows as attacks (one seed reached 100 %).
+
 Run C evaluates only strategies defined before it. The cross-run forest of `cross_run_rf.py` and the strategies of
 `strategies_eval.py` were chosen after seeing the data and are exploratory.
 
