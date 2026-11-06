@@ -1,0 +1,9 @@
+# SHA-256 of the scripts as they were run on the project server (before the path constants were made relative).
+# strategies_eval_B.py and strategies_eval_C.py were fixed before runs B (2026-11-05 20:14:55 UTC-3) and C (2026-11-05 20:36:07 UTC-3).
+80cb509568bd8cd0b81296497f03b12f27a2bfb29be7c2fee615bc78e4f88cc3  bench_capture.py
+b103aba4e44a9b181783eef2fb054916bd715e2a4dcd1595e44e89b96857664d  bench_capture_variants.py
+822f5f43937ff372aa299a9ce86b05409a60c2520a80f818f6754d02f39fbc55  normalize_and_eval.py
+ea4503662505f93857ecfb6087895f9c61f8b34bb503ffaa47b7b6866cc31b07  strategies_eval.py
+9dd52ab97016739c6f43ad3112629b439deffe95b877e43779d7b96e28f4e86b  strategies_eval_B.py
+6cba88ff9153c595e52fdc2ab1c34fa1a30e5e5fc798311560d980f2ed138688  strategies_eval_C.py
+cf61483b80941aaa725d0cccf39dcf077702667963306a9746087c18e0438266  cross_run_rf.py

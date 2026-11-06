@@ -1,0 +1,108 @@
+{
+  "rule": {
+    "accuracy": 1.0,
+    "cm": [
+      [
+        360,
+        0,
+        0
+      ],
+      [
+        0,
+        120,
+        0
+      ],
+      [
+        0,
+        0,
+        120
+      ]
+    ]
+  },
+  "S0_rf_synth": {
+    "accuracy": 0.8,
+    "cm": [
+      [
+        360,
+        0,
+        0
+      ],
+      [
+        120,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        120
+      ]
+    ]
+  },
+  "S1_rf_no_speed_avg": {
+    "accuracy": 0.8,
+    "cm": [
+      [
+        360,
+        0,
+        0
+      ],
+      [
+        120,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        120
+      ]
+    ]
+  },
+  "S2_rf_synth_plus_injection_aug": {
+    "accuracy": 1.0,
+    "cm": [
+      [
+        360,
+        0,
+        0
+      ],
+      [
+        0,
+        120,
+        0
+      ],
+      [
+        0,
+        0,
+        120
+      ]
+    ]
+  },
+  "S2_aug_windows": 995,
+  "S3_oneclass": {
+    "false_positive_rate_heldout_normal": 0.0083,
+    "detection_rate_spoofing": 0.975,
+    "detection_rate_flooding": 0.0667
+  },
+  "S4_in_domain_rf": {
+    "accuracy": 1.0,
+    "cm": [
+      [
+        180,
+        0,
+        0
+      ],
+      [
+        0,
+        60,
+        0
+      ],
+      [
+        0,
+        0,
+        60
+      ]
+    ]
+  }
+}

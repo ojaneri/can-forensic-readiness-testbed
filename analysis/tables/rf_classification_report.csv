@@ -1,0 +1,6 @@
+class,precision,recall,f1,support
+normal,1.0,1.0,1.0,794
+spoofing,1.0,1.0,1.0,265
+flooding,1.0,1.0,1.0,264
+accuracy,,,1.0,1323
+macro_avg,1.0,1.0,1.0,1323

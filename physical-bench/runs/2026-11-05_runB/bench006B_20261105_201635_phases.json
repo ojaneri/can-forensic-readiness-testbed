@@ -1,0 +1,42 @@
+{
+  "python": "3.12.10",
+  "python_can": "4.6.1",
+  "port": "COM9",
+  "bitrate": 500000,
+  "seed": 2026110502,
+  "rx_frames": 50918,
+  "phases": [
+    {
+      "phase": "baseline",
+      "start_epoch_s": 1793920597.633385,
+      "end_epoch_s": 1793920777.6339097,
+      "planned_s": 180,
+      "injected_frames": 0,
+      "send_errors": 0
+    },
+    {
+      "phase": "spoofing",
+      "start_epoch_s": 1793920777.6339097,
+      "end_epoch_s": 1793920897.6347003,
+      "planned_s": 120,
+      "injected_frames": 6000,
+      "send_errors": 0
+    },
+    {
+      "phase": "flooding",
+      "start_epoch_s": 1793920897.6347003,
+      "end_epoch_s": 1793921017.6349888,
+      "planned_s": 120,
+      "injected_frames": 12000,
+      "send_errors": 0
+    },
+    {
+      "phase": "recovery",
+      "start_epoch_s": 1793921017.6349888,
+      "end_epoch_s": 1793921197.635364,
+      "planned_s": 180,
+      "injected_frames": 0,
+      "send_errors": 0
+    }
+  ]
+}

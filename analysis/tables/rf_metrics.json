@@ -1,0 +1,144 @@
+{
+  "model": "RandomForest",
+  "params": {
+    "n_estimators": 200,
+    "max_depth": 12,
+    "seed": 42,
+    "window_s": 1.0,
+    "class_weight": "balanced"
+  },
+  "dataset": {
+    "total_frames": 477738,
+    "total_windows": 6615,
+    "train_windows": 5292,
+    "test_windows": 1323,
+    "class_distribution": {
+      "normal": 3969,
+      "spoofing": 1323,
+      "flooding": 1323
+    }
+  },
+  "cv_scores": {
+    "folds": 5,
+    "mean_accuracy": 0.9998,
+    "std_accuracy": 0.0003,
+    "scores": [
+      1.0,
+      1.0,
+      0.9992,
+      1.0,
+      1.0
+    ]
+  },
+  "loeo_cv_scores": {
+    "mean_accuracy": 0.9881,
+    "std_accuracy": 0.0395,
+    "n_experiments": 12,
+    "scores": [
+      0.8571,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ]
+  },
+  "test_metrics": {
+    "accuracy": 1.0,
+    "macro_f1": 1.0,
+    "macro_precision": 1.0,
+    "macro_recall": 1.0
+  },
+  "per_class": {
+    "normal": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 794
+    },
+    "spoofing": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 265
+    },
+    "flooding": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 264
+    }
+  },
+  "confusion_matrix": {
+    "labels": [
+      "normal",
+      "spoofing",
+      "flooding"
+    ],
+    "matrix": [
+      [
+        794,
+        0,
+        0
+      ],
+      [
+        0,
+        265,
+        0
+      ],
+      [
+        0,
+        0,
+        264
+      ]
+    ]
+  },
+  "top_features": [
+    {
+      "feature": "n_unique_ids",
+      "importance": 0.092539
+    },
+    {
+      "feature": "pl_entropy_std",
+      "importance": 0.08772
+    },
+    {
+      "feature": "mean_id",
+      "importance": 0.079968
+    },
+    {
+      "feature": "max_id_val",
+      "importance": 0.072576
+    },
+    {
+      "feature": "std_id",
+      "importance": 0.069944
+    },
+    {
+      "feature": "cnt_120",
+      "importance": 0.065274
+    },
+    {
+      "feature": "pl_entropy",
+      "importance": 0.057645
+    },
+    {
+      "feature": "id_range",
+      "importance": 0.057439
+    },
+    {
+      "feature": "known_frame_ratio",
+      "importance": 0.054834
+    },
+    {
+      "feature": "std_iat",
+      "importance": 0.04984
+    }
+  ]
+}

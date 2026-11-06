@@ -1,0 +1,76 @@
+{
+  "n_windows": 6615,
+  "experiments": 12,
+  "labels": [
+    "normal",
+    "spoofing",
+    "flooding"
+  ],
+  "full_n": 26,
+  "reduced_n": 14,
+  "dropped": [
+    "n_unique_ids",
+    "unknown_id_ratio",
+    "known_frame_ratio",
+    "cnt_100",
+    "cnt_120",
+    "cnt_188",
+    "cnt_300",
+    "mean_speed",
+    "max_speed",
+    "min_speed",
+    "std_speed",
+    "speed_count"
+  ],
+  "loeo_full_mean": 0.9881,
+  "loeo_full_std": 0.0395,
+  "loeo_full_macroF1": 0.9891,
+  "loeo_reduced_mean": 0.9881,
+  "loeo_reduced_std": 0.0395,
+  "loeo_reduced_macroF1": 0.9891,
+  "per_exp_full": {
+    "005_short_attack": 0.8571,
+    "006_10min_attack": 1.0,
+    "007_matrix_run_01_low_spoof_low_flood": 1.0,
+    "007_matrix_run_02_low_spoof_medium_flood": 1.0,
+    "007_matrix_run_03_low_spoof_high_flood": 1.0,
+    "007_matrix_run_04_medium_spoof_low_flood": 1.0,
+    "007_matrix_run_05_medium_spoof_medium_flood": 1.0,
+    "007_matrix_run_06_medium_spoof_high_flood": 1.0,
+    "007_matrix_run_07_high_spoof_low_flood": 1.0,
+    "007_matrix_run_08_high_spoof_medium_flood": 1.0,
+    "007_matrix_run_09_high_spoof_high_flood": 1.0,
+    "007_matrix_run_10_medium_spoof_medium_flood": 1.0
+  },
+  "per_exp_reduced": {
+    "005_short_attack": 0.8571,
+    "006_10min_attack": 1.0,
+    "007_matrix_run_01_low_spoof_low_flood": 1.0,
+    "007_matrix_run_02_low_spoof_medium_flood": 1.0,
+    "007_matrix_run_03_low_spoof_high_flood": 1.0,
+    "007_matrix_run_04_medium_spoof_low_flood": 1.0,
+    "007_matrix_run_05_medium_spoof_medium_flood": 1.0,
+    "007_matrix_run_06_medium_spoof_high_flood": 1.0,
+    "007_matrix_run_07_high_spoof_low_flood": 1.0,
+    "007_matrix_run_08_high_spoof_medium_flood": 1.0,
+    "007_matrix_run_09_high_spoof_high_flood": 1.0,
+    "007_matrix_run_10_medium_spoof_medium_flood": 1.0
+  },
+  "loeo_aggregated_cm": [
+    [
+      3967,
+      2,
+      0
+    ],
+    [
+      0,
+      1323,
+      0
+    ],
+    [
+      0,
+      0,
+      1323
+    ]
+  ]
+}

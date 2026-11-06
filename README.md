@@ -39,6 +39,8 @@ All demos replay stored artifacts and do not transmit live CAN frames.
 - Experiment 008: external ICSim `sample-can.log` ingestion and normalization.
 - Experiment 009: didactic spoof injection into external ICSim trace.
 - Experiment 010: software-only wall-clock timing capture.
+- Experiments 020--022: physical two-node CAN bench captures, firmware and evaluation scripts (`physical-bench/`).
+- Random Forest baseline and its ablation: `analysis/scripts/rf_baseline.py`, `analysis/scripts/ablation_loeo.py`, `analysis/tables/rf_*`.
 - SHA-256 manifests and validation scripts.
 - Normalized CSV datasets and data dictionary.
 - Browser demos for safe replay and visualization.

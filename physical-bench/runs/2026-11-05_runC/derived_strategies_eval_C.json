@@ -1,0 +1,95 @@
+{
+  "delivery": {
+    "injected": 30824,
+    "received_by_nucleo": 30824
+  },
+  "windows": 421,
+  "window_counts": {
+    "baseline": 60,
+    "spoof_low_rate": 44,
+    "recovery": 84,
+    "flood_slow": 44,
+    "spoof_stealth": 44,
+    "flood_targeted": 44,
+    "spoof_mid": 44,
+    "dos_id0": 44
+  },
+  "rule": {
+    "false_positive_rate_recovery": 0.0,
+    "spoof_low_rate": 1.0,
+    "spoof_low_rate_any_attack": 1.0,
+    "spoof_stealth": 0.0,
+    "spoof_stealth_any_attack": 0.0,
+    "spoof_mid": 1.0,
+    "spoof_mid_any_attack": 1.0,
+    "flood_slow": 0.0,
+    "flood_slow_any_attack": 0.0,
+    "flood_targeted": 1.0,
+    "flood_targeted_any_attack": 1.0,
+    "dos_id0": 1.0,
+    "dos_id0_any_attack": 1.0
+  },
+  "S0_rf_synthetic": {
+    "false_positive_rate_recovery": 0.0,
+    "spoof_low_rate": 0.0,
+    "spoof_low_rate_any_attack": 0.0,
+    "spoof_stealth": 0.0,
+    "spoof_stealth_any_attack": 0.0,
+    "spoof_mid": 0.0,
+    "spoof_mid_any_attack": 0.0,
+    "flood_slow": 0.0,
+    "flood_slow_any_attack": 0.0,
+    "flood_targeted": 1.0,
+    "flood_targeted_any_attack": 1.0,
+    "dos_id0": 0.0,
+    "dos_id0_any_attack": 0.0
+  },
+  "S2_rf_synth_plus_injection_aug": {
+    "false_positive_rate_recovery": 0.0,
+    "spoof_low_rate": 1.0,
+    "spoof_low_rate_any_attack": 1.0,
+    "spoof_stealth": 1.0,
+    "spoof_stealth_any_attack": 1.0,
+    "spoof_mid": 1.0,
+    "spoof_mid_any_attack": 1.0,
+    "flood_slow": 0.0,
+    "flood_slow_any_attack": 0.0,
+    "flood_targeted": 1.0,
+    "flood_targeted_any_attack": 1.0,
+    "dos_id0": 0.0,
+    "dos_id0_any_attack": 0.0
+  },
+  "P_AB_rf_physical_A_plus_B": {
+    "false_positive_rate_recovery": 0.0,
+    "spoof_low_rate": 0.0,
+    "spoof_low_rate_any_attack": 0.0,
+    "spoof_stealth": 1.0,
+    "spoof_stealth_any_attack": 1.0,
+    "spoof_mid": 0.0,
+    "spoof_mid_any_attack": 0.0,
+    "flood_slow": 0.0,
+    "flood_slow_any_attack": 0.0,
+    "flood_targeted": 1.0,
+    "flood_targeted_any_attack": 1.0,
+    "dos_id0": 1.0,
+    "dos_id0_any_attack": 1.0
+  },
+  "S3b_zscore_fit_on_C_baseline": {
+    "false_positive_rate_recovery": 0.0,
+    "spoof_low_rate": 1.0,
+    "spoof_stealth": 1.0,
+    "spoof_mid": 1.0,
+    "flood_slow": 1.0,
+    "flood_targeted": 1.0,
+    "dos_id0": 1.0
+  },
+  "S3b_zscore_fit_on_B_baseline": {
+    "false_positive_rate_recovery": 0.0,
+    "spoof_low_rate": 1.0,
+    "spoof_stealth": 1.0,
+    "spoof_mid": 1.0,
+    "flood_slow": 1.0,
+    "flood_targeted": 1.0,
+    "dos_id0": 1.0
+  }
+}

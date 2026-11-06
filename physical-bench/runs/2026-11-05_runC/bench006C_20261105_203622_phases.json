@@ -1,0 +1,140 @@
+{
+  "python": "3.12.10",
+  "python_can": "4.6.1",
+  "port": "COM9",
+  "bitrate": 500000,
+  "seed": 2026110503,
+  "rx_frames": 35638,
+  "phases": [
+    {
+      "phase": "baseline",
+      "variant": "baseline",
+      "start_epoch_s": 1793921784.8121934,
+      "end_epoch_s": 1793921844.8130307,
+      "planned_s": 60,
+      "rate_hz": 0,
+      "injected_frames": 0,
+      "send_errors": 0
+    },
+    {
+      "phase": "spoofing",
+      "variant": "spoof_low_rate",
+      "start_epoch_s": 1793921844.8130307,
+      "end_epoch_s": 1793921889.8142045,
+      "planned_s": 45,
+      "rate_hz": 5,
+      "injected_frames": 225,
+      "send_errors": 0
+    },
+    {
+      "phase": "recovery",
+      "variant": "recovery",
+      "start_epoch_s": 1793921889.8142045,
+      "end_epoch_s": 1793921904.8147304,
+      "planned_s": 15,
+      "rate_hz": 0,
+      "injected_frames": 0,
+      "send_errors": 0
+    },
+    {
+      "phase": "flooding",
+      "variant": "flood_slow",
+      "start_epoch_s": 1793921904.8147304,
+      "end_epoch_s": 1793921949.8149807,
+      "planned_s": 45,
+      "rate_hz": 10,
+      "injected_frames": 450,
+      "send_errors": 0
+    },
+    {
+      "phase": "recovery",
+      "variant": "recovery",
+      "start_epoch_s": 1793921949.8149807,
+      "end_epoch_s": 1793921964.81543,
+      "planned_s": 15,
+      "rate_hz": 0,
+      "injected_frames": 0,
+      "send_errors": 0
+    },
+    {
+      "phase": "spoofing",
+      "variant": "spoof_stealth",
+      "start_epoch_s": 1793921964.81543,
+      "end_epoch_s": 1793922009.8156688,
+      "planned_s": 45,
+      "rate_hz": 50,
+      "injected_frames": 2250,
+      "send_errors": 0
+    },
+    {
+      "phase": "recovery",
+      "variant": "recovery",
+      "start_epoch_s": 1793922009.8156688,
+      "end_epoch_s": 1793922024.816789,
+      "planned_s": 15,
+      "rate_hz": 0,
+      "injected_frames": 0,
+      "send_errors": 0
+    },
+    {
+      "phase": "flooding",
+      "variant": "flood_targeted",
+      "start_epoch_s": 1793922024.816789,
+      "end_epoch_s": 1793922069.8175895,
+      "planned_s": 45,
+      "rate_hz": 100,
+      "injected_frames": 4500,
+      "send_errors": 0
+    },
+    {
+      "phase": "recovery",
+      "variant": "recovery",
+      "start_epoch_s": 1793922069.8175895,
+      "end_epoch_s": 1793922084.81797,
+      "planned_s": 15,
+      "rate_hz": 0,
+      "injected_frames": 0,
+      "send_errors": 0
+    },
+    {
+      "phase": "spoofing",
+      "variant": "spoof_mid",
+      "start_epoch_s": 1793922084.81797,
+      "end_epoch_s": 1793922129.8188992,
+      "planned_s": 45,
+      "rate_hz": 20,
+      "injected_frames": 900,
+      "send_errors": 0
+    },
+    {
+      "phase": "recovery",
+      "variant": "recovery",
+      "start_epoch_s": 1793922129.8188992,
+      "end_epoch_s": 1793922144.819254,
+      "planned_s": 15,
+      "rate_hz": 0,
+      "injected_frames": 0,
+      "send_errors": 0
+    },
+    {
+      "phase": "flooding",
+      "variant": "dos_id0",
+      "start_epoch_s": 1793922144.819254,
+      "end_epoch_s": 1793922189.8204532,
+      "planned_s": 45,
+      "rate_hz": 500,
+      "injected_frames": 22499,
+      "send_errors": 0
+    },
+    {
+      "phase": "recovery",
+      "variant": "recovery",
+      "start_epoch_s": 1793922189.8204532,
+      "end_epoch_s": 1793922204.8213701,
+      "planned_s": 15,
+      "rate_hz": 0,
+      "injected_frames": 0,
+      "send_errors": 0
+    }
+  ]
+}

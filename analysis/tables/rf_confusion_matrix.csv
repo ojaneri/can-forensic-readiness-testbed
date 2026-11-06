@@ -1,0 +1,4 @@
+expected_label,normal,spoofing,flooding
+normal,794,0,0
+spoofing,0,265,0
+flooding,0,0,264
