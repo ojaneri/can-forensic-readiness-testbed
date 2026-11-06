@@ -66,10 +66,12 @@ Check file integrity with `sha256sum -c MANIFEST.sha256` from this directory.
 
 ## Frozen scripts
 
-`strategies_eval_B.py` and `strategies_eval_C.py` were fixed, with their SHA-256 recorded, before runs B and C were
-captured (2026-11-05 20:14:55 and 20:36:07, UTC-3). The copies here differ from the as-run versions only in path
-constants, made relative to the repository. `scripts/AS_RUN_SHA256.txt` lists the SHA-256 of every as-run script, and
-re-running the deposited copies reproduces the derived JSON files.
+`strategies_eval_B.py` and `strategies_eval_C.py` were frozen by file timestamp (2026-11-05 20:14:55 and 20:36:07,
+UTC-3, as recorded in the as-run files) and by as-run SHA-256 (`scripts/AS_RUN_SHA256.txt`). The hash list was published
+in this repository on 2026-11-05 at 21:19, after the captures, so the timing is not independently timestamped. The
+docstrings of the deposited copies state the intent of the freeze; they are not evidence of its timing. The copies here
+differ from the as-run versions only in path constants, made relative to the repository, and re-running them reproduces
+the derived JSON files.
 
 Run C evaluates only strategies defined before it. The cross-run forest of `cross_run_rf.py` and the strategies of
 `strategies_eval.py` were chosen after seeing the data and are exploratory.
